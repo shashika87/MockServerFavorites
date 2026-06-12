@@ -1,0 +1,3031 @@
+{
+  "actions": {
+    "DRAWERV2": {
+      "http_method": "GET",
+      "url": "https://p-cmwnext.movetv.com/drawer/sports_favourites?focusedTile=favorites&sourceScreen=home"
+    }
+  },
+  "dismiss_action": "DRAWERV2",
+  "end_time": 1777618669,
+  "exclusive": false,
+  "expires_at": 1777618669,
+  "format": "DRAWERV2",
+  "header_view": {
+    "title": "Add Favorite Teams"
+  },
+  "href": "https://p-cmwnext.movetv.com/drawer/favorites?sourceScreen={sourceScreen)&stack=ncaaf",
+  "ribbons": [
+    {
+      "icon": {
+        "key": "STAR_LOGO",
+        "type": "STATIC"
+      },
+      "format": "GRID",
+      "ribbon_analytics": {
+        "AccountGuid": "804fc3b0-6b5f-11f1-9f90-7a7bc35467e0",
+        "AccountStatus": "Paid",
+        "DeviceGuid": "069e8d22-3f57-58e1-b072-c0680d357e5a",
+        "ProfileGuid": "804fc3b0-6b5f-11f1-9f90-7a7bc35467e0",
+        "ProfileType": "Admin",
+        "query_id": "/drawer/favorites",
+        "ScreenName": "fluid-guide",
+        "SessionID": "",
+        "TabName": "Guide"
+      },
+      "sub_title": "4",
+      "tiles": [
+        {
+          "actions": {
+            "FAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "ADD TO WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "POST",
+              "label": "ADD TO WATCHLIST",
+              "payload": {
+                "channel_guid": "ncaaf_uga_009",
+                "enabler20Flag": true,
+                "external_id": "ncaaf_uga_009",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/ncaaf_uga.png",
+                  "w": 1280
+                },
+                "subtitle": "Added to favorites list",
+                "title": "Georgia Bulldogs"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            },
+            "UNFAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "REMOVE FROM WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "DELETE",
+              "label": "REMOVE FROM WATCHLIST",
+              "payload": {
+                "channel_guid": "ncaaf_uga_009",
+                "enabler20Flag": true,
+                "external_id": "ncaaf_uga_009",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/ncaaf_uga.png",
+                  "w": 1280
+                },
+                "subtitle": "Removed from favorites list",
+                "title": "Georgia Bulldogs"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            }
+          },
+          "analytics": {
+            "item_id": "ncaaf_uga_009",
+            "query_id": "/drawer/favorites"
+          },
+          "focus_row_background_color": "BA0C2F",
+          "format": "CHANNEL_CARD",
+          "image": {
+            "h": 720,
+            "url": "https://mockserverfavorites.onrender.com/1280x720/ncaaf_uga.png",
+            "w": 1280
+          },
+          "overlay_indicators": [
+            {
+              "icon": {
+                "key": {
+                  "condition": {
+                    "decision": "IS_FAVORITED",
+                    "checks": {
+                      "favorite_channel": "ncaaf_uga_009"
+                    },
+                    "true": "FAVORITE_HEART_FILLED",
+                    "false": "FAVORITE_HEART_EMPTY"
+                  }
+                },
+                "type": "STATIC"
+              }
+            }
+          ],
+          "primary_action": {
+            "condition": {
+              "decision": "IS_FAVORITED",
+              "checks": {
+                "favorite_channel": "ncaaf_uga_009"
+              },
+              "true": "UNFAVORITE_WITH_INVALIDATION",
+              "false": "FAVORITE_WITH_INVALIDATION"
+            }
+          },
+          "team_abbr": "UGA",
+          "team_name": "Georgia Bulldogs",
+          "tile_analytics": {
+            "TBD": "TBD"
+          }
+        },
+        {
+          "actions": {
+            "FAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "ADD TO WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "POST",
+              "label": "ADD TO WATCHLIST",
+              "payload": {
+                "channel_guid": "ncaaf_usc_018",
+                "enabler20Flag": true,
+                "external_id": "ncaaf_usc_018",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/ncaaf_usc.png",
+                  "w": 1280
+                },
+                "subtitle": "Added to favorites list",
+                "title": "USC Trojans"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            },
+            "UNFAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "REMOVE FROM WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "DELETE",
+              "label": "REMOVE FROM WATCHLIST",
+              "payload": {
+                "channel_guid": "ncaaf_usc_018",
+                "enabler20Flag": true,
+                "external_id": "ncaaf_usc_018",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/ncaaf_usc.png",
+                  "w": 1280
+                },
+                "subtitle": "Removed from favorites list",
+                "title": "USC Trojans"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            }
+          },
+          "analytics": {
+            "item_id": "ncaaf_usc_018",
+            "query_id": "/drawer/favorites"
+          },
+          "focus_row_background_color": "990000",
+          "format": "CHANNEL_CARD",
+          "image": {
+            "h": 720,
+            "url": "https://mockserverfavorites.onrender.com/1280x720/ncaaf_usc.png",
+            "w": 1280
+          },
+          "overlay_indicators": [
+            {
+              "icon": {
+                "key": {
+                  "condition": {
+                    "decision": "IS_FAVORITED",
+                    "checks": {
+                      "favorite_channel": "ncaaf_usc_018"
+                    },
+                    "true": "FAVORITE_HEART_FILLED",
+                    "false": "FAVORITE_HEART_EMPTY"
+                  }
+                },
+                "type": "STATIC"
+              }
+            }
+          ],
+          "primary_action": {
+            "condition": {
+              "decision": "IS_FAVORITED",
+              "checks": {
+                "favorite_channel": "ncaaf_usc_018"
+              },
+              "true": "UNFAVORITE_WITH_INVALIDATION",
+              "false": "FAVORITE_WITH_INVALIDATION"
+            }
+          },
+          "team_abbr": "USC",
+          "team_name": "USC Trojans",
+          "tile_analytics": {
+            "TBD": "TBD"
+          }
+        },
+        {
+          "actions": {
+            "FAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "ADD TO WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "POST",
+              "label": "ADD TO WATCHLIST",
+              "payload": {
+                "channel_guid": "ncaaf_osu_015",
+                "enabler20Flag": true,
+                "external_id": "ncaaf_osu_015",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/ncaaf_osu.png",
+                  "w": 1280
+                },
+                "subtitle": "Added to favorites list",
+                "title": "Ohio State Buckeyes"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            },
+            "UNFAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "REMOVE FROM WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "DELETE",
+              "label": "REMOVE FROM WATCHLIST",
+              "payload": {
+                "channel_guid": "ncaaf_osu_015",
+                "enabler20Flag": true,
+                "external_id": "ncaaf_osu_015",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/ncaaf_osu.png",
+                  "w": 1280
+                },
+                "subtitle": "Removed from favorites list",
+                "title": "Ohio State Buckeyes"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            }
+          },
+          "analytics": {
+            "item_id": "ncaaf_osu_015",
+            "query_id": "/drawer/favorites"
+          },
+          "focus_row_background_color": "BB0000",
+          "format": "CHANNEL_CARD",
+          "image": {
+            "h": 720,
+            "url": "https://mockserverfavorites.onrender.com/1280x720/ncaaf_osu.png",
+            "w": 1280
+          },
+          "overlay_indicators": [
+            {
+              "icon": {
+                "key": {
+                  "condition": {
+                    "decision": "IS_FAVORITED",
+                    "checks": {
+                      "favorite_channel": "ncaaf_osu_015"
+                    },
+                    "true": "FAVORITE_HEART_FILLED",
+                    "false": "FAVORITE_HEART_EMPTY"
+                  }
+                },
+                "type": "STATIC"
+              }
+            }
+          ],
+          "primary_action": {
+            "condition": {
+              "decision": "IS_FAVORITED",
+              "checks": {
+                "favorite_channel": "ncaaf_osu_015"
+              },
+              "true": "UNFAVORITE_WITH_INVALIDATION",
+              "false": "FAVORITE_WITH_INVALIDATION"
+            }
+          },
+          "team_abbr": "OSU",
+          "team_name": "Ohio State Buckeyes",
+          "tile_analytics": {
+            "TBD": "TBD"
+          }
+        },
+        {
+          "actions": {
+            "FAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "ADD TO WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "POST",
+              "label": "ADD TO WATCHLIST",
+              "payload": {
+                "channel_guid": "ncaaf_wash_022",
+                "enabler20Flag": true,
+                "external_id": "ncaaf_wash_022",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/ncaaf_wash.png",
+                  "w": 1280
+                },
+                "subtitle": "Added to favorites list",
+                "title": "Washington Huskies"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            },
+            "UNFAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "REMOVE FROM WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "DELETE",
+              "label": "REMOVE FROM WATCHLIST",
+              "payload": {
+                "channel_guid": "ncaaf_wash_022",
+                "enabler20Flag": true,
+                "external_id": "ncaaf_wash_022",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/ncaaf_wash.png",
+                  "w": 1280
+                },
+                "subtitle": "Removed from favorites list",
+                "title": "Washington Huskies"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            }
+          },
+          "analytics": {
+            "item_id": "ncaaf_wash_022",
+            "query_id": "/drawer/favorites"
+          },
+          "focus_row_background_color": "4B2E83",
+          "format": "CHANNEL_CARD",
+          "image": {
+            "h": 720,
+            "url": "https://mockserverfavorites.onrender.com/1280x720/ncaaf_wash.png",
+            "w": 1280
+          },
+          "overlay_indicators": [
+            {
+              "icon": {
+                "key": {
+                  "condition": {
+                    "decision": "IS_FAVORITED",
+                    "checks": {
+                      "favorite_channel": "ncaaf_wash_022"
+                    },
+                    "true": "FAVORITE_HEART_FILLED",
+                    "false": "FAVORITE_HEART_EMPTY"
+                  }
+                },
+                "type": "STATIC"
+              }
+            }
+          ],
+          "primary_action": {
+            "condition": {
+              "decision": "IS_FAVORITED",
+              "checks": {
+                "favorite_channel": "ncaaf_wash_022"
+              },
+              "true": "UNFAVORITE_WITH_INVALIDATION",
+              "false": "FAVORITE_WITH_INVALIDATION"
+            }
+          },
+          "team_abbr": "WASH",
+          "team_name": "Washington Huskies",
+          "tile_analytics": {
+            "TBD": "TBD"
+          }
+        }
+      ],
+      "title": "Recommended Teams",
+      "total_tiles": 4
+    },
+    {
+      "alpha": "A",
+      "format": "GRID",
+      "ribbon_analytics": {
+        "AccountGuid": "65c9ca3e-217b-11ed-ba13-126882dbc557",
+        "AccountStatus": "Paid",
+        "DeviceGuid": "7b235964-439d-49dc-93ed-e7ed0ebad610",
+        "ProfileGuid": "10340350-2875-c41c-9371-1b714803851d",
+        "ProfileType": "Non Admin",
+        "ScreenName": "Home",
+        "SessionID": "",
+        "TabName": "Home",
+        "query_id": "/drawer/favorites"
+      },
+      "sub_title": "4",
+      "tiles": [
+        {
+          "actions": {
+            "FAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "ADD TO WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "POST",
+              "label": "ADD TO WATCHLIST",
+              "payload": {
+                "channel_guid": "ncaaf_ala_001",
+                "enabler20Flag": true,
+                "external_id": "ncaaf_ala_001",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/ncaaf_ala.png",
+                  "w": 1280
+                },
+                "subtitle": "Added to favorites list",
+                "title": "Alabama Crimson Tide"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            },
+            "UNFAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "REMOVE FROM WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "DELETE",
+              "label": "REMOVE FROM WATCHLIST",
+              "payload": {
+                "channel_guid": "ncaaf_ala_001",
+                "enabler20Flag": true,
+                "external_id": "ncaaf_ala_001",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/ncaaf_ala.png",
+                  "w": 1280
+                },
+                "subtitle": "Removed from favorites list",
+                "title": "Alabama Crimson Tide"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            }
+          },
+          "analytics": {
+            "item_id": "ncaaf_ala_001",
+            "query_id": "/drawer/favorites"
+          },
+          "focus_row_background_color": "9E1B32",
+          "format": "CHANNEL_CARD",
+          "image": {
+            "h": 720,
+            "url": "https://mockserverfavorites.onrender.com/1280x720/ncaaf_ala.png",
+            "w": 1280
+          },
+          "overlay_indicators": [
+            {
+              "icon": {
+                "key": {
+                  "condition": {
+                    "checks": {
+                      "favorite_channel": "ncaaf_ala_001"
+                    },
+                    "decision": "IS_FAVORITED",
+                    "false": "FAVORITE_HEART_EMPTY",
+                    "true": "FAVORITE_HEART_FILLED"
+                  }
+                },
+                "type": "STATIC"
+              }
+            }
+          ],
+          "primary_action": {
+            "condition": {
+              "checks": {
+                "favorite_channel": "ncaaf_ala_001"
+              },
+              "decision": "IS_FAVORITED",
+              "false": "FAVORITE_WITH_INVALIDATION",
+              "true": "UNFAVORITE_WITH_INVALIDATION"
+            }
+          },
+          "team_abbr": "ALA",
+          "team_name": "Alabama Crimson Tide",
+          "tile_analytics": {
+            "TBD": "TBD"
+          }
+        },
+        {
+          "actions": {
+            "FAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "ADD TO WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "POST",
+              "label": "ADD TO WATCHLIST",
+              "payload": {
+                "channel_guid": "ncaaf_ari_002",
+                "enabler20Flag": true,
+                "external_id": "ncaaf_ari_002",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/ncaaf_ari.png",
+                  "w": 1280
+                },
+                "subtitle": "Added to favorites list",
+                "title": "Arizona Wildcats"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            },
+            "UNFAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "REMOVE FROM WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "DELETE",
+              "label": "REMOVE FROM WATCHLIST",
+              "payload": {
+                "channel_guid": "ncaaf_ari_002",
+                "enabler20Flag": true,
+                "external_id": "ncaaf_ari_002",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/ncaaf_ari.png",
+                  "w": 1280
+                },
+                "subtitle": "Removed from favorites list",
+                "title": "Arizona Wildcats"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            }
+          },
+          "analytics": {
+            "item_id": "ncaaf_ari_002",
+            "query_id": "/drawer/favorites"
+          },
+          "focus_row_background_color": "CC0033",
+          "format": "CHANNEL_CARD",
+          "image": {
+            "h": 720,
+            "url": "https://mockserverfavorites.onrender.com/1280x720/ncaaf_ari.png",
+            "w": 1280
+          },
+          "overlay_indicators": [
+            {
+              "icon": {
+                "key": {
+                  "condition": {
+                    "checks": {
+                      "favorite_channel": "ncaaf_ari_002"
+                    },
+                    "decision": "IS_FAVORITED",
+                    "false": "FAVORITE_HEART_EMPTY",
+                    "true": "FAVORITE_HEART_FILLED"
+                  }
+                },
+                "type": "STATIC"
+              }
+            }
+          ],
+          "primary_action": {
+            "condition": {
+              "checks": {
+                "favorite_channel": "ncaaf_ari_002"
+              },
+              "decision": "IS_FAVORITED",
+              "false": "FAVORITE_WITH_INVALIDATION",
+              "true": "UNFAVORITE_WITH_INVALIDATION"
+            }
+          },
+          "team_abbr": "ARI",
+          "team_name": "Arizona Wildcats",
+          "tile_analytics": {
+            "TBD": "TBD"
+          }
+        },
+        {
+          "actions": {
+            "FAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "ADD TO WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "POST",
+              "label": "ADD TO WATCHLIST",
+              "payload": {
+                "channel_guid": "ncaaf_asu_003",
+                "enabler20Flag": true,
+                "external_id": "ncaaf_asu_003",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/ncaaf_asu.png",
+                  "w": 1280
+                },
+                "subtitle": "Added to favorites list",
+                "title": "Arizona State Sun Devils"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            },
+            "UNFAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "REMOVE FROM WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "DELETE",
+              "label": "REMOVE FROM WATCHLIST",
+              "payload": {
+                "channel_guid": "ncaaf_asu_003",
+                "enabler20Flag": true,
+                "external_id": "ncaaf_asu_003",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/ncaaf_asu.png",
+                  "w": 1280
+                },
+                "subtitle": "Removed from favorites list",
+                "title": "Arizona State Sun Devils"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            }
+          },
+          "analytics": {
+            "item_id": "ncaaf_asu_003",
+            "query_id": "/drawer/favorites"
+          },
+          "focus_row_background_color": "8C1D40",
+          "format": "CHANNEL_CARD",
+          "image": {
+            "h": 720,
+            "url": "https://mockserverfavorites.onrender.com/1280x720/ncaaf_asu.png",
+            "w": 1280
+          },
+          "overlay_indicators": [
+            {
+              "icon": {
+                "key": {
+                  "condition": {
+                    "checks": {
+                      "favorite_channel": "ncaaf_asu_003"
+                    },
+                    "decision": "IS_FAVORITED",
+                    "false": "FAVORITE_HEART_EMPTY",
+                    "true": "FAVORITE_HEART_FILLED"
+                  }
+                },
+                "type": "STATIC"
+              }
+            }
+          ],
+          "primary_action": {
+            "condition": {
+              "checks": {
+                "favorite_channel": "ncaaf_asu_003"
+              },
+              "decision": "IS_FAVORITED",
+              "false": "FAVORITE_WITH_INVALIDATION",
+              "true": "UNFAVORITE_WITH_INVALIDATION"
+            }
+          },
+          "team_abbr": "ASU",
+          "team_name": "Arizona State Sun Devils",
+          "tile_analytics": {
+            "TBD": "TBD"
+          }
+        },
+        {
+          "actions": {
+            "FAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "ADD TO WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "POST",
+              "label": "ADD TO WATCHLIST",
+              "payload": {
+                "channel_guid": "ncaaf_aub_004",
+                "enabler20Flag": true,
+                "external_id": "ncaaf_aub_004",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/ncaaf_aub.png",
+                  "w": 1280
+                },
+                "subtitle": "Added to favorites list",
+                "title": "Auburn Tigers"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            },
+            "UNFAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "REMOVE FROM WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "DELETE",
+              "label": "REMOVE FROM WATCHLIST",
+              "payload": {
+                "channel_guid": "ncaaf_aub_004",
+                "enabler20Flag": true,
+                "external_id": "ncaaf_aub_004",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/ncaaf_aub.png",
+                  "w": 1280
+                },
+                "subtitle": "Removed from favorites list",
+                "title": "Auburn Tigers"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            }
+          },
+          "analytics": {
+            "item_id": "ncaaf_aub_004",
+            "query_id": "/drawer/favorites"
+          },
+          "focus_row_background_color": "0C2340",
+          "format": "CHANNEL_CARD",
+          "image": {
+            "h": 720,
+            "url": "https://mockserverfavorites.onrender.com/1280x720/ncaaf_aub.png",
+            "w": 1280
+          },
+          "overlay_indicators": [
+            {
+              "icon": {
+                "key": {
+                  "condition": {
+                    "checks": {
+                      "favorite_channel": "ncaaf_aub_004"
+                    },
+                    "decision": "IS_FAVORITED",
+                    "false": "FAVORITE_HEART_EMPTY",
+                    "true": "FAVORITE_HEART_FILLED"
+                  }
+                },
+                "type": "STATIC"
+              }
+            }
+          ],
+          "primary_action": {
+            "condition": {
+              "checks": {
+                "favorite_channel": "ncaaf_aub_004"
+              },
+              "decision": "IS_FAVORITED",
+              "false": "FAVORITE_WITH_INVALIDATION",
+              "true": "UNFAVORITE_WITH_INVALIDATION"
+            }
+          },
+          "team_abbr": "AUB",
+          "team_name": "Auburn Tigers",
+          "tile_analytics": {
+            "TBD": "TBD"
+          }
+        }
+      ],
+      "title": "A",
+      "total_tiles": 4
+    },
+    {
+      "alpha": "C",
+      "format": "GRID",
+      "ribbon_analytics": {
+        "AccountGuid": "65c9ca3e-217b-11ed-ba13-126882dbc557",
+        "AccountStatus": "Paid",
+        "DeviceGuid": "7b235964-439d-49dc-93ed-e7ed0ebad610",
+        "ProfileGuid": "10340350-2875-c41c-9371-1b714803851d",
+        "ProfileType": "Non Admin",
+        "ScreenName": "Home",
+        "SessionID": "",
+        "TabName": "Home",
+        "query_id": "/drawer/favorites"
+      },
+      "sub_title": "2",
+      "tiles": [
+        {
+          "actions": {
+            "FAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "ADD TO WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "POST",
+              "label": "ADD TO WATCHLIST",
+              "payload": {
+                "channel_guid": "ncaaf_clem_005",
+                "enabler20Flag": true,
+                "external_id": "ncaaf_clem_005",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/ncaaf_clem.png",
+                  "w": 1280
+                },
+                "subtitle": "Added to favorites list",
+                "title": "Clemson Tigers"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            },
+            "UNFAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "REMOVE FROM WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "DELETE",
+              "label": "REMOVE FROM WATCHLIST",
+              "payload": {
+                "channel_guid": "ncaaf_clem_005",
+                "enabler20Flag": true,
+                "external_id": "ncaaf_clem_005",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/ncaaf_clem.png",
+                  "w": 1280
+                },
+                "subtitle": "Removed from favorites list",
+                "title": "Clemson Tigers"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            }
+          },
+          "analytics": {
+            "item_id": "ncaaf_clem_005",
+            "query_id": "/drawer/favorites"
+          },
+          "focus_row_background_color": "F56600",
+          "format": "CHANNEL_CARD",
+          "image": {
+            "h": 720,
+            "url": "https://mockserverfavorites.onrender.com/1280x720/ncaaf_clem.png",
+            "w": 1280
+          },
+          "overlay_indicators": [
+            {
+              "icon": {
+                "key": {
+                  "condition": {
+                    "checks": {
+                      "favorite_channel": "ncaaf_clem_005"
+                    },
+                    "decision": "IS_FAVORITED",
+                    "false": "FAVORITE_HEART_EMPTY",
+                    "true": "FAVORITE_HEART_FILLED"
+                  }
+                },
+                "type": "STATIC"
+              }
+            }
+          ],
+          "primary_action": {
+            "condition": {
+              "checks": {
+                "favorite_channel": "ncaaf_clem_005"
+              },
+              "decision": "IS_FAVORITED",
+              "false": "FAVORITE_WITH_INVALIDATION",
+              "true": "UNFAVORITE_WITH_INVALIDATION"
+            }
+          },
+          "team_abbr": "CLEM",
+          "team_name": "Clemson Tigers",
+          "tile_analytics": {
+            "TBD": "TBD"
+          }
+        },
+        {
+          "actions": {
+            "FAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "ADD TO WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "POST",
+              "label": "ADD TO WATCHLIST",
+              "payload": {
+                "channel_guid": "ncaaf_col_006",
+                "enabler20Flag": true,
+                "external_id": "ncaaf_col_006",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/ncaaf_col.png",
+                  "w": 1280
+                },
+                "subtitle": "Added to favorites list",
+                "title": "Colorado Buffaloes"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            },
+            "UNFAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "REMOVE FROM WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "DELETE",
+              "label": "REMOVE FROM WATCHLIST",
+              "payload": {
+                "channel_guid": "ncaaf_col_006",
+                "enabler20Flag": true,
+                "external_id": "ncaaf_col_006",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/ncaaf_col.png",
+                  "w": 1280
+                },
+                "subtitle": "Removed from favorites list",
+                "title": "Colorado Buffaloes"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            }
+          },
+          "analytics": {
+            "item_id": "ncaaf_col_006",
+            "query_id": "/drawer/favorites"
+          },
+          "focus_row_background_color": "CFB87C",
+          "format": "CHANNEL_CARD",
+          "image": {
+            "h": 720,
+            "url": "https://mockserverfavorites.onrender.com/1280x720/ncaaf_col.png",
+            "w": 1280
+          },
+          "overlay_indicators": [
+            {
+              "icon": {
+                "key": {
+                  "condition": {
+                    "checks": {
+                      "favorite_channel": "ncaaf_col_006"
+                    },
+                    "decision": "IS_FAVORITED",
+                    "false": "FAVORITE_HEART_EMPTY",
+                    "true": "FAVORITE_HEART_FILLED"
+                  }
+                },
+                "type": "STATIC"
+              }
+            }
+          ],
+          "primary_action": {
+            "condition": {
+              "checks": {
+                "favorite_channel": "ncaaf_col_006"
+              },
+              "decision": "IS_FAVORITED",
+              "false": "FAVORITE_WITH_INVALIDATION",
+              "true": "UNFAVORITE_WITH_INVALIDATION"
+            }
+          },
+          "team_abbr": "COL",
+          "team_name": "Colorado Buffaloes",
+          "tile_analytics": {
+            "TBD": "TBD"
+          }
+        }
+      ],
+      "title": "C",
+      "total_tiles": 2
+    },
+    {
+      "alpha": "F",
+      "format": "GRID",
+      "ribbon_analytics": {
+        "AccountGuid": "65c9ca3e-217b-11ed-ba13-126882dbc557",
+        "AccountStatus": "Paid",
+        "DeviceGuid": "7b235964-439d-49dc-93ed-e7ed0ebad610",
+        "ProfileGuid": "10340350-2875-c41c-9371-1b714803851d",
+        "ProfileType": "Non Admin",
+        "ScreenName": "Home",
+        "SessionID": "",
+        "TabName": "Home",
+        "query_id": "/drawer/favorites"
+      },
+      "sub_title": "2",
+      "tiles": [
+        {
+          "actions": {
+            "FAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "ADD TO WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "POST",
+              "label": "ADD TO WATCHLIST",
+              "payload": {
+                "channel_guid": "ncaaf_fla_007",
+                "enabler20Flag": true,
+                "external_id": "ncaaf_fla_007",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/ncaaf_fla.png",
+                  "w": 1280
+                },
+                "subtitle": "Added to favorites list",
+                "title": "Florida Gators"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            },
+            "UNFAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "REMOVE FROM WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "DELETE",
+              "label": "REMOVE FROM WATCHLIST",
+              "payload": {
+                "channel_guid": "ncaaf_fla_007",
+                "enabler20Flag": true,
+                "external_id": "ncaaf_fla_007",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/ncaaf_fla.png",
+                  "w": 1280
+                },
+                "subtitle": "Removed from favorites list",
+                "title": "Florida Gators"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            }
+          },
+          "analytics": {
+            "item_id": "ncaaf_fla_007",
+            "query_id": "/drawer/favorites"
+          },
+          "focus_row_background_color": "0021A5",
+          "format": "CHANNEL_CARD",
+          "image": {
+            "h": 720,
+            "url": "https://mockserverfavorites.onrender.com/1280x720/ncaaf_fla.png",
+            "w": 1280
+          },
+          "overlay_indicators": [
+            {
+              "icon": {
+                "key": {
+                  "condition": {
+                    "checks": {
+                      "favorite_channel": "ncaaf_fla_007"
+                    },
+                    "decision": "IS_FAVORITED",
+                    "false": "FAVORITE_HEART_EMPTY",
+                    "true": "FAVORITE_HEART_FILLED"
+                  }
+                },
+                "type": "STATIC"
+              }
+            }
+          ],
+          "primary_action": {
+            "condition": {
+              "checks": {
+                "favorite_channel": "ncaaf_fla_007"
+              },
+              "decision": "IS_FAVORITED",
+              "false": "FAVORITE_WITH_INVALIDATION",
+              "true": "UNFAVORITE_WITH_INVALIDATION"
+            }
+          },
+          "team_abbr": "FLA",
+          "team_name": "Florida Gators",
+          "tile_analytics": {
+            "TBD": "TBD"
+          }
+        },
+        {
+          "actions": {
+            "FAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "ADD TO WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "POST",
+              "label": "ADD TO WATCHLIST",
+              "payload": {
+                "channel_guid": "ncaaf_fsu_008",
+                "enabler20Flag": true,
+                "external_id": "ncaaf_fsu_008",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/ncaaf_fsu.png",
+                  "w": 1280
+                },
+                "subtitle": "Added to favorites list",
+                "title": "Florida State Seminoles"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            },
+            "UNFAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "REMOVE FROM WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "DELETE",
+              "label": "REMOVE FROM WATCHLIST",
+              "payload": {
+                "channel_guid": "ncaaf_fsu_008",
+                "enabler20Flag": true,
+                "external_id": "ncaaf_fsu_008",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/ncaaf_fsu.png",
+                  "w": 1280
+                },
+                "subtitle": "Removed from favorites list",
+                "title": "Florida State Seminoles"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            }
+          },
+          "analytics": {
+            "item_id": "ncaaf_fsu_008",
+            "query_id": "/drawer/favorites"
+          },
+          "focus_row_background_color": "782F40",
+          "format": "CHANNEL_CARD",
+          "image": {
+            "h": 720,
+            "url": "https://mockserverfavorites.onrender.com/1280x720/ncaaf_fsu.png",
+            "w": 1280
+          },
+          "overlay_indicators": [
+            {
+              "icon": {
+                "key": {
+                  "condition": {
+                    "checks": {
+                      "favorite_channel": "ncaaf_fsu_008"
+                    },
+                    "decision": "IS_FAVORITED",
+                    "false": "FAVORITE_HEART_EMPTY",
+                    "true": "FAVORITE_HEART_FILLED"
+                  }
+                },
+                "type": "STATIC"
+              }
+            }
+          ],
+          "primary_action": {
+            "condition": {
+              "checks": {
+                "favorite_channel": "ncaaf_fsu_008"
+              },
+              "decision": "IS_FAVORITED",
+              "false": "FAVORITE_WITH_INVALIDATION",
+              "true": "UNFAVORITE_WITH_INVALIDATION"
+            }
+          },
+          "team_abbr": "FSU",
+          "team_name": "Florida State Seminoles",
+          "tile_analytics": {
+            "TBD": "TBD"
+          }
+        }
+      ],
+      "title": "F",
+      "total_tiles": 2
+    },
+    {
+      "alpha": "G",
+      "format": "GRID",
+      "ribbon_analytics": {
+        "AccountGuid": "65c9ca3e-217b-11ed-ba13-126882dbc557",
+        "AccountStatus": "Paid",
+        "DeviceGuid": "7b235964-439d-49dc-93ed-e7ed0ebad610",
+        "ProfileGuid": "10340350-2875-c41c-9371-1b714803851d",
+        "ProfileType": "Non Admin",
+        "ScreenName": "Home",
+        "SessionID": "",
+        "TabName": "Home",
+        "query_id": "/drawer/favorites"
+      },
+      "sub_title": "1",
+      "tiles": [
+        {
+          "actions": {
+            "FAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "ADD TO WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "POST",
+              "label": "ADD TO WATCHLIST",
+              "payload": {
+                "channel_guid": "ncaaf_uga_009",
+                "enabler20Flag": true,
+                "external_id": "ncaaf_uga_009",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/ncaaf_uga.png",
+                  "w": 1280
+                },
+                "subtitle": "Added to favorites list",
+                "title": "Georgia Bulldogs"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            },
+            "UNFAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "REMOVE FROM WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "DELETE",
+              "label": "REMOVE FROM WATCHLIST",
+              "payload": {
+                "channel_guid": "ncaaf_uga_009",
+                "enabler20Flag": true,
+                "external_id": "ncaaf_uga_009",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/ncaaf_uga.png",
+                  "w": 1280
+                },
+                "subtitle": "Removed from favorites list",
+                "title": "Georgia Bulldogs"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            }
+          },
+          "analytics": {
+            "item_id": "ncaaf_uga_009",
+            "query_id": "/drawer/favorites"
+          },
+          "focus_row_background_color": "BA0C2F",
+          "format": "CHANNEL_CARD",
+          "image": {
+            "h": 720,
+            "url": "https://mockserverfavorites.onrender.com/1280x720/ncaaf_uga.png",
+            "w": 1280
+          },
+          "overlay_indicators": [
+            {
+              "icon": {
+                "key": {
+                  "condition": {
+                    "checks": {
+                      "favorite_channel": "ncaaf_uga_009"
+                    },
+                    "decision": "IS_FAVORITED",
+                    "false": "FAVORITE_HEART_EMPTY",
+                    "true": "FAVORITE_HEART_FILLED"
+                  }
+                },
+                "type": "STATIC"
+              }
+            }
+          ],
+          "primary_action": {
+            "condition": {
+              "checks": {
+                "favorite_channel": "ncaaf_uga_009"
+              },
+              "decision": "IS_FAVORITED",
+              "false": "FAVORITE_WITH_INVALIDATION",
+              "true": "UNFAVORITE_WITH_INVALIDATION"
+            }
+          },
+          "team_abbr": "UGA",
+          "team_name": "Georgia Bulldogs",
+          "tile_analytics": {
+            "TBD": "TBD"
+          }
+        }
+      ],
+      "title": "G",
+      "total_tiles": 1
+    },
+    {
+      "alpha": "L",
+      "format": "GRID",
+      "ribbon_analytics": {
+        "AccountGuid": "65c9ca3e-217b-11ed-ba13-126882dbc557",
+        "AccountStatus": "Paid",
+        "DeviceGuid": "7b235964-439d-49dc-93ed-e7ed0ebad610",
+        "ProfileGuid": "10340350-2875-c41c-9371-1b714803851d",
+        "ProfileType": "Non Admin",
+        "ScreenName": "Home",
+        "SessionID": "",
+        "TabName": "Home",
+        "query_id": "/drawer/favorites"
+      },
+      "sub_title": "1",
+      "tiles": [
+        {
+          "actions": {
+            "FAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "ADD TO WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "POST",
+              "label": "ADD TO WATCHLIST",
+              "payload": {
+                "channel_guid": "ncaaf_lsu_010",
+                "enabler20Flag": true,
+                "external_id": "ncaaf_lsu_010",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/ncaaf_lsu.png",
+                  "w": 1280
+                },
+                "subtitle": "Added to favorites list",
+                "title": "LSU Tigers"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            },
+            "UNFAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "REMOVE FROM WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "DELETE",
+              "label": "REMOVE FROM WATCHLIST",
+              "payload": {
+                "channel_guid": "ncaaf_lsu_010",
+                "enabler20Flag": true,
+                "external_id": "ncaaf_lsu_010",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/ncaaf_lsu.png",
+                  "w": 1280
+                },
+                "subtitle": "Removed from favorites list",
+                "title": "LSU Tigers"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            }
+          },
+          "analytics": {
+            "item_id": "ncaaf_lsu_010",
+            "query_id": "/drawer/favorites"
+          },
+          "focus_row_background_color": "461D7C",
+          "format": "CHANNEL_CARD",
+          "image": {
+            "h": 720,
+            "url": "https://mockserverfavorites.onrender.com/1280x720/ncaaf_lsu.png",
+            "w": 1280
+          },
+          "overlay_indicators": [
+            {
+              "icon": {
+                "key": {
+                  "condition": {
+                    "checks": {
+                      "favorite_channel": "ncaaf_lsu_010"
+                    },
+                    "decision": "IS_FAVORITED",
+                    "false": "FAVORITE_HEART_EMPTY",
+                    "true": "FAVORITE_HEART_FILLED"
+                  }
+                },
+                "type": "STATIC"
+              }
+            }
+          ],
+          "primary_action": {
+            "condition": {
+              "checks": {
+                "favorite_channel": "ncaaf_lsu_010"
+              },
+              "decision": "IS_FAVORITED",
+              "false": "FAVORITE_WITH_INVALIDATION",
+              "true": "UNFAVORITE_WITH_INVALIDATION"
+            }
+          },
+          "team_abbr": "LSU",
+          "team_name": "LSU Tigers",
+          "tile_analytics": {
+            "TBD": "TBD"
+          }
+        }
+      ],
+      "title": "L",
+      "total_tiles": 1
+    },
+    {
+      "alpha": "M",
+      "format": "GRID",
+      "ribbon_analytics": {
+        "AccountGuid": "65c9ca3e-217b-11ed-ba13-126882dbc557",
+        "AccountStatus": "Paid",
+        "DeviceGuid": "7b235964-439d-49dc-93ed-e7ed0ebad610",
+        "ProfileGuid": "10340350-2875-c41c-9371-1b714803851d",
+        "ProfileType": "Non Admin",
+        "ScreenName": "Home",
+        "SessionID": "",
+        "TabName": "Home",
+        "query_id": "/drawer/favorites"
+      },
+      "sub_title": "2",
+      "tiles": [
+        {
+          "actions": {
+            "FAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "ADD TO WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "POST",
+              "label": "ADD TO WATCHLIST",
+              "payload": {
+                "channel_guid": "ncaaf_mich_011",
+                "enabler20Flag": true,
+                "external_id": "ncaaf_mich_011",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/ncaaf_mich.png",
+                  "w": 1280
+                },
+                "subtitle": "Added to favorites list",
+                "title": "Michigan Wolverines"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            },
+            "UNFAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "REMOVE FROM WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "DELETE",
+              "label": "REMOVE FROM WATCHLIST",
+              "payload": {
+                "channel_guid": "ncaaf_mich_011",
+                "enabler20Flag": true,
+                "external_id": "ncaaf_mich_011",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/ncaaf_mich.png",
+                  "w": 1280
+                },
+                "subtitle": "Removed from favorites list",
+                "title": "Michigan Wolverines"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            }
+          },
+          "analytics": {
+            "item_id": "ncaaf_mich_011",
+            "query_id": "/drawer/favorites"
+          },
+          "focus_row_background_color": "00274C",
+          "format": "CHANNEL_CARD",
+          "image": {
+            "h": 720,
+            "url": "https://mockserverfavorites.onrender.com/1280x720/ncaaf_mich.png",
+            "w": 1280
+          },
+          "overlay_indicators": [
+            {
+              "icon": {
+                "key": {
+                  "condition": {
+                    "checks": {
+                      "favorite_channel": "ncaaf_mich_011"
+                    },
+                    "decision": "IS_FAVORITED",
+                    "false": "FAVORITE_HEART_EMPTY",
+                    "true": "FAVORITE_HEART_FILLED"
+                  }
+                },
+                "type": "STATIC"
+              }
+            }
+          ],
+          "primary_action": {
+            "condition": {
+              "checks": {
+                "favorite_channel": "ncaaf_mich_011"
+              },
+              "decision": "IS_FAVORITED",
+              "false": "FAVORITE_WITH_INVALIDATION",
+              "true": "UNFAVORITE_WITH_INVALIDATION"
+            }
+          },
+          "team_abbr": "MICH",
+          "team_name": "Michigan Wolverines",
+          "tile_analytics": {
+            "TBD": "TBD"
+          }
+        },
+        {
+          "actions": {
+            "FAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "ADD TO WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "POST",
+              "label": "ADD TO WATCHLIST",
+              "payload": {
+                "channel_guid": "ncaaf_msu_012",
+                "enabler20Flag": true,
+                "external_id": "ncaaf_msu_012",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/ncaaf_msu.png",
+                  "w": 1280
+                },
+                "subtitle": "Added to favorites list",
+                "title": "Michigan State Spartans"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            },
+            "UNFAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "REMOVE FROM WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "DELETE",
+              "label": "REMOVE FROM WATCHLIST",
+              "payload": {
+                "channel_guid": "ncaaf_msu_012",
+                "enabler20Flag": true,
+                "external_id": "ncaaf_msu_012",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/ncaaf_msu.png",
+                  "w": 1280
+                },
+                "subtitle": "Removed from favorites list",
+                "title": "Michigan State Spartans"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            }
+          },
+          "analytics": {
+            "item_id": "ncaaf_msu_012",
+            "query_id": "/drawer/favorites"
+          },
+          "focus_row_background_color": "18453B",
+          "format": "CHANNEL_CARD",
+          "image": {
+            "h": 720,
+            "url": "https://mockserverfavorites.onrender.com/1280x720/ncaaf_msu.png",
+            "w": 1280
+          },
+          "overlay_indicators": [
+            {
+              "icon": {
+                "key": {
+                  "condition": {
+                    "checks": {
+                      "favorite_channel": "ncaaf_msu_012"
+                    },
+                    "decision": "IS_FAVORITED",
+                    "false": "FAVORITE_HEART_EMPTY",
+                    "true": "FAVORITE_HEART_FILLED"
+                  }
+                },
+                "type": "STATIC"
+              }
+            }
+          ],
+          "primary_action": {
+            "condition": {
+              "checks": {
+                "favorite_channel": "ncaaf_msu_012"
+              },
+              "decision": "IS_FAVORITED",
+              "false": "FAVORITE_WITH_INVALIDATION",
+              "true": "UNFAVORITE_WITH_INVALIDATION"
+            }
+          },
+          "team_abbr": "MSU",
+          "team_name": "Michigan State Spartans",
+          "tile_analytics": {
+            "TBD": "TBD"
+          }
+        }
+      ],
+      "title": "M",
+      "total_tiles": 2
+    },
+    {
+      "alpha": "N",
+      "format": "GRID",
+      "ribbon_analytics": {
+        "AccountGuid": "65c9ca3e-217b-11ed-ba13-126882dbc557",
+        "AccountStatus": "Paid",
+        "DeviceGuid": "7b235964-439d-49dc-93ed-e7ed0ebad610",
+        "ProfileGuid": "10340350-2875-c41c-9371-1b714803851d",
+        "ProfileType": "Non Admin",
+        "ScreenName": "Home",
+        "SessionID": "",
+        "TabName": "Home",
+        "query_id": "/drawer/favorites"
+      },
+      "sub_title": "2",
+      "tiles": [
+        {
+          "actions": {
+            "FAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "ADD TO WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "POST",
+              "label": "ADD TO WATCHLIST",
+              "payload": {
+                "channel_guid": "ncaaf_nd_013",
+                "enabler20Flag": true,
+                "external_id": "ncaaf_nd_013",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/ncaaf_nd.png",
+                  "w": 1280
+                },
+                "subtitle": "Added to favorites list",
+                "title": "Notre Dame Fighting Irish"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            },
+            "UNFAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "REMOVE FROM WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "DELETE",
+              "label": "REMOVE FROM WATCHLIST",
+              "payload": {
+                "channel_guid": "ncaaf_nd_013",
+                "enabler20Flag": true,
+                "external_id": "ncaaf_nd_013",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/ncaaf_nd.png",
+                  "w": 1280
+                },
+                "subtitle": "Removed from favorites list",
+                "title": "Notre Dame Fighting Irish"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            }
+          },
+          "analytics": {
+            "item_id": "ncaaf_nd_013",
+            "query_id": "/drawer/favorites"
+          },
+          "focus_row_background_color": "0C2340",
+          "format": "CHANNEL_CARD",
+          "image": {
+            "h": 720,
+            "url": "https://mockserverfavorites.onrender.com/1280x720/ncaaf_nd.png",
+            "w": 1280
+          },
+          "overlay_indicators": [
+            {
+              "icon": {
+                "key": {
+                  "condition": {
+                    "checks": {
+                      "favorite_channel": "ncaaf_nd_013"
+                    },
+                    "decision": "IS_FAVORITED",
+                    "false": "FAVORITE_HEART_EMPTY",
+                    "true": "FAVORITE_HEART_FILLED"
+                  }
+                },
+                "type": "STATIC"
+              }
+            }
+          ],
+          "primary_action": {
+            "condition": {
+              "checks": {
+                "favorite_channel": "ncaaf_nd_013"
+              },
+              "decision": "IS_FAVORITED",
+              "false": "FAVORITE_WITH_INVALIDATION",
+              "true": "UNFAVORITE_WITH_INVALIDATION"
+            }
+          },
+          "team_abbr": "ND",
+          "team_name": "Notre Dame Fighting Irish",
+          "tile_analytics": {
+            "TBD": "TBD"
+          }
+        },
+        {
+          "actions": {
+            "FAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "ADD TO WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "POST",
+              "label": "ADD TO WATCHLIST",
+              "payload": {
+                "channel_guid": "ncaaf_neb_014",
+                "enabler20Flag": true,
+                "external_id": "ncaaf_neb_014",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/ncaaf_neb.png",
+                  "w": 1280
+                },
+                "subtitle": "Added to favorites list",
+                "title": "Nebraska Cornhuskers"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            },
+            "UNFAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "REMOVE FROM WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "DELETE",
+              "label": "REMOVE FROM WATCHLIST",
+              "payload": {
+                "channel_guid": "ncaaf_neb_014",
+                "enabler20Flag": true,
+                "external_id": "ncaaf_neb_014",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/ncaaf_neb.png",
+                  "w": 1280
+                },
+                "subtitle": "Removed from favorites list",
+                "title": "Nebraska Cornhuskers"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            }
+          },
+          "analytics": {
+            "item_id": "ncaaf_neb_014",
+            "query_id": "/drawer/favorites"
+          },
+          "focus_row_background_color": "E41C38",
+          "format": "CHANNEL_CARD",
+          "image": {
+            "h": 720,
+            "url": "https://mockserverfavorites.onrender.com/1280x720/ncaaf_neb.png",
+            "w": 1280
+          },
+          "overlay_indicators": [
+            {
+              "icon": {
+                "key": {
+                  "condition": {
+                    "checks": {
+                      "favorite_channel": "ncaaf_neb_014"
+                    },
+                    "decision": "IS_FAVORITED",
+                    "false": "FAVORITE_HEART_EMPTY",
+                    "true": "FAVORITE_HEART_FILLED"
+                  }
+                },
+                "type": "STATIC"
+              }
+            }
+          ],
+          "primary_action": {
+            "condition": {
+              "checks": {
+                "favorite_channel": "ncaaf_neb_014"
+              },
+              "decision": "IS_FAVORITED",
+              "false": "FAVORITE_WITH_INVALIDATION",
+              "true": "UNFAVORITE_WITH_INVALIDATION"
+            }
+          },
+          "team_abbr": "NEB",
+          "team_name": "Nebraska Cornhuskers",
+          "tile_analytics": {
+            "TBD": "TBD"
+          }
+        }
+      ],
+      "title": "N",
+      "total_tiles": 2
+    },
+    {
+      "alpha": "O",
+      "format": "GRID",
+      "ribbon_analytics": {
+        "AccountGuid": "65c9ca3e-217b-11ed-ba13-126882dbc557",
+        "AccountStatus": "Paid",
+        "DeviceGuid": "7b235964-439d-49dc-93ed-e7ed0ebad610",
+        "ProfileGuid": "10340350-2875-c41c-9371-1b714803851d",
+        "ProfileType": "Non Admin",
+        "ScreenName": "Home",
+        "SessionID": "",
+        "TabName": "Home",
+        "query_id": "/drawer/favorites"
+      },
+      "sub_title": "2",
+      "tiles": [
+        {
+          "actions": {
+            "FAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "ADD TO WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "POST",
+              "label": "ADD TO WATCHLIST",
+              "payload": {
+                "channel_guid": "ncaaf_osu_015",
+                "enabler20Flag": true,
+                "external_id": "ncaaf_osu_015",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/ncaaf_osu.png",
+                  "w": 1280
+                },
+                "subtitle": "Added to favorites list",
+                "title": "Ohio State Buckeyes"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            },
+            "UNFAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "REMOVE FROM WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "DELETE",
+              "label": "REMOVE FROM WATCHLIST",
+              "payload": {
+                "channel_guid": "ncaaf_osu_015",
+                "enabler20Flag": true,
+                "external_id": "ncaaf_osu_015",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/ncaaf_osu.png",
+                  "w": 1280
+                },
+                "subtitle": "Removed from favorites list",
+                "title": "Ohio State Buckeyes"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            }
+          },
+          "analytics": {
+            "item_id": "ncaaf_osu_015",
+            "query_id": "/drawer/favorites"
+          },
+          "focus_row_background_color": "BB0000",
+          "format": "CHANNEL_CARD",
+          "image": {
+            "h": 720,
+            "url": "https://mockserverfavorites.onrender.com/1280x720/ncaaf_osu.png",
+            "w": 1280
+          },
+          "overlay_indicators": [
+            {
+              "icon": {
+                "key": {
+                  "condition": {
+                    "checks": {
+                      "favorite_channel": "ncaaf_osu_015"
+                    },
+                    "decision": "IS_FAVORITED",
+                    "false": "FAVORITE_HEART_EMPTY",
+                    "true": "FAVORITE_HEART_FILLED"
+                  }
+                },
+                "type": "STATIC"
+              }
+            }
+          ],
+          "primary_action": {
+            "condition": {
+              "checks": {
+                "favorite_channel": "ncaaf_osu_015"
+              },
+              "decision": "IS_FAVORITED",
+              "false": "FAVORITE_WITH_INVALIDATION",
+              "true": "UNFAVORITE_WITH_INVALIDATION"
+            }
+          },
+          "team_abbr": "OSU",
+          "team_name": "Ohio State Buckeyes",
+          "tile_analytics": {
+            "TBD": "TBD"
+          }
+        },
+        {
+          "actions": {
+            "FAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "ADD TO WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "POST",
+              "label": "ADD TO WATCHLIST",
+              "payload": {
+                "channel_guid": "ncaaf_ore_016",
+                "enabler20Flag": true,
+                "external_id": "ncaaf_ore_016",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/ncaaf_ore.png",
+                  "w": 1280
+                },
+                "subtitle": "Added to favorites list",
+                "title": "Oregon Ducks"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            },
+            "UNFAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "REMOVE FROM WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "DELETE",
+              "label": "REMOVE FROM WATCHLIST",
+              "payload": {
+                "channel_guid": "ncaaf_ore_016",
+                "enabler20Flag": true,
+                "external_id": "ncaaf_ore_016",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/ncaaf_ore.png",
+                  "w": 1280
+                },
+                "subtitle": "Removed from favorites list",
+                "title": "Oregon Ducks"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            }
+          },
+          "analytics": {
+            "item_id": "ncaaf_ore_016",
+            "query_id": "/drawer/favorites"
+          },
+          "focus_row_background_color": "154733",
+          "format": "CHANNEL_CARD",
+          "image": {
+            "h": 720,
+            "url": "https://mockserverfavorites.onrender.com/1280x720/ncaaf_ore.png",
+            "w": 1280
+          },
+          "overlay_indicators": [
+            {
+              "icon": {
+                "key": {
+                  "condition": {
+                    "checks": {
+                      "favorite_channel": "ncaaf_ore_016"
+                    },
+                    "decision": "IS_FAVORITED",
+                    "false": "FAVORITE_HEART_EMPTY",
+                    "true": "FAVORITE_HEART_FILLED"
+                  }
+                },
+                "type": "STATIC"
+              }
+            }
+          ],
+          "primary_action": {
+            "condition": {
+              "checks": {
+                "favorite_channel": "ncaaf_ore_016"
+              },
+              "decision": "IS_FAVORITED",
+              "false": "FAVORITE_WITH_INVALIDATION",
+              "true": "UNFAVORITE_WITH_INVALIDATION"
+            }
+          },
+          "team_abbr": "ORE",
+          "team_name": "Oregon Ducks",
+          "tile_analytics": {
+            "TBD": "TBD"
+          }
+        }
+      ],
+      "title": "O",
+      "total_tiles": 2
+    },
+    {
+      "alpha": "P",
+      "format": "GRID",
+      "ribbon_analytics": {
+        "AccountGuid": "65c9ca3e-217b-11ed-ba13-126882dbc557",
+        "AccountStatus": "Paid",
+        "DeviceGuid": "7b235964-439d-49dc-93ed-e7ed0ebad610",
+        "ProfileGuid": "10340350-2875-c41c-9371-1b714803851d",
+        "ProfileType": "Non Admin",
+        "ScreenName": "Home",
+        "SessionID": "",
+        "TabName": "Home",
+        "query_id": "/drawer/favorites"
+      },
+      "sub_title": "2",
+      "tiles": [
+        {
+          "actions": {
+            "FAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "ADD TO WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "POST",
+              "label": "ADD TO WATCHLIST",
+              "payload": {
+                "channel_guid": "ncaaf_psu_017",
+                "enabler20Flag": true,
+                "external_id": "ncaaf_psu_017",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/ncaaf_psu.png",
+                  "w": 1280
+                },
+                "subtitle": "Added to favorites list",
+                "title": "Penn State Nittany Lions"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            },
+            "UNFAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "REMOVE FROM WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "DELETE",
+              "label": "REMOVE FROM WATCHLIST",
+              "payload": {
+                "channel_guid": "ncaaf_psu_017",
+                "enabler20Flag": true,
+                "external_id": "ncaaf_psu_017",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/ncaaf_psu.png",
+                  "w": 1280
+                },
+                "subtitle": "Removed from favorites list",
+                "title": "Penn State Nittany Lions"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            }
+          },
+          "analytics": {
+            "item_id": "ncaaf_psu_017",
+            "query_id": "/drawer/favorites"
+          },
+          "focus_row_background_color": "041E42",
+          "format": "CHANNEL_CARD",
+          "image": {
+            "h": 720,
+            "url": "https://mockserverfavorites.onrender.com/1280x720/ncaaf_psu.png",
+            "w": 1280
+          },
+          "overlay_indicators": [
+            {
+              "icon": {
+                "key": {
+                  "condition": {
+                    "checks": {
+                      "favorite_channel": "ncaaf_psu_017"
+                    },
+                    "decision": "IS_FAVORITED",
+                    "false": "FAVORITE_HEART_EMPTY",
+                    "true": "FAVORITE_HEART_FILLED"
+                  }
+                },
+                "type": "STATIC"
+              }
+            }
+          ],
+          "primary_action": {
+            "condition": {
+              "checks": {
+                "favorite_channel": "ncaaf_psu_017"
+              },
+              "decision": "IS_FAVORITED",
+              "false": "FAVORITE_WITH_INVALIDATION",
+              "true": "UNFAVORITE_WITH_INVALIDATION"
+            }
+          },
+          "team_abbr": "PSU",
+          "team_name": "Penn State Nittany Lions",
+          "tile_analytics": {
+            "TBD": "TBD"
+          }
+        }
+      ],
+      "title": "P",
+      "total_tiles": 1
+    },
+    {
+      "alpha": "S",
+      "format": "GRID",
+      "ribbon_analytics": {
+        "AccountGuid": "65c9ca3e-217b-11ed-ba13-126882dbc557",
+        "AccountStatus": "Paid",
+        "DeviceGuid": "7b235964-439d-49dc-93ed-e7ed0ebad610",
+        "ProfileGuid": "10340350-2875-c41c-9371-1b714803851d",
+        "ProfileType": "Non Admin",
+        "ScreenName": "Home",
+        "SessionID": "",
+        "TabName": "Home",
+        "query_id": "/drawer/favorites"
+      },
+      "sub_title": "1",
+      "tiles": [
+        {
+          "actions": {
+            "FAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "ADD TO WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "POST",
+              "label": "ADD TO WATCHLIST",
+              "payload": {
+                "channel_guid": "ncaaf_usc_018",
+                "enabler20Flag": true,
+                "external_id": "ncaaf_usc_018",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/ncaaf_usc.png",
+                  "w": 1280
+                },
+                "subtitle": "Added to favorites list",
+                "title": "USC Trojans"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            },
+            "UNFAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "REMOVE FROM WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "DELETE",
+              "label": "REMOVE FROM WATCHLIST",
+              "payload": {
+                "channel_guid": "ncaaf_usc_018",
+                "enabler20Flag": true,
+                "external_id": "ncaaf_usc_018",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/ncaaf_usc.png",
+                  "w": 1280
+                },
+                "subtitle": "Removed from favorites list",
+                "title": "USC Trojans"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            }
+          },
+          "analytics": {
+            "item_id": "ncaaf_usc_018",
+            "query_id": "/drawer/favorites"
+          },
+          "focus_row_background_color": "990000",
+          "format": "CHANNEL_CARD",
+          "image": {
+            "h": 720,
+            "url": "https://mockserverfavorites.onrender.com/1280x720/ncaaf_usc.png",
+            "w": 1280
+          },
+          "overlay_indicators": [
+            {
+              "icon": {
+                "key": {
+                  "condition": {
+                    "checks": {
+                      "favorite_channel": "ncaaf_usc_018"
+                    },
+                    "decision": "IS_FAVORITED",
+                    "false": "FAVORITE_HEART_EMPTY",
+                    "true": "FAVORITE_HEART_FILLED"
+                  }
+                },
+                "type": "STATIC"
+              }
+            }
+          ],
+          "primary_action": {
+            "condition": {
+              "checks": {
+                "favorite_channel": "ncaaf_usc_018"
+              },
+              "decision": "IS_FAVORITED",
+              "false": "FAVORITE_WITH_INVALIDATION",
+              "true": "UNFAVORITE_WITH_INVALIDATION"
+            }
+          },
+          "team_abbr": "USC",
+          "team_name": "USC Trojans",
+          "tile_analytics": {
+            "TBD": "TBD"
+          }
+        }
+      ],
+      "title": "S",
+      "total_tiles": 1
+    },
+    {
+      "alpha": "T",
+      "format": "GRID",
+      "ribbon_analytics": {
+        "AccountGuid": "65c9ca3e-217b-11ed-ba13-126882dbc557",
+        "AccountStatus": "Paid",
+        "DeviceGuid": "7b235964-439d-49dc-93ed-e7ed0ebad610",
+        "ProfileGuid": "10340350-2875-c41c-9371-1b714803851d",
+        "ProfileType": "Non Admin",
+        "ScreenName": "Home",
+        "SessionID": "",
+        "TabName": "Home",
+        "query_id": "/drawer/favorites"
+      },
+      "sub_title": "2",
+      "tiles": [
+        {
+          "actions": {
+            "FAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "ADD TO WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "POST",
+              "label": "ADD TO WATCHLIST",
+              "payload": {
+                "channel_guid": "ncaaf_tex_019",
+                "enabler20Flag": true,
+                "external_id": "ncaaf_tex_019",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/ncaaf_tex.png",
+                  "w": 1280
+                },
+                "subtitle": "Added to favorites list",
+                "title": "Texas Longhorns"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            },
+            "UNFAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "REMOVE FROM WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "DELETE",
+              "label": "REMOVE FROM WATCHLIST",
+              "payload": {
+                "channel_guid": "ncaaf_tex_019",
+                "enabler20Flag": true,
+                "external_id": "ncaaf_tex_019",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/ncaaf_tex.png",
+                  "w": 1280
+                },
+                "subtitle": "Removed from favorites list",
+                "title": "Texas Longhorns"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            }
+          },
+          "analytics": {
+            "item_id": "ncaaf_tex_019",
+            "query_id": "/drawer/favorites"
+          },
+          "focus_row_background_color": "BF5700",
+          "format": "CHANNEL_CARD",
+          "image": {
+            "h": 720,
+            "url": "https://mockserverfavorites.onrender.com/1280x720/ncaaf_tex.png",
+            "w": 1280
+          },
+          "overlay_indicators": [
+            {
+              "icon": {
+                "key": {
+                  "condition": {
+                    "checks": {
+                      "favorite_channel": "ncaaf_tex_019"
+                    },
+                    "decision": "IS_FAVORITED",
+                    "false": "FAVORITE_HEART_EMPTY",
+                    "true": "FAVORITE_HEART_FILLED"
+                  }
+                },
+                "type": "STATIC"
+              }
+            }
+          ],
+          "primary_action": {
+            "condition": {
+              "checks": {
+                "favorite_channel": "ncaaf_tex_019"
+              },
+              "decision": "IS_FAVORITED",
+              "false": "FAVORITE_WITH_INVALIDATION",
+              "true": "UNFAVORITE_WITH_INVALIDATION"
+            }
+          },
+          "team_abbr": "TEX",
+          "team_name": "Texas Longhorns",
+          "tile_analytics": {
+            "TBD": "TBD"
+          }
+        },
+        {
+          "actions": {
+            "FAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "ADD TO WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "POST",
+              "label": "ADD TO WATCHLIST",
+              "payload": {
+                "channel_guid": "ncaaf_tamu_020",
+                "enabler20Flag": true,
+                "external_id": "ncaaf_tamu_020",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/ncaaf_tamu.png",
+                  "w": 1280
+                },
+                "subtitle": "Added to favorites list",
+                "title": "Texas A&M Aggies"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            },
+            "UNFAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "REMOVE FROM WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "DELETE",
+              "label": "REMOVE FROM WATCHLIST",
+              "payload": {
+                "channel_guid": "ncaaf_tamu_020",
+                "enabler20Flag": true,
+                "external_id": "ncaaf_tamu_020",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/ncaaf_tamu.png",
+                  "w": 1280
+                },
+                "subtitle": "Removed from favorites list",
+                "title": "Texas A&M Aggies"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            }
+          },
+          "analytics": {
+            "item_id": "ncaaf_tamu_020",
+            "query_id": "/drawer/favorites"
+          },
+          "focus_row_background_color": "500000",
+          "format": "CHANNEL_CARD",
+          "image": {
+            "h": 720,
+            "url": "https://mockserverfavorites.onrender.com/1280x720/ncaaf_tamu.png",
+            "w": 1280
+          },
+          "overlay_indicators": [
+            {
+              "icon": {
+                "key": {
+                  "condition": {
+                    "checks": {
+                      "favorite_channel": "ncaaf_tamu_020"
+                    },
+                    "decision": "IS_FAVORITED",
+                    "false": "FAVORITE_HEART_EMPTY",
+                    "true": "FAVORITE_HEART_FILLED"
+                  }
+                },
+                "type": "STATIC"
+              }
+            }
+          ],
+          "primary_action": {
+            "condition": {
+              "checks": {
+                "favorite_channel": "ncaaf_tamu_020"
+              },
+              "decision": "IS_FAVORITED",
+              "false": "FAVORITE_WITH_INVALIDATION",
+              "true": "UNFAVORITE_WITH_INVALIDATION"
+            }
+          },
+          "team_abbr": "TAMU",
+          "team_name": "Texas A&M Aggies",
+          "tile_analytics": {
+            "TBD": "TBD"
+          }
+        }
+      ],
+      "title": "T",
+      "total_tiles": 2
+    },
+    {
+      "alpha": "U",
+      "format": "GRID",
+      "ribbon_analytics": {
+        "AccountGuid": "65c9ca3e-217b-11ed-ba13-126882dbc557",
+        "AccountStatus": "Paid",
+        "DeviceGuid": "7b235964-439d-49dc-93ed-e7ed0ebad610",
+        "ProfileGuid": "10340350-2875-c41c-9371-1b714803851d",
+        "ProfileType": "Non Admin",
+        "ScreenName": "Home",
+        "SessionID": "",
+        "TabName": "Home",
+        "query_id": "/drawer/favorites"
+      },
+      "sub_title": "1",
+      "tiles": [
+        {
+          "actions": {
+            "FAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "ADD TO WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "POST",
+              "label": "ADD TO WATCHLIST",
+              "payload": {
+                "channel_guid": "ncaaf_utah_021",
+                "enabler20Flag": true,
+                "external_id": "ncaaf_utah_021",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/ncaaf_utah.png",
+                  "w": 1280
+                },
+                "subtitle": "Added to favorites list",
+                "title": "Utah Utes"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            },
+            "UNFAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "REMOVE FROM WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "DELETE",
+              "label": "REMOVE FROM WATCHLIST",
+              "payload": {
+                "channel_guid": "ncaaf_utah_021",
+                "enabler20Flag": true,
+                "external_id": "ncaaf_utah_021",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/ncaaf_utah.png",
+                  "w": 1280
+                },
+                "subtitle": "Removed from favorites list",
+                "title": "Utah Utes"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            }
+          },
+          "analytics": {
+            "item_id": "ncaaf_utah_021",
+            "query_id": "/drawer/favorites"
+          },
+          "focus_row_background_color": "CC0000",
+          "format": "CHANNEL_CARD",
+          "image": {
+            "h": 720,
+            "url": "https://mockserverfavorites.onrender.com/1280x720/ncaaf_utah.png",
+            "w": 1280
+          },
+          "overlay_indicators": [
+            {
+              "icon": {
+                "key": {
+                  "condition": {
+                    "checks": {
+                      "favorite_channel": "ncaaf_utah_021"
+                    },
+                    "decision": "IS_FAVORITED",
+                    "false": "FAVORITE_HEART_EMPTY",
+                    "true": "FAVORITE_HEART_FILLED"
+                  }
+                },
+                "type": "STATIC"
+              }
+            }
+          ],
+          "primary_action": {
+            "condition": {
+              "checks": {
+                "favorite_channel": "ncaaf_utah_021"
+              },
+              "decision": "IS_FAVORITED",
+              "false": "FAVORITE_WITH_INVALIDATION",
+              "true": "UNFAVORITE_WITH_INVALIDATION"
+            }
+          },
+          "team_abbr": "UTAH",
+          "team_name": "Utah Utes",
+          "tile_analytics": {
+            "TBD": "TBD"
+          }
+        }
+      ],
+      "title": "U",
+      "total_tiles": 1
+    },
+    {
+      "alpha": "W",
+      "format": "GRID",
+      "ribbon_analytics": {
+        "AccountGuid": "65c9ca3e-217b-11ed-ba13-126882dbc557",
+        "AccountStatus": "Paid",
+        "DeviceGuid": "7b235964-439d-49dc-93ed-e7ed0ebad610",
+        "ProfileGuid": "10340350-2875-c41c-9371-1b714803851d",
+        "ProfileType": "Non Admin",
+        "ScreenName": "Home",
+        "SessionID": "",
+        "TabName": "Home",
+        "query_id": "/drawer/favorites"
+      },
+      "sub_title": "2",
+      "tiles": [
+        {
+          "actions": {
+            "FAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "ADD TO WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "POST",
+              "label": "ADD TO WATCHLIST",
+              "payload": {
+                "channel_guid": "ncaaf_wash_022",
+                "enabler20Flag": true,
+                "external_id": "ncaaf_wash_022",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/ncaaf_wash.png",
+                  "w": 1280
+                },
+                "subtitle": "Added to favorites list",
+                "title": "Washington Huskies"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            },
+            "UNFAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "REMOVE FROM WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "DELETE",
+              "label": "REMOVE FROM WATCHLIST",
+              "payload": {
+                "channel_guid": "ncaaf_wash_022",
+                "enabler20Flag": true,
+                "external_id": "ncaaf_wash_022",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/ncaaf_wash.png",
+                  "w": 1280
+                },
+                "subtitle": "Removed from favorites list",
+                "title": "Washington Huskies"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            }
+          },
+          "analytics": {
+            "item_id": "ncaaf_wash_022",
+            "query_id": "/drawer/favorites"
+          },
+          "focus_row_background_color": "4B2E83",
+          "format": "CHANNEL_CARD",
+          "image": {
+            "h": 720,
+            "url": "https://mockserverfavorites.onrender.com/1280x720/ncaaf_wash.png",
+            "w": 1280
+          },
+          "overlay_indicators": [
+            {
+              "icon": {
+                "key": {
+                  "condition": {
+                    "checks": {
+                      "favorite_channel": "ncaaf_wash_022"
+                    },
+                    "decision": "IS_FAVORITED",
+                    "false": "FAVORITE_HEART_EMPTY",
+                    "true": "FAVORITE_HEART_FILLED"
+                  }
+                },
+                "type": "STATIC"
+              }
+            }
+          ],
+          "primary_action": {
+            "condition": {
+              "checks": {
+                "favorite_channel": "ncaaf_wash_022"
+              },
+              "decision": "IS_FAVORITED",
+              "false": "FAVORITE_WITH_INVALIDATION",
+              "true": "UNFAVORITE_WITH_INVALIDATION"
+            }
+          },
+          "team_abbr": "WASH",
+          "team_name": "Washington Huskies",
+          "tile_analytics": {
+            "TBD": "TBD"
+          }
+        },
+        {
+          "actions": {
+            "FAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "ADD TO WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "POST",
+              "label": "ADD TO WATCHLIST",
+              "payload": {
+                "channel_guid": "ncaaf_wis_023",
+                "enabler20Flag": true,
+                "external_id": "ncaaf_wis_023",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/ncaaf_wis.png",
+                  "w": 1280
+                },
+                "subtitle": "Added to favorites list",
+                "title": "Wisconsin Badgers"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            },
+            "UNFAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "REMOVE FROM WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "DELETE",
+              "label": "REMOVE FROM WATCHLIST",
+              "payload": {
+                "channel_guid": "ncaaf_wis_023",
+                "enabler20Flag": true,
+                "external_id": "ncaaf_wis_023",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/ncaaf_wis.png",
+                  "w": 1280
+                },
+                "subtitle": "Removed from favorites list",
+                "title": "Wisconsin Badgers"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            }
+          },
+          "analytics": {
+            "item_id": "ncaaf_wis_023",
+            "query_id": "/drawer/favorites"
+          },
+          "focus_row_background_color": "C5050C",
+          "format": "CHANNEL_CARD",
+          "image": {
+            "h": 720,
+            "url": "https://mockserverfavorites.onrender.com/1280x720/ncaaf_wis.png",
+            "w": 1280
+          },
+          "overlay_indicators": [
+            {
+              "icon": {
+                "key": {
+                  "condition": {
+                    "checks": {
+                      "favorite_channel": "ncaaf_wis_023"
+                    },
+                    "decision": "IS_FAVORITED",
+                    "false": "FAVORITE_HEART_EMPTY",
+                    "true": "FAVORITE_HEART_FILLED"
+                  }
+                },
+                "type": "STATIC"
+              }
+            }
+          ],
+          "primary_action": {
+            "condition": {
+              "checks": {
+                "favorite_channel": "ncaaf_wis_023"
+              },
+              "decision": "IS_FAVORITED",
+              "false": "FAVORITE_WITH_INVALIDATION",
+              "true": "UNFAVORITE_WITH_INVALIDATION"
+            }
+          },
+          "team_abbr": "WIS",
+          "team_name": "Wisconsin Badgers",
+          "tile_analytics": {
+            "TBD": "TBD"
+          }
+        }
+      ],
+      "title": "W",
+      "total_tiles": 2
+    }
+  ],
+  "start_time": 1777532269,
+  "type": "FAVORITES"
+}

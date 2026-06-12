@@ -1,0 +1,2708 @@
+{
+  "actions": {
+    "DRAWERV2": {
+      "http_method": "GET",
+      "url": "https://p-cmwnext.movetv.com/drawer/sports_favourites?focusedTile=favorites&sourceScreen=home"
+    }
+  },
+  "dismiss_action": "DRAWERV2",
+  "end_time": 1777618669,
+  "exclusive": false,
+  "expires_at": 1777618669,
+  "format": "DRAWERV2",
+  "header_view": {
+    "title": "Add Favorite Teams"
+  },
+  "href": "https://p-cmwnext.movetv.com/drawer/favorites?sourceScreen={sourceScreen)&stack=eps",
+  "ribbons": [
+    {
+      "icon": {
+        "key": "STAR_LOGO",
+        "type": "STATIC"
+      },
+      "format": "GRID",
+      "ribbon_analytics": {
+        "AccountGuid": "804fc3b0-6b5f-11f1-9f90-7a7bc35467e0",
+        "AccountStatus": "Paid",
+        "DeviceGuid": "069e8d22-3f57-58e1-b072-c0680d357e5a",
+        "ProfileGuid": "804fc3b0-6b5f-11f1-9f90-7a7bc35467e0",
+        "ProfileType": "Admin",
+        "query_id": "/drawer/favorites",
+        "ScreenName": "fluid-guide",
+        "SessionID": "",
+        "TabName": "Guide"
+      },
+      "sub_title": "4",
+      "tiles": [
+        {
+          "actions": {
+            "FAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "ADD TO WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "POST",
+              "label": "ADD TO WATCHLIST",
+              "payload": {
+                "channel_guid": "epl_mci_013",
+                "enabler20Flag": true,
+                "external_id": "epl_mci_013",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/epl_mci.png",
+                  "w": 1280
+                },
+                "subtitle": "Added to favorites list",
+                "title": "Manchester City"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            },
+            "UNFAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "REMOVE FROM WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "DELETE",
+              "label": "REMOVE FROM WATCHLIST",
+              "payload": {
+                "channel_guid": "epl_mci_013",
+                "enabler20Flag": true,
+                "external_id": "epl_mci_013",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/epl_mci.png",
+                  "w": 1280
+                },
+                "subtitle": "Removed from favorites list",
+                "title": "Manchester City"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            }
+          },
+          "analytics": {
+            "item_id": "epl_mci_013",
+            "query_id": "/drawer/favorites"
+          },
+          "focus_row_background_color": "6CABDD",
+          "format": "CHANNEL_CARD",
+          "image": {
+            "h": 720,
+            "url": "https://mockserverfavorites.onrender.com/1280x720/epl_mci.png",
+            "w": 1280
+          },
+          "overlay_indicators": [
+            {
+              "icon": {
+                "key": {
+                  "condition": {
+                    "decision": "IS_FAVORITED",
+                    "checks": {
+                      "favorite_channel": "epl_mci_013"
+                    },
+                    "true": "FAVORITE_HEART_FILLED",
+                    "false": "FAVORITE_HEART_EMPTY"
+                  }
+                },
+                "type": "STATIC"
+              }
+            }
+          ],
+          "primary_action": {
+            "condition": {
+              "decision": "IS_FAVORITED",
+              "checks": {
+                "favorite_channel": "epl_mci_013"
+              },
+              "true": "UNFAVORITE_WITH_INVALIDATION",
+              "false": "FAVORITE_WITH_INVALIDATION"
+            }
+          },
+          "team_abbr": "MCI",
+          "team_name": "Manchester City",
+          "tile_analytics": {
+            "TBD": "TBD"
+          }
+        },
+        {
+          "actions": {
+            "FAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "ADD TO WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "POST",
+              "label": "ADD TO WATCHLIST",
+              "payload": {
+                "channel_guid": "epl_avl_002",
+                "enabler20Flag": true,
+                "external_id": "epl_avl_002",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/epl_avl.png",
+                  "w": 1280
+                },
+                "subtitle": "Added to favorites list",
+                "title": "Aston Villa"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            },
+            "UNFAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "REMOVE FROM WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "DELETE",
+              "label": "REMOVE FROM WATCHLIST",
+              "payload": {
+                "channel_guid": "epl_avl_002",
+                "enabler20Flag": true,
+                "external_id": "epl_avl_002",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/epl_avl.png",
+                  "w": 1280
+                },
+                "subtitle": "Removed from favorites list",
+                "title": "Aston Villa"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            }
+          },
+          "analytics": {
+            "item_id": "epl_avl_002",
+            "query_id": "/drawer/favorites"
+          },
+          "focus_row_background_color": "670E36",
+          "format": "CHANNEL_CARD",
+          "image": {
+            "h": 720,
+            "url": "https://mockserverfavorites.onrender.com/1280x720/epl_avl.png",
+            "w": 1280
+          },
+          "overlay_indicators": [
+            {
+              "icon": {
+                "key": {
+                  "condition": {
+                    "decision": "IS_FAVORITED",
+                    "checks": {
+                      "favorite_channel": "epl_avl_002"
+                    },
+                    "true": "FAVORITE_HEART_FILLED",
+                    "false": "FAVORITE_HEART_EMPTY"
+                  }
+                },
+                "type": "STATIC"
+              }
+            }
+          ],
+          "primary_action": {
+            "condition": {
+              "decision": "IS_FAVORITED",
+              "checks": {
+                "favorite_channel": "epl_avl_002"
+              },
+              "true": "UNFAVORITE_WITH_INVALIDATION",
+              "false": "FAVORITE_WITH_INVALIDATION"
+            }
+          },
+          "team_abbr": "AVL",
+          "team_name": "Aston Villa",
+          "tile_analytics": {
+            "TBD": "TBD"
+          }
+        },
+        {
+          "actions": {
+            "FAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "ADD TO WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "POST",
+              "label": "ADD TO WATCHLIST",
+              "payload": {
+                "channel_guid": "epl_lei_011",
+                "enabler20Flag": true,
+                "external_id": "epl_lei_011",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/epl_lei.png",
+                  "w": 1280
+                },
+                "subtitle": "Added to favorites list",
+                "title": "Leicester City"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            },
+            "UNFAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "REMOVE FROM WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "DELETE",
+              "label": "REMOVE FROM WATCHLIST",
+              "payload": {
+                "channel_guid": "epl_lei_011",
+                "enabler20Flag": true,
+                "external_id": "epl_lei_011",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/epl_lei.png",
+                  "w": 1280
+                },
+                "subtitle": "Removed from favorites list",
+                "title": "Leicester City"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            }
+          },
+          "analytics": {
+            "item_id": "epl_lei_011",
+            "query_id": "/drawer/favorites"
+          },
+          "focus_row_background_color": "003090",
+          "format": "CHANNEL_CARD",
+          "image": {
+            "h": 720,
+            "url": "https://mockserverfavorites.onrender.com/1280x720/epl_lei.png",
+            "w": 1280
+          },
+          "overlay_indicators": [
+            {
+              "icon": {
+                "key": {
+                  "condition": {
+                    "decision": "IS_FAVORITED",
+                    "checks": {
+                      "favorite_channel": "epl_lei_011"
+                    },
+                    "true": "FAVORITE_HEART_FILLED",
+                    "false": "FAVORITE_HEART_EMPTY"
+                  }
+                },
+                "type": "STATIC"
+              }
+            }
+          ],
+          "primary_action": {
+            "condition": {
+              "decision": "IS_FAVORITED",
+              "checks": {
+                "favorite_channel": "epl_lei_011"
+              },
+              "true": "UNFAVORITE_WITH_INVALIDATION",
+              "false": "FAVORITE_WITH_INVALIDATION"
+            }
+          },
+          "team_abbr": "LEI",
+          "team_name": "Leicester City",
+          "tile_analytics": {
+            "TBD": "TBD"
+          }
+        },
+        {
+          "actions": {
+            "FAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "ADD TO WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "POST",
+              "label": "ADD TO WATCHLIST",
+              "payload": {
+                "channel_guid": "epl_liv_012",
+                "enabler20Flag": true,
+                "external_id": "epl_liv_012",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/epl_liv.png",
+                  "w": 1280
+                },
+                "subtitle": "Added to favorites list",
+                "title": "Liverpool"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            },
+            "UNFAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "REMOVE FROM WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "DELETE",
+              "label": "REMOVE FROM WATCHLIST",
+              "payload": {
+                "channel_guid": "epl_liv_012",
+                "enabler20Flag": true,
+                "external_id": "epl_liv_012",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/epl_liv.png",
+                  "w": 1280
+                },
+                "subtitle": "Removed from favorites list",
+                "title": "Liverpool"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            }
+          },
+          "analytics": {
+            "item_id": "epl_liv_012",
+            "query_id": "/drawer/favorites"
+          },
+          "focus_row_background_color": "C8102E",
+          "format": "CHANNEL_CARD",
+          "image": {
+            "h": 720,
+            "url": "https://mockserverfavorites.onrender.com/1280x720/epl_liv.png",
+            "w": 1280
+          },
+          "overlay_indicators": [
+            {
+              "icon": {
+                "key": {
+                  "condition": {
+                    "decision": "IS_FAVORITED",
+                    "checks": {
+                      "favorite_channel": "epl_liv_012"
+                    },
+                    "true": "FAVORITE_HEART_FILLED",
+                    "false": "FAVORITE_HEART_EMPTY"
+                  }
+                },
+                "type": "STATIC"
+              }
+            }
+          ],
+          "primary_action": {
+            "condition": {
+              "decision": "IS_FAVORITED",
+              "checks": {
+                "favorite_channel": "epl_liv_012"
+              },
+              "true": "UNFAVORITE_WITH_INVALIDATION",
+              "false": "FAVORITE_WITH_INVALIDATION"
+            }
+          },
+          "team_abbr": "LIV",
+          "team_name": "Liverpool",
+          "tile_analytics": {
+            "TBD": "TBD"
+          }
+        }
+      ],
+      "title": "Recommended Teams",
+      "total_tiles": 4
+    },
+    {
+      "alpha": "A",
+      "format": "GRID",
+      "ribbon_analytics": {
+        "AccountGuid": "65c9ca3e-217b-11ed-ba13-126882dbc557",
+        "AccountStatus": "Paid",
+        "DeviceGuid": "7b235964-439d-49dc-93ed-e7ed0ebad610",
+        "ProfileGuid": "10340350-2875-c41c-9371-1b714803851d",
+        "ProfileType": "Non Admin",
+        "ScreenName": "Home",
+        "SessionID": "",
+        "TabName": "Home",
+        "query_id": "/drawer/favorites"
+      },
+      "sub_title": "2",
+      "tiles": [
+        {
+          "actions": {
+            "FAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "ADD TO WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "POST",
+              "label": "ADD TO WATCHLIST",
+              "payload": {
+                "channel_guid": "epl_ars_001",
+                "enabler20Flag": true,
+                "external_id": "epl_ars_001",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/epl_ars.png",
+                  "w": 1280
+                },
+                "subtitle": "Added to favorites list",
+                "title": "Arsenal"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            },
+            "UNFAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "REMOVE FROM WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "DELETE",
+              "label": "REMOVE FROM WATCHLIST",
+              "payload": {
+                "channel_guid": "epl_ars_001",
+                "enabler20Flag": true,
+                "external_id": "epl_ars_001",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/epl_ars.png",
+                  "w": 1280
+                },
+                "subtitle": "Removed from favorites list",
+                "title": "Arsenal"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            }
+          },
+          "analytics": {
+            "item_id": "epl_ars_001",
+            "query_id": "/drawer/favorites"
+          },
+          "focus_row_background_color": "EF0107",
+          "format": "CHANNEL_CARD",
+          "image": {
+            "h": 720,
+            "url": "https://mockserverfavorites.onrender.com/1280x720/epl_ars.png",
+            "w": 1280
+          },
+          "overlay_indicators": [
+            {
+              "icon": {
+                "key": {
+                  "condition": {
+                    "checks": {
+                      "favorite_channel": "epl_ars_001"
+                    },
+                    "decision": "IS_FAVORITED",
+                    "false": "FAVORITE_HEART_EMPTY",
+                    "true": "FAVORITE_HEART_FILLED"
+                  }
+                },
+                "type": "STATIC"
+              }
+            }
+          ],
+          "primary_action": {
+            "condition": {
+              "checks": {
+                "favorite_channel": "epl_ars_001"
+              },
+              "decision": "IS_FAVORITED",
+              "false": "FAVORITE_WITH_INVALIDATION",
+              "true": "UNFAVORITE_WITH_INVALIDATION"
+            }
+          },
+          "team_abbr": "ARS",
+          "team_name": "Arsenal",
+          "tile_analytics": {
+            "TBD": "TBD"
+          }
+        },
+        {
+          "actions": {
+            "FAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "ADD TO WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "POST",
+              "label": "ADD TO WATCHLIST",
+              "payload": {
+                "channel_guid": "epl_avl_002",
+                "enabler20Flag": true,
+                "external_id": "epl_avl_002",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/epl_avl.png",
+                  "w": 1280
+                },
+                "subtitle": "Added to favorites list",
+                "title": "Aston Villa"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            },
+            "UNFAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "REMOVE FROM WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "DELETE",
+              "label": "REMOVE FROM WATCHLIST",
+              "payload": {
+                "channel_guid": "epl_avl_002",
+                "enabler20Flag": true,
+                "external_id": "epl_avl_002",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/epl_avl.png",
+                  "w": 1280
+                },
+                "subtitle": "Removed from favorites list",
+                "title": "Aston Villa"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            }
+          },
+          "analytics": {
+            "item_id": "epl_avl_002",
+            "query_id": "/drawer/favorites"
+          },
+          "focus_row_background_color": "670E36",
+          "format": "CHANNEL_CARD",
+          "image": {
+            "h": 720,
+            "url": "https://mockserverfavorites.onrender.com/1280x720/epl_avl.png",
+            "w": 1280
+          },
+          "overlay_indicators": [
+            {
+              "icon": {
+                "key": {
+                  "condition": {
+                    "checks": {
+                      "favorite_channel": "epl_avl_002"
+                    },
+                    "decision": "IS_FAVORITED",
+                    "false": "FAVORITE_HEART_EMPTY",
+                    "true": "FAVORITE_HEART_FILLED"
+                  }
+                },
+                "type": "STATIC"
+              }
+            }
+          ],
+          "primary_action": {
+            "condition": {
+              "checks": {
+                "favorite_channel": "epl_avl_002"
+              },
+              "decision": "IS_FAVORITED",
+              "false": "FAVORITE_WITH_INVALIDATION",
+              "true": "UNFAVORITE_WITH_INVALIDATION"
+            }
+          },
+          "team_abbr": "AVL",
+          "team_name": "Aston Villa",
+          "tile_analytics": {
+            "TBD": "TBD"
+          }
+        }
+      ],
+      "title": "A",
+      "total_tiles": 2
+    },
+    {
+      "alpha": "B",
+      "format": "GRID",
+      "ribbon_analytics": {
+        "AccountGuid": "65c9ca3e-217b-11ed-ba13-126882dbc557",
+        "AccountStatus": "Paid",
+        "DeviceGuid": "7b235964-439d-49dc-93ed-e7ed0ebad610",
+        "ProfileGuid": "10340350-2875-c41c-9371-1b714803851d",
+        "ProfileType": "Non Admin",
+        "ScreenName": "Home",
+        "SessionID": "",
+        "TabName": "Home",
+        "query_id": "/drawer/favorites"
+      },
+      "sub_title": "3",
+      "tiles": [
+        {
+          "actions": {
+            "FAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "ADD TO WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "POST",
+              "label": "ADD TO WATCHLIST",
+              "payload": {
+                "channel_guid": "epl_bou_003",
+                "enabler20Flag": true,
+                "external_id": "epl_bou_003",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/epl_bou.png",
+                  "w": 1280
+                },
+                "subtitle": "Added to favorites list",
+                "title": "AFC Bournemouth"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            },
+            "UNFAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "REMOVE FROM WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "DELETE",
+              "label": "REMOVE FROM WATCHLIST",
+              "payload": {
+                "channel_guid": "epl_bou_003",
+                "enabler20Flag": true,
+                "external_id": "epl_bou_003",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/epl_bou.png",
+                  "w": 1280
+                },
+                "subtitle": "Removed from favorites list",
+                "title": "AFC Bournemouth"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            }
+          },
+          "analytics": {
+            "item_id": "epl_bou_003",
+            "query_id": "/drawer/favorites"
+          },
+          "focus_row_background_color": "DA291C",
+          "format": "CHANNEL_CARD",
+          "image": {
+            "h": 720,
+            "url": "https://mockserverfavorites.onrender.com/1280x720/epl_bou.png",
+            "w": 1280
+          },
+          "overlay_indicators": [
+            {
+              "icon": {
+                "key": {
+                  "condition": {
+                    "checks": {
+                      "favorite_channel": "epl_bou_003"
+                    },
+                    "decision": "IS_FAVORITED",
+                    "false": "FAVORITE_HEART_EMPTY",
+                    "true": "FAVORITE_HEART_FILLED"
+                  }
+                },
+                "type": "STATIC"
+              }
+            }
+          ],
+          "primary_action": {
+            "condition": {
+              "checks": {
+                "favorite_channel": "epl_bou_003"
+              },
+              "decision": "IS_FAVORITED",
+              "false": "FAVORITE_WITH_INVALIDATION",
+              "true": "UNFAVORITE_WITH_INVALIDATION"
+            }
+          },
+          "team_abbr": "BOU",
+          "team_name": "AFC Bournemouth",
+          "tile_analytics": {
+            "TBD": "TBD"
+          }
+        },
+        {
+          "actions": {
+            "FAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "ADD TO WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "POST",
+              "label": "ADD TO WATCHLIST",
+              "payload": {
+                "channel_guid": "epl_bre_004",
+                "enabler20Flag": true,
+                "external_id": "epl_bre_004",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/epl_bre.png",
+                  "w": 1280
+                },
+                "subtitle": "Added to favorites list",
+                "title": "Brentford"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            },
+            "UNFAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "REMOVE FROM WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "DELETE",
+              "label": "REMOVE FROM WATCHLIST",
+              "payload": {
+                "channel_guid": "epl_bre_004",
+                "enabler20Flag": true,
+                "external_id": "epl_bre_004",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/epl_bre.png",
+                  "w": 1280
+                },
+                "subtitle": "Removed from favorites list",
+                "title": "Brentford"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            }
+          },
+          "analytics": {
+            "item_id": "epl_bre_004",
+            "query_id": "/drawer/favorites"
+          },
+          "focus_row_background_color": "E30613",
+          "format": "CHANNEL_CARD",
+          "image": {
+            "h": 720,
+            "url": "https://mockserverfavorites.onrender.com/1280x720/epl_bre.png",
+            "w": 1280
+          },
+          "overlay_indicators": [
+            {
+              "icon": {
+                "key": {
+                  "condition": {
+                    "checks": {
+                      "favorite_channel": "epl_bre_004"
+                    },
+                    "decision": "IS_FAVORITED",
+                    "false": "FAVORITE_HEART_EMPTY",
+                    "true": "FAVORITE_HEART_FILLED"
+                  }
+                },
+                "type": "STATIC"
+              }
+            }
+          ],
+          "primary_action": {
+            "condition": {
+              "checks": {
+                "favorite_channel": "epl_bre_004"
+              },
+              "decision": "IS_FAVORITED",
+              "false": "FAVORITE_WITH_INVALIDATION",
+              "true": "UNFAVORITE_WITH_INVALIDATION"
+            }
+          },
+          "team_abbr": "BRE",
+          "team_name": "Brentford",
+          "tile_analytics": {
+            "TBD": "TBD"
+          }
+        },
+        {
+          "actions": {
+            "FAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "ADD TO WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "POST",
+              "label": "ADD TO WATCHLIST",
+              "payload": {
+                "channel_guid": "epl_bha_005",
+                "enabler20Flag": true,
+                "external_id": "epl_bha_005",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/epl_bha.png",
+                  "w": 1280
+                },
+                "subtitle": "Added to favorites list",
+                "title": "Brighton & Hove Albion"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            },
+            "UNFAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "REMOVE FROM WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "DELETE",
+              "label": "REMOVE FROM WATCHLIST",
+              "payload": {
+                "channel_guid": "epl_bha_005",
+                "enabler20Flag": true,
+                "external_id": "epl_bha_005",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/epl_bha.png",
+                  "w": 1280
+                },
+                "subtitle": "Removed from favorites list",
+                "title": "Brighton & Hove Albion"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            }
+          },
+          "analytics": {
+            "item_id": "epl_bha_005",
+            "query_id": "/drawer/favorites"
+          },
+          "focus_row_background_color": "0057B8",
+          "format": "CHANNEL_CARD",
+          "image": {
+            "h": 720,
+            "url": "https://mockserverfavorites.onrender.com/1280x720/epl_bha.png",
+            "w": 1280
+          },
+          "overlay_indicators": [
+            {
+              "icon": {
+                "key": {
+                  "condition": {
+                    "checks": {
+                      "favorite_channel": "epl_bha_005"
+                    },
+                    "decision": "IS_FAVORITED",
+                    "false": "FAVORITE_HEART_EMPTY",
+                    "true": "FAVORITE_HEART_FILLED"
+                  }
+                },
+                "type": "STATIC"
+              }
+            }
+          ],
+          "primary_action": {
+            "condition": {
+              "checks": {
+                "favorite_channel": "epl_bha_005"
+              },
+              "decision": "IS_FAVORITED",
+              "false": "FAVORITE_WITH_INVALIDATION",
+              "true": "UNFAVORITE_WITH_INVALIDATION"
+            }
+          },
+          "team_abbr": "BHA",
+          "team_name": "Brighton & Hove Albion",
+          "tile_analytics": {
+            "TBD": "TBD"
+          }
+        }
+      ],
+      "title": "B",
+      "total_tiles": 3
+    },
+    {
+      "alpha": "C",
+      "format": "GRID",
+      "ribbon_analytics": {
+        "AccountGuid": "65c9ca3e-217b-11ed-ba13-126882dbc557",
+        "AccountStatus": "Paid",
+        "DeviceGuid": "7b235964-439d-49dc-93ed-e7ed0ebad610",
+        "ProfileGuid": "10340350-2875-c41c-9371-1b714803851d",
+        "ProfileType": "Non Admin",
+        "ScreenName": "Home",
+        "SessionID": "",
+        "TabName": "Home",
+        "query_id": "/drawer/favorites"
+      },
+      "sub_title": "2",
+      "tiles": [
+        {
+          "actions": {
+            "FAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "ADD TO WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "POST",
+              "label": "ADD TO WATCHLIST",
+              "payload": {
+                "channel_guid": "epl_che_006",
+                "enabler20Flag": true,
+                "external_id": "epl_che_006",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/epl_che.png",
+                  "w": 1280
+                },
+                "subtitle": "Added to favorites list",
+                "title": "Chelsea"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            },
+            "UNFAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "REMOVE FROM WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "DELETE",
+              "label": "REMOVE FROM WATCHLIST",
+              "payload": {
+                "channel_guid": "epl_che_006",
+                "enabler20Flag": true,
+                "external_id": "epl_che_006",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/epl_che.png",
+                  "w": 1280
+                },
+                "subtitle": "Removed from favorites list",
+                "title": "Chelsea"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            }
+          },
+          "analytics": {
+            "item_id": "epl_che_006",
+            "query_id": "/drawer/favorites"
+          },
+          "focus_row_background_color": "034694",
+          "format": "CHANNEL_CARD",
+          "image": {
+            "h": 720,
+            "url": "https://mockserverfavorites.onrender.com/1280x720/epl_che.png",
+            "w": 1280
+          },
+          "overlay_indicators": [
+            {
+              "icon": {
+                "key": {
+                  "condition": {
+                    "checks": {
+                      "favorite_channel": "epl_che_006"
+                    },
+                    "decision": "IS_FAVORITED",
+                    "false": "FAVORITE_HEART_EMPTY",
+                    "true": "FAVORITE_HEART_FILLED"
+                  }
+                },
+                "type": "STATIC"
+              }
+            }
+          ],
+          "primary_action": {
+            "condition": {
+              "checks": {
+                "favorite_channel": "epl_che_006"
+              },
+              "decision": "IS_FAVORITED",
+              "false": "FAVORITE_WITH_INVALIDATION",
+              "true": "UNFAVORITE_WITH_INVALIDATION"
+            }
+          },
+          "team_abbr": "CHE",
+          "team_name": "Chelsea",
+          "tile_analytics": {
+            "TBD": "TBD"
+          }
+        },
+        {
+          "actions": {
+            "FAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "ADD TO WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "POST",
+              "label": "ADD TO WATCHLIST",
+              "payload": {
+                "channel_guid": "epl_cry_007",
+                "enabler20Flag": true,
+                "external_id": "epl_cry_007",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/epl_cry.png",
+                  "w": 1280
+                },
+                "subtitle": "Added to favorites list",
+                "title": "Crystal Palace"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            },
+            "UNFAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "REMOVE FROM WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "DELETE",
+              "label": "REMOVE FROM WATCHLIST",
+              "payload": {
+                "channel_guid": "epl_cry_007",
+                "enabler20Flag": true,
+                "external_id": "epl_cry_007",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/epl_cry.png",
+                  "w": 1280
+                },
+                "subtitle": "Removed from favorites list",
+                "title": "Crystal Palace"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            }
+          },
+          "analytics": {
+            "item_id": "epl_cry_007",
+            "query_id": "/drawer/favorites"
+          },
+          "focus_row_background_color": "1B458F",
+          "format": "CHANNEL_CARD",
+          "image": {
+            "h": 720,
+            "url": "https://mockserverfavorites.onrender.com/1280x720/epl_cry.png",
+            "w": 1280
+          },
+          "overlay_indicators": [
+            {
+              "icon": {
+                "key": {
+                  "condition": {
+                    "checks": {
+                      "favorite_channel": "epl_cry_007"
+                    },
+                    "decision": "IS_FAVORITED",
+                    "false": "FAVORITE_HEART_EMPTY",
+                    "true": "FAVORITE_HEART_FILLED"
+                  }
+                },
+                "type": "STATIC"
+              }
+            }
+          ],
+          "primary_action": {
+            "condition": {
+              "checks": {
+                "favorite_channel": "epl_cry_007"
+              },
+              "decision": "IS_FAVORITED",
+              "false": "FAVORITE_WITH_INVALIDATION",
+              "true": "UNFAVORITE_WITH_INVALIDATION"
+            }
+          },
+          "team_abbr": "CRY",
+          "team_name": "Crystal Palace",
+          "tile_analytics": {
+            "TBD": "TBD"
+          }
+        }
+      ],
+      "title": "C",
+      "total_tiles": 2
+    },
+    {
+      "alpha": "E",
+      "format": "GRID",
+      "ribbon_analytics": {
+        "AccountGuid": "65c9ca3e-217b-11ed-ba13-126882dbc557",
+        "AccountStatus": "Paid",
+        "DeviceGuid": "7b235964-439d-49dc-93ed-e7ed0ebad610",
+        "ProfileGuid": "10340350-2875-c41c-9371-1b714803851d",
+        "ProfileType": "Non Admin",
+        "ScreenName": "Home",
+        "SessionID": "",
+        "TabName": "Home",
+        "query_id": "/drawer/favorites"
+      },
+      "sub_title": "1",
+      "tiles": [
+        {
+          "actions": {
+            "FAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "ADD TO WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "POST",
+              "label": "ADD TO WATCHLIST",
+              "payload": {
+                "channel_guid": "epl_eve_008",
+                "enabler20Flag": true,
+                "external_id": "epl_eve_008",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/epl_eve.png",
+                  "w": 1280
+                },
+                "subtitle": "Added to favorites list",
+                "title": "Everton"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            },
+            "UNFAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "REMOVE FROM WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "DELETE",
+              "label": "REMOVE FROM WATCHLIST",
+              "payload": {
+                "channel_guid": "epl_eve_008",
+                "enabler20Flag": true,
+                "external_id": "epl_eve_008",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/epl_eve.png",
+                  "w": 1280
+                },
+                "subtitle": "Removed from favorites list",
+                "title": "Everton"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            }
+          },
+          "analytics": {
+            "item_id": "epl_eve_008",
+            "query_id": "/drawer/favorites"
+          },
+          "focus_row_background_color": "003399",
+          "format": "CHANNEL_CARD",
+          "image": {
+            "h": 720,
+            "url": "https://mockserverfavorites.onrender.com/1280x720/epl_eve.png",
+            "w": 1280
+          },
+          "overlay_indicators": [
+            {
+              "icon": {
+                "key": {
+                  "condition": {
+                    "checks": {
+                      "favorite_channel": "epl_eve_008"
+                    },
+                    "decision": "IS_FAVORITED",
+                    "false": "FAVORITE_HEART_EMPTY",
+                    "true": "FAVORITE_HEART_FILLED"
+                  }
+                },
+                "type": "STATIC"
+              }
+            }
+          ],
+          "primary_action": {
+            "condition": {
+              "checks": {
+                "favorite_channel": "epl_eve_008"
+              },
+              "decision": "IS_FAVORITED",
+              "false": "FAVORITE_WITH_INVALIDATION",
+              "true": "UNFAVORITE_WITH_INVALIDATION"
+            }
+          },
+          "team_abbr": "EVE",
+          "team_name": "Everton",
+          "tile_analytics": {
+            "TBD": "TBD"
+          }
+        }
+      ],
+      "title": "E",
+      "total_tiles": 1
+    },
+    {
+      "alpha": "F",
+      "format": "GRID",
+      "ribbon_analytics": {
+        "AccountGuid": "65c9ca3e-217b-11ed-ba13-126882dbc557",
+        "AccountStatus": "Paid",
+        "DeviceGuid": "7b235964-439d-49dc-93ed-e7ed0ebad610",
+        "ProfileGuid": "10340350-2875-c41c-9371-1b714803851d",
+        "ProfileType": "Non Admin",
+        "ScreenName": "Home",
+        "SessionID": "",
+        "TabName": "Home",
+        "query_id": "/drawer/favorites"
+      },
+      "sub_title": "1",
+      "tiles": [
+        {
+          "actions": {
+            "FAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "ADD TO WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "POST",
+              "label": "ADD TO WATCHLIST",
+              "payload": {
+                "channel_guid": "epl_ful_009",
+                "enabler20Flag": true,
+                "external_id": "epl_ful_009",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/epl_ful.png",
+                  "w": 1280
+                },
+                "subtitle": "Added to favorites list",
+                "title": "Fulham"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            },
+            "UNFAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "REMOVE FROM WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "DELETE",
+              "label": "REMOVE FROM WATCHLIST",
+              "payload": {
+                "channel_guid": "epl_ful_009",
+                "enabler20Flag": true,
+                "external_id": "epl_ful_009",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/epl_ful.png",
+                  "w": 1280
+                },
+                "subtitle": "Removed from favorites list",
+                "title": "Fulham"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            }
+          },
+          "analytics": {
+            "item_id": "epl_ful_009",
+            "query_id": "/drawer/favorites"
+          },
+          "focus_row_background_color": "000000",
+          "format": "CHANNEL_CARD",
+          "image": {
+            "h": 720,
+            "url": "https://mockserverfavorites.onrender.com/1280x720/epl_ful.png",
+            "w": 1280
+          },
+          "overlay_indicators": [
+            {
+              "icon": {
+                "key": {
+                  "condition": {
+                    "checks": {
+                      "favorite_channel": "epl_ful_009"
+                    },
+                    "decision": "IS_FAVORITED",
+                    "false": "FAVORITE_HEART_EMPTY",
+                    "true": "FAVORITE_HEART_FILLED"
+                  }
+                },
+                "type": "STATIC"
+              }
+            }
+          ],
+          "primary_action": {
+            "condition": {
+              "checks": {
+                "favorite_channel": "epl_ful_009"
+              },
+              "decision": "IS_FAVORITED",
+              "false": "FAVORITE_WITH_INVALIDATION",
+              "true": "UNFAVORITE_WITH_INVALIDATION"
+            }
+          },
+          "team_abbr": "FUL",
+          "team_name": "Fulham",
+          "tile_analytics": {
+            "TBD": "TBD"
+          }
+        }
+      ],
+      "title": "F",
+      "total_tiles": 1
+    },
+    {
+      "alpha": "I",
+      "format": "GRID",
+      "ribbon_analytics": {
+        "AccountGuid": "65c9ca3e-217b-11ed-ba13-126882dbc557",
+        "AccountStatus": "Paid",
+        "DeviceGuid": "7b235964-439d-49dc-93ed-e7ed0ebad610",
+        "ProfileGuid": "10340350-2875-c41c-9371-1b714803851d",
+        "ProfileType": "Non Admin",
+        "ScreenName": "Home",
+        "SessionID": "",
+        "TabName": "Home",
+        "query_id": "/drawer/favorites"
+      },
+      "sub_title": "1",
+      "tiles": [
+        {
+          "actions": {
+            "FAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "ADD TO WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "POST",
+              "label": "ADD TO WATCHLIST",
+              "payload": {
+                "channel_guid": "epl_ips_010",
+                "enabler20Flag": true,
+                "external_id": "epl_ips_010",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/epl_ips.png",
+                  "w": 1280
+                },
+                "subtitle": "Added to favorites list",
+                "title": "Ipswich Town"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            },
+            "UNFAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "REMOVE FROM WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "DELETE",
+              "label": "REMOVE FROM WATCHLIST",
+              "payload": {
+                "channel_guid": "epl_ips_010",
+                "enabler20Flag": true,
+                "external_id": "epl_ips_010",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/epl_ips.png",
+                  "w": 1280
+                },
+                "subtitle": "Removed from favorites list",
+                "title": "Ipswich Town"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            }
+          },
+          "analytics": {
+            "item_id": "epl_ips_010",
+            "query_id": "/drawer/favorites"
+          },
+          "focus_row_background_color": "3A64A3",
+          "format": "CHANNEL_CARD",
+          "image": {
+            "h": 720,
+            "url": "https://mockserverfavorites.onrender.com/1280x720/epl_ips.png",
+            "w": 1280
+          },
+          "overlay_indicators": [
+            {
+              "icon": {
+                "key": {
+                  "condition": {
+                    "checks": {
+                      "favorite_channel": "epl_ips_010"
+                    },
+                    "decision": "IS_FAVORITED",
+                    "false": "FAVORITE_HEART_EMPTY",
+                    "true": "FAVORITE_HEART_FILLED"
+                  }
+                },
+                "type": "STATIC"
+              }
+            }
+          ],
+          "primary_action": {
+            "condition": {
+              "checks": {
+                "favorite_channel": "epl_ips_010"
+              },
+              "decision": "IS_FAVORITED",
+              "false": "FAVORITE_WITH_INVALIDATION",
+              "true": "UNFAVORITE_WITH_INVALIDATION"
+            }
+          },
+          "team_abbr": "IPS",
+          "team_name": "Ipswich Town",
+          "tile_analytics": {
+            "TBD": "TBD"
+          }
+        }
+      ],
+      "title": "I",
+      "total_tiles": 1
+    },
+    {
+      "alpha": "L",
+      "format": "GRID",
+      "ribbon_analytics": {
+        "AccountGuid": "65c9ca3e-217b-11ed-ba13-126882dbc557",
+        "AccountStatus": "Paid",
+        "DeviceGuid": "7b235964-439d-49dc-93ed-e7ed0ebad610",
+        "ProfileGuid": "10340350-2875-c41c-9371-1b714803851d",
+        "ProfileType": "Non Admin",
+        "ScreenName": "Home",
+        "SessionID": "",
+        "TabName": "Home",
+        "query_id": "/drawer/favorites"
+      },
+      "sub_title": "2",
+      "tiles": [
+        {
+          "actions": {
+            "FAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "ADD TO WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "POST",
+              "label": "ADD TO WATCHLIST",
+              "payload": {
+                "channel_guid": "epl_lei_011",
+                "enabler20Flag": true,
+                "external_id": "epl_lei_011",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/epl_lei.png",
+                  "w": 1280
+                },
+                "subtitle": "Added to favorites list",
+                "title": "Leicester City"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            },
+            "UNFAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "REMOVE FROM WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "DELETE",
+              "label": "REMOVE FROM WATCHLIST",
+              "payload": {
+                "channel_guid": "epl_lei_011",
+                "enabler20Flag": true,
+                "external_id": "epl_lei_011",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/epl_lei.png",
+                  "w": 1280
+                },
+                "subtitle": "Removed from favorites list",
+                "title": "Leicester City"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            }
+          },
+          "analytics": {
+            "item_id": "epl_lei_011",
+            "query_id": "/drawer/favorites"
+          },
+          "focus_row_background_color": "003090",
+          "format": "CHANNEL_CARD",
+          "image": {
+            "h": 720,
+            "url": "https://mockserverfavorites.onrender.com/1280x720/epl_lei.png",
+            "w": 1280
+          },
+          "overlay_indicators": [
+            {
+              "icon": {
+                "key": {
+                  "condition": {
+                    "checks": {
+                      "favorite_channel": "epl_lei_011"
+                    },
+                    "decision": "IS_FAVORITED",
+                    "false": "FAVORITE_HEART_EMPTY",
+                    "true": "FAVORITE_HEART_FILLED"
+                  }
+                },
+                "type": "STATIC"
+              }
+            }
+          ],
+          "primary_action": {
+            "condition": {
+              "checks": {
+                "favorite_channel": "epl_lei_011"
+              },
+              "decision": "IS_FAVORITED",
+              "false": "FAVORITE_WITH_INVALIDATION",
+              "true": "UNFAVORITE_WITH_INVALIDATION"
+            }
+          },
+          "team_abbr": "LEI",
+          "team_name": "Leicester City",
+          "tile_analytics": {
+            "TBD": "TBD"
+          }
+        },
+        {
+          "actions": {
+            "FAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "ADD TO WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "POST",
+              "label": "ADD TO WATCHLIST",
+              "payload": {
+                "channel_guid": "epl_liv_012",
+                "enabler20Flag": true,
+                "external_id": "epl_liv_012",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/epl_liv.png",
+                  "w": 1280
+                },
+                "subtitle": "Added to favorites list",
+                "title": "Liverpool"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            },
+            "UNFAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "REMOVE FROM WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "DELETE",
+              "label": "REMOVE FROM WATCHLIST",
+              "payload": {
+                "channel_guid": "epl_liv_012",
+                "enabler20Flag": true,
+                "external_id": "epl_liv_012",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/epl_liv.png",
+                  "w": 1280
+                },
+                "subtitle": "Removed from favorites list",
+                "title": "Liverpool"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            }
+          },
+          "analytics": {
+            "item_id": "epl_liv_012",
+            "query_id": "/drawer/favorites"
+          },
+          "focus_row_background_color": "C8102E",
+          "format": "CHANNEL_CARD",
+          "image": {
+            "h": 720,
+            "url": "https://mockserverfavorites.onrender.com/1280x720/epl_liv.png",
+            "w": 1280
+          },
+          "overlay_indicators": [
+            {
+              "icon": {
+                "key": {
+                  "condition": {
+                    "checks": {
+                      "favorite_channel": "epl_liv_012"
+                    },
+                    "decision": "IS_FAVORITED",
+                    "false": "FAVORITE_HEART_EMPTY",
+                    "true": "FAVORITE_HEART_FILLED"
+                  }
+                },
+                "type": "STATIC"
+              }
+            }
+          ],
+          "primary_action": {
+            "condition": {
+              "checks": {
+                "favorite_channel": "epl_liv_012"
+              },
+              "decision": "IS_FAVORITED",
+              "false": "FAVORITE_WITH_INVALIDATION",
+              "true": "UNFAVORITE_WITH_INVALIDATION"
+            }
+          },
+          "team_abbr": "LIV",
+          "team_name": "Liverpool",
+          "tile_analytics": {
+            "TBD": "TBD"
+          }
+        }
+      ],
+      "title": "L",
+      "total_tiles": 2
+    },
+    {
+      "alpha": "M",
+      "format": "GRID",
+      "ribbon_analytics": {
+        "AccountGuid": "65c9ca3e-217b-11ed-ba13-126882dbc557",
+        "AccountStatus": "Paid",
+        "DeviceGuid": "7b235964-439d-49dc-93ed-e7ed0ebad610",
+        "ProfileGuid": "10340350-2875-c41c-9371-1b714803851d",
+        "ProfileType": "Non Admin",
+        "ScreenName": "Home",
+        "SessionID": "",
+        "TabName": "Home",
+        "query_id": "/drawer/favorites"
+      },
+      "sub_title": "2",
+      "tiles": [
+        {
+          "actions": {
+            "FAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "ADD TO WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "POST",
+              "label": "ADD TO WATCHLIST",
+              "payload": {
+                "channel_guid": "epl_mci_013",
+                "enabler20Flag": true,
+                "external_id": "epl_mci_013",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/epl_mci.png",
+                  "w": 1280
+                },
+                "subtitle": "Added to favorites list",
+                "title": "Manchester City"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            },
+            "UNFAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "REMOVE FROM WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "DELETE",
+              "label": "REMOVE FROM WATCHLIST",
+              "payload": {
+                "channel_guid": "epl_mci_013",
+                "enabler20Flag": true,
+                "external_id": "epl_mci_013",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/epl_mci.png",
+                  "w": 1280
+                },
+                "subtitle": "Removed from favorites list",
+                "title": "Manchester City"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            }
+          },
+          "analytics": {
+            "item_id": "epl_mci_013",
+            "query_id": "/drawer/favorites"
+          },
+          "focus_row_background_color": "6CABDD",
+          "format": "CHANNEL_CARD",
+          "image": {
+            "h": 720,
+            "url": "https://mockserverfavorites.onrender.com/1280x720/epl_mci.png",
+            "w": 1280
+          },
+          "overlay_indicators": [
+            {
+              "icon": {
+                "key": {
+                  "condition": {
+                    "checks": {
+                      "favorite_channel": "epl_mci_013"
+                    },
+                    "decision": "IS_FAVORITED",
+                    "false": "FAVORITE_HEART_EMPTY",
+                    "true": "FAVORITE_HEART_FILLED"
+                  }
+                },
+                "type": "STATIC"
+              }
+            }
+          ],
+          "primary_action": {
+            "condition": {
+              "checks": {
+                "favorite_channel": "epl_mci_013"
+              },
+              "decision": "IS_FAVORITED",
+              "false": "FAVORITE_WITH_INVALIDATION",
+              "true": "UNFAVORITE_WITH_INVALIDATION"
+            }
+          },
+          "team_abbr": "MCI",
+          "team_name": "Manchester City",
+          "tile_analytics": {
+            "TBD": "TBD"
+          }
+        },
+        {
+          "actions": {
+            "FAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "ADD TO WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "POST",
+              "label": "ADD TO WATCHLIST",
+              "payload": {
+                "channel_guid": "epl_mun_014",
+                "enabler20Flag": true,
+                "external_id": "epl_mun_014",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/epl_mun.png",
+                  "w": 1280
+                },
+                "subtitle": "Added to favorites list",
+                "title": "Manchester United"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            },
+            "UNFAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "REMOVE FROM WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "DELETE",
+              "label": "REMOVE FROM WATCHLIST",
+              "payload": {
+                "channel_guid": "epl_mun_014",
+                "enabler20Flag": true,
+                "external_id": "epl_mun_014",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/epl_mun.png",
+                  "w": 1280
+                },
+                "subtitle": "Removed from favorites list",
+                "title": "Manchester United"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            }
+          },
+          "analytics": {
+            "item_id": "epl_mun_014",
+            "query_id": "/drawer/favorites"
+          },
+          "focus_row_background_color": "DA291C",
+          "format": "CHANNEL_CARD",
+          "image": {
+            "h": 720,
+            "url": "https://mockserverfavorites.onrender.com/1280x720/epl_mun.png",
+            "w": 1280
+          },
+          "overlay_indicators": [
+            {
+              "icon": {
+                "key": {
+                  "condition": {
+                    "checks": {
+                      "favorite_channel": "epl_mun_014"
+                    },
+                    "decision": "IS_FAVORITED",
+                    "false": "FAVORITE_HEART_EMPTY",
+                    "true": "FAVORITE_HEART_FILLED"
+                  }
+                },
+                "type": "STATIC"
+              }
+            }
+          ],
+          "primary_action": {
+            "condition": {
+              "checks": {
+                "favorite_channel": "epl_mun_014"
+              },
+              "decision": "IS_FAVORITED",
+              "false": "FAVORITE_WITH_INVALIDATION",
+              "true": "UNFAVORITE_WITH_INVALIDATION"
+            }
+          },
+          "team_abbr": "MUN",
+          "team_name": "Manchester United",
+          "tile_analytics": {
+            "TBD": "TBD"
+          }
+        }
+      ],
+      "title": "M",
+      "total_tiles": 2
+    },
+    {
+      "alpha": "N",
+      "format": "GRID",
+      "ribbon_analytics": {
+        "AccountGuid": "65c9ca3e-217b-11ed-ba13-126882dbc557",
+        "AccountStatus": "Paid",
+        "DeviceGuid": "7b235964-439d-49dc-93ed-e7ed0ebad610",
+        "ProfileGuid": "10340350-2875-c41c-9371-1b714803851d",
+        "ProfileType": "Non Admin",
+        "ScreenName": "Home",
+        "SessionID": "",
+        "TabName": "Home",
+        "query_id": "/drawer/favorites"
+      },
+      "sub_title": "2",
+      "tiles": [
+        {
+          "actions": {
+            "FAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "ADD TO WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "POST",
+              "label": "ADD TO WATCHLIST",
+              "payload": {
+                "channel_guid": "epl_new_015",
+                "enabler20Flag": true,
+                "external_id": "epl_new_015",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/epl_new.png",
+                  "w": 1280
+                },
+                "subtitle": "Added to favorites list",
+                "title": "Newcastle United"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            },
+            "UNFAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "REMOVE FROM WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "DELETE",
+              "label": "REMOVE FROM WATCHLIST",
+              "payload": {
+                "channel_guid": "epl_new_015",
+                "enabler20Flag": true,
+                "external_id": "epl_new_015",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/epl_new.png",
+                  "w": 1280
+                },
+                "subtitle": "Removed from favorites list",
+                "title": "Newcastle United"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            }
+          },
+          "analytics": {
+            "item_id": "epl_new_015",
+            "query_id": "/drawer/favorites"
+          },
+          "focus_row_background_color": "241F20",
+          "format": "CHANNEL_CARD",
+          "image": {
+            "h": 720,
+            "url": "https://mockserverfavorites.onrender.com/1280x720/epl_new.png",
+            "w": 1280
+          },
+          "overlay_indicators": [
+            {
+              "icon": {
+                "key": {
+                  "condition": {
+                    "checks": {
+                      "favorite_channel": "epl_new_015"
+                    },
+                    "decision": "IS_FAVORITED",
+                    "false": "FAVORITE_HEART_EMPTY",
+                    "true": "FAVORITE_HEART_FILLED"
+                  }
+                },
+                "type": "STATIC"
+              }
+            }
+          ],
+          "primary_action": {
+            "condition": {
+              "checks": {
+                "favorite_channel": "epl_new_015"
+              },
+              "decision": "IS_FAVORITED",
+              "false": "FAVORITE_WITH_INVALIDATION",
+              "true": "UNFAVORITE_WITH_INVALIDATION"
+            }
+          },
+          "team_abbr": "NEW",
+          "team_name": "Newcastle United",
+          "tile_analytics": {
+            "TBD": "TBD"
+          }
+        },
+        {
+          "actions": {
+            "FAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "ADD TO WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "POST",
+              "label": "ADD TO WATCHLIST",
+              "payload": {
+                "channel_guid": "epl_nfo_016",
+                "enabler20Flag": true,
+                "external_id": "epl_nfo_016",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/epl_nfo.png",
+                  "w": 1280
+                },
+                "subtitle": "Added to favorites list",
+                "title": "Nottingham Forest"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            },
+            "UNFAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "REMOVE FROM WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "DELETE",
+              "label": "REMOVE FROM WATCHLIST",
+              "payload": {
+                "channel_guid": "epl_nfo_016",
+                "enabler20Flag": true,
+                "external_id": "epl_nfo_016",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/epl_nfo.png",
+                  "w": 1280
+                },
+                "subtitle": "Removed from favorites list",
+                "title": "Nottingham Forest"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            }
+          },
+          "analytics": {
+            "item_id": "epl_nfo_016",
+            "query_id": "/drawer/favorites"
+          },
+          "focus_row_background_color": "DD0000",
+          "format": "CHANNEL_CARD",
+          "image": {
+            "h": 720,
+            "url": "https://mockserverfavorites.onrender.com/1280x720/epl_nfo.png",
+            "w": 1280
+          },
+          "overlay_indicators": [
+            {
+              "icon": {
+                "key": {
+                  "condition": {
+                    "checks": {
+                      "favorite_channel": "epl_nfo_016"
+                    },
+                    "decision": "IS_FAVORITED",
+                    "false": "FAVORITE_HEART_EMPTY",
+                    "true": "FAVORITE_HEART_FILLED"
+                  }
+                },
+                "type": "STATIC"
+              }
+            }
+          ],
+          "primary_action": {
+            "condition": {
+              "checks": {
+                "favorite_channel": "epl_nfo_016"
+              },
+              "decision": "IS_FAVORITED",
+              "false": "FAVORITE_WITH_INVALIDATION",
+              "true": "UNFAVORITE_WITH_INVALIDATION"
+            }
+          },
+          "team_abbr": "NFO",
+          "team_name": "Nottingham Forest",
+          "tile_analytics": {
+            "TBD": "TBD"
+          }
+        }
+      ],
+      "title": "N",
+      "total_tiles": 2
+    },
+    {
+      "alpha": "S",
+      "format": "GRID",
+      "ribbon_analytics": {
+        "AccountGuid": "65c9ca3e-217b-11ed-ba13-126882dbc557",
+        "AccountStatus": "Paid",
+        "DeviceGuid": "7b235964-439d-49dc-93ed-e7ed0ebad610",
+        "ProfileGuid": "10340350-2875-c41c-9371-1b714803851d",
+        "ProfileType": "Non Admin",
+        "ScreenName": "Home",
+        "SessionID": "",
+        "TabName": "Home",
+        "query_id": "/drawer/favorites"
+      },
+      "sub_title": "1",
+      "tiles": [
+        {
+          "actions": {
+            "FAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "ADD TO WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "POST",
+              "label": "ADD TO WATCHLIST",
+              "payload": {
+                "channel_guid": "epl_sou_017",
+                "enabler20Flag": true,
+                "external_id": "epl_sou_017",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/epl_sou.png",
+                  "w": 1280
+                },
+                "subtitle": "Added to favorites list",
+                "title": "Southampton"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            },
+            "UNFAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "REMOVE FROM WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "DELETE",
+              "label": "REMOVE FROM WATCHLIST",
+              "payload": {
+                "channel_guid": "epl_sou_017",
+                "enabler20Flag": true,
+                "external_id": "epl_sou_017",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/epl_sou.png",
+                  "w": 1280
+                },
+                "subtitle": "Removed from favorites list",
+                "title": "Southampton"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            }
+          },
+          "analytics": {
+            "item_id": "epl_sou_017",
+            "query_id": "/drawer/favorites"
+          },
+          "focus_row_background_color": "D71920",
+          "format": "CHANNEL_CARD",
+          "image": {
+            "h": 720,
+            "url": "https://mockserverfavorites.onrender.com/1280x720/epl_sou.png",
+            "w": 1280
+          },
+          "overlay_indicators": [
+            {
+              "icon": {
+                "key": {
+                  "condition": {
+                    "checks": {
+                      "favorite_channel": "epl_sou_017"
+                    },
+                    "decision": "IS_FAVORITED",
+                    "false": "FAVORITE_HEART_EMPTY",
+                    "true": "FAVORITE_HEART_FILLED"
+                  }
+                },
+                "type": "STATIC"
+              }
+            }
+          ],
+          "primary_action": {
+            "condition": {
+              "checks": {
+                "favorite_channel": "epl_sou_017"
+              },
+              "decision": "IS_FAVORITED",
+              "false": "FAVORITE_WITH_INVALIDATION",
+              "true": "UNFAVORITE_WITH_INVALIDATION"
+            }
+          },
+          "team_abbr": "SOU",
+          "team_name": "Southampton",
+          "tile_analytics": {
+            "TBD": "TBD"
+          }
+        }
+      ],
+      "title": "S",
+      "total_tiles": 1
+    },
+    {
+      "alpha": "T",
+      "format": "GRID",
+      "ribbon_analytics": {
+        "AccountGuid": "65c9ca3e-217b-11ed-ba13-126882dbc557",
+        "AccountStatus": "Paid",
+        "DeviceGuid": "7b235964-439d-49dc-93ed-e7ed0ebad610",
+        "ProfileGuid": "10340350-2875-c41c-9371-1b714803851d",
+        "ProfileType": "Non Admin",
+        "ScreenName": "Home",
+        "SessionID": "",
+        "TabName": "Home",
+        "query_id": "/drawer/favorites"
+      },
+      "sub_title": "2",
+      "tiles": [
+        {
+          "actions": {
+            "FAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "ADD TO WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "POST",
+              "label": "ADD TO WATCHLIST",
+              "payload": {
+                "channel_guid": "epl_tot_018",
+                "enabler20Flag": true,
+                "external_id": "epl_tot_018",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/epl_tot.png",
+                  "w": 1280
+                },
+                "subtitle": "Added to favorites list",
+                "title": "Tottenham Hotspur"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            },
+            "UNFAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "REMOVE FROM WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "DELETE",
+              "label": "REMOVE FROM WATCHLIST",
+              "payload": {
+                "channel_guid": "epl_tot_018",
+                "enabler20Flag": true,
+                "external_id": "epl_tot_018",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/epl_tot.png",
+                  "w": 1280
+                },
+                "subtitle": "Removed from favorites list",
+                "title": "Tottenham Hotspur"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            }
+          },
+          "analytics": {
+            "item_id": "epl_tot_018",
+            "query_id": "/drawer/favorites"
+          },
+          "focus_row_background_color": "132257",
+          "format": "CHANNEL_CARD",
+          "image": {
+            "h": 720,
+            "url": "https://mockserverfavorites.onrender.com/1280x720/epl_tot.png",
+            "w": 1280
+          },
+          "overlay_indicators": [
+            {
+              "icon": {
+                "key": {
+                  "condition": {
+                    "checks": {
+                      "favorite_channel": "epl_tot_018"
+                    },
+                    "decision": "IS_FAVORITED",
+                    "false": "FAVORITE_HEART_EMPTY",
+                    "true": "FAVORITE_HEART_FILLED"
+                  }
+                },
+                "type": "STATIC"
+              }
+            }
+          ],
+          "primary_action": {
+            "condition": {
+              "checks": {
+                "favorite_channel": "epl_tot_018"
+              },
+              "decision": "IS_FAVORITED",
+              "false": "FAVORITE_WITH_INVALIDATION",
+              "true": "UNFAVORITE_WITH_INVALIDATION"
+            }
+          },
+          "team_abbr": "TOT",
+          "team_name": "Tottenham Hotspur",
+          "tile_analytics": {
+            "TBD": "TBD"
+          }
+        }
+      ],
+      "title": "T",
+      "total_tiles": 1
+    },
+    {
+      "alpha": "W",
+      "format": "GRID",
+      "ribbon_analytics": {
+        "AccountGuid": "65c9ca3e-217b-11ed-ba13-126882dbc557",
+        "AccountStatus": "Paid",
+        "DeviceGuid": "7b235964-439d-49dc-93ed-e7ed0ebad610",
+        "ProfileGuid": "10340350-2875-c41c-9371-1b714803851d",
+        "ProfileType": "Non Admin",
+        "ScreenName": "Home",
+        "SessionID": "",
+        "TabName": "Home",
+        "query_id": "/drawer/favorites"
+      },
+      "sub_title": "2",
+      "tiles": [
+        {
+          "actions": {
+            "FAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "ADD TO WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "POST",
+              "label": "ADD TO WATCHLIST",
+              "payload": {
+                "channel_guid": "epl_whu_019",
+                "enabler20Flag": true,
+                "external_id": "epl_whu_019",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/epl_whu.png",
+                  "w": 1280
+                },
+                "subtitle": "Added to favorites list",
+                "title": "West Ham United"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            },
+            "UNFAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "REMOVE FROM WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "DELETE",
+              "label": "REMOVE FROM WATCHLIST",
+              "payload": {
+                "channel_guid": "epl_whu_019",
+                "enabler20Flag": true,
+                "external_id": "epl_whu_019",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/epl_whu.png",
+                  "w": 1280
+                },
+                "subtitle": "Removed from favorites list",
+                "title": "West Ham United"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            }
+          },
+          "analytics": {
+            "item_id": "epl_whu_019",
+            "query_id": "/drawer/favorites"
+          },
+          "focus_row_background_color": "7A263A",
+          "format": "CHANNEL_CARD",
+          "image": {
+            "h": 720,
+            "url": "https://mockserverfavorites.onrender.com/1280x720/epl_whu.png",
+            "w": 1280
+          },
+          "overlay_indicators": [
+            {
+              "icon": {
+                "key": {
+                  "condition": {
+                    "checks": {
+                      "favorite_channel": "epl_whu_019"
+                    },
+                    "decision": "IS_FAVORITED",
+                    "false": "FAVORITE_HEART_EMPTY",
+                    "true": "FAVORITE_HEART_FILLED"
+                  }
+                },
+                "type": "STATIC"
+              }
+            }
+          ],
+          "primary_action": {
+            "condition": {
+              "checks": {
+                "favorite_channel": "epl_whu_019"
+              },
+              "decision": "IS_FAVORITED",
+              "false": "FAVORITE_WITH_INVALIDATION",
+              "true": "UNFAVORITE_WITH_INVALIDATION"
+            }
+          },
+          "team_abbr": "WHU",
+          "team_name": "West Ham United",
+          "tile_analytics": {
+            "TBD": "TBD"
+          }
+        },
+        {
+          "actions": {
+            "FAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "ADD TO WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "POST",
+              "label": "ADD TO WATCHLIST",
+              "payload": {
+                "channel_guid": "epl_wol_020",
+                "enabler20Flag": true,
+                "external_id": "epl_wol_020",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/epl_wol.png",
+                  "w": 1280
+                },
+                "subtitle": "Added to favorites list",
+                "title": "Wolverhampton Wanderers"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            },
+            "UNFAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "REMOVE FROM WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "DELETE",
+              "label": "REMOVE FROM WATCHLIST",
+              "payload": {
+                "channel_guid": "epl_wol_020",
+                "enabler20Flag": true,
+                "external_id": "epl_wol_020",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/epl_wol.png",
+                  "w": 1280
+                },
+                "subtitle": "Removed from favorites list",
+                "title": "Wolverhampton Wanderers"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            }
+          },
+          "analytics": {
+            "item_id": "epl_wol_020",
+            "query_id": "/drawer/favorites"
+          },
+          "focus_row_background_color": "FDB913",
+          "format": "CHANNEL_CARD",
+          "image": {
+            "h": 720,
+            "url": "https://mockserverfavorites.onrender.com/1280x720/epl_wol.png",
+            "w": 1280
+          },
+          "overlay_indicators": [
+            {
+              "icon": {
+                "key": {
+                  "condition": {
+                    "checks": {
+                      "favorite_channel": "epl_wol_020"
+                    },
+                    "decision": "IS_FAVORITED",
+                    "false": "FAVORITE_HEART_EMPTY",
+                    "true": "FAVORITE_HEART_FILLED"
+                  }
+                },
+                "type": "STATIC"
+              }
+            }
+          ],
+          "primary_action": {
+            "condition": {
+              "checks": {
+                "favorite_channel": "epl_wol_020"
+              },
+              "decision": "IS_FAVORITED",
+              "false": "FAVORITE_WITH_INVALIDATION",
+              "true": "UNFAVORITE_WITH_INVALIDATION"
+            }
+          },
+          "team_abbr": "WOL",
+          "team_name": "Wolverhampton Wanderers",
+          "tile_analytics": {
+            "TBD": "TBD"
+          }
+        }
+      ],
+      "title": "W",
+      "total_tiles": 2
+    }
+  ],
+  "start_time": 1777532269,
+  "type": "FAVORITES"
+}

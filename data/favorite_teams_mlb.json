@@ -1,0 +1,3859 @@
+{
+  "actions": {
+    "DRAWERV2": {
+      "http_method": "GET",
+      "url": "https://p-cmwnext.movetv.com/drawer/sports_favourites?focusedTile=favorites&sourceScreen=home"
+    }
+  },
+  "dismiss_action": "DRAWERV2",
+  "end_time": 1777618669,
+  "exclusive": false,
+  "expires_at": 1777618669,
+  "format": "DRAWERV2",
+  "header_view": {
+    "title": "Add Favorite Teams"
+  },
+  "href": "https://p-cmwnext.movetv.com/drawer/favorites?sourceScreen={sourceScreen)&stack=mlb",
+  "ribbons": [
+    {
+      "icon": {
+        "key": "STAR_LOGO",
+        "type": "STATIC"
+      },
+      "format": "GRID",
+      "ribbon_analytics": {
+        "AccountGuid": "804fc3b0-6b5f-11f1-9f90-7a7bc35467e0",
+        "AccountStatus": "Paid",
+        "DeviceGuid": "069e8d22-3f57-58e1-b072-c0680d357e5a",
+        "ProfileGuid": "804fc3b0-6b5f-11f1-9f90-7a7bc35467e0",
+        "ProfileType": "Admin",
+        "query_id": "/drawer/favorites",
+        "ScreenName": "fluid-guide",
+        "SessionID": "",
+        "TabName": "Guide"
+      },
+      "sub_title": "5",
+      "tiles": [
+        {
+          "actions": {
+            "FAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "ADD TO WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "POST",
+              "label": "ADD TO WATCHLIST",
+              "payload": {
+                "channel_guid": "mlb_bal_orioles_003",
+                "enabler20Flag": true,
+                "external_id": "mlb_bal_orioles_003",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/mlb_bal_orioles.png",
+                  "w": 1280
+                },
+                "subtitle": "Added to favorites list",
+                "title": "Baltimore Orioles"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            },
+            "UNFAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "REMOVE FROM WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "DELETE",
+              "label": "REMOVE FROM WATCHLIST",
+              "payload": {
+                "channel_guid": "mlb_bal_orioles_003",
+                "enabler20Flag": true,
+                "external_id": "mlb_bal_orioles_003",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/mlb_bal_orioles.png",
+                  "w": 1280
+                },
+                "subtitle": "Removed from favorites list",
+                "title": "Baltimore Orioles"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            }
+          },
+          "analytics": {
+            "item_id": "mlb_bal_orioles_003",
+            "query_id": "/drawer/favorites"
+          },
+          "focus_row_background_color": "DF4601",
+          "format": "CHANNEL_CARD",
+          "image": {
+            "h": 720,
+            "url": "https://mockserverfavorites.onrender.com/1280x720/mlb_bal_orioles.png",
+            "w": 1280
+          },
+          "overlay_indicators": [
+            {
+              "icon": {
+                "key": {
+                  "condition": {
+                    "decision": "IS_FAVORITED",
+                    "checks": {
+                      "favorite_channel": "mlb_bal_orioles_003"
+                    },
+                    "true": "FAVORITE_HEART_FILLED",
+                    "false": "FAVORITE_HEART_EMPTY"
+                  }
+                },
+                "type": "STATIC"
+              }
+            }
+          ],
+          "primary_action": {
+            "condition": {
+              "decision": "IS_FAVORITED",
+              "checks": {
+                "favorite_channel": "mlb_bal_orioles_003"
+              },
+              "true": "UNFAVORITE_WITH_INVALIDATION",
+              "false": "FAVORITE_WITH_INVALIDATION"
+            }
+          },
+          "team_abbr": "BAL",
+          "team_name": "Baltimore Orioles",
+          "tile_analytics": {
+            "TBD": "TBD"
+          }
+        },
+        {
+          "actions": {
+            "FAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "ADD TO WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "POST",
+              "label": "ADD TO WATCHLIST",
+              "payload": {
+                "channel_guid": "mlb_col_rockies_009",
+                "enabler20Flag": true,
+                "external_id": "mlb_col_rockies_009",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/mlb_col_rockies.png",
+                  "w": 1280
+                },
+                "subtitle": "Added to favorites list",
+                "title": "Colorado Rockies"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            },
+            "UNFAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "REMOVE FROM WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "DELETE",
+              "label": "REMOVE FROM WATCHLIST",
+              "payload": {
+                "channel_guid": "mlb_col_rockies_009",
+                "enabler20Flag": true,
+                "external_id": "mlb_col_rockies_009",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/mlb_col_rockies.png",
+                  "w": 1280
+                },
+                "subtitle": "Removed from favorites list",
+                "title": "Colorado Rockies"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            }
+          },
+          "analytics": {
+            "item_id": "mlb_col_rockies_009",
+            "query_id": "/drawer/favorites"
+          },
+          "focus_row_background_color": "33006F",
+          "format": "CHANNEL_CARD",
+          "image": {
+            "h": 720,
+            "url": "https://mockserverfavorites.onrender.com/1280x720/mlb_col_rockies.png",
+            "w": 1280
+          },
+          "overlay_indicators": [
+            {
+              "icon": {
+                "key": {
+                  "condition": {
+                    "decision": "IS_FAVORITED",
+                    "checks": {
+                      "favorite_channel": "mlb_col_rockies_009"
+                    },
+                    "true": "FAVORITE_HEART_FILLED",
+                    "false": "FAVORITE_HEART_EMPTY"
+                  }
+                },
+                "type": "STATIC"
+              }
+            }
+          ],
+          "primary_action": {
+            "condition": {
+              "decision": "IS_FAVORITED",
+              "checks": {
+                "favorite_channel": "mlb_col_rockies_009"
+              },
+              "true": "UNFAVORITE_WITH_INVALIDATION",
+              "false": "FAVORITE_WITH_INVALIDATION"
+            }
+          },
+          "team_abbr": "COL",
+          "team_name": "Colorado Rockies",
+          "tile_analytics": {
+            "TBD": "TBD"
+          }
+        },
+        {
+          "actions": {
+            "FAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "ADD TO WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "POST",
+              "label": "ADD TO WATCHLIST",
+              "payload": {
+                "channel_guid": "mlb_cin_reds_007",
+                "enabler20Flag": true,
+                "external_id": "mlb_cin_reds_007",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/mlb_cin_reds.png",
+                  "w": 1280
+                },
+                "subtitle": "Added to favorites list",
+                "title": "Cincinnati Reds"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            },
+            "UNFAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "REMOVE FROM WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "DELETE",
+              "label": "REMOVE FROM WATCHLIST",
+              "payload": {
+                "channel_guid": "mlb_cin_reds_007",
+                "enabler20Flag": true,
+                "external_id": "mlb_cin_reds_007",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/mlb_cin_reds.png",
+                  "w": 1280
+                },
+                "subtitle": "Removed from favorites list",
+                "title": "Cincinnati Reds"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            }
+          },
+          "analytics": {
+            "item_id": "mlb_cin_reds_007",
+            "query_id": "/drawer/favorites"
+          },
+          "focus_row_background_color": "C6011F",
+          "format": "CHANNEL_CARD",
+          "image": {
+            "h": 720,
+            "url": "https://mockserverfavorites.onrender.com/1280x720/mlb_cin_reds.png",
+            "w": 1280
+          },
+          "overlay_indicators": [
+            {
+              "icon": {
+                "key": {
+                  "condition": {
+                    "decision": "IS_FAVORITED",
+                    "checks": {
+                      "favorite_channel": "mlb_cin_reds_007"
+                    },
+                    "true": "FAVORITE_HEART_FILLED",
+                    "false": "FAVORITE_HEART_EMPTY"
+                  }
+                },
+                "type": "STATIC"
+              }
+            }
+          ],
+          "primary_action": {
+            "condition": {
+              "decision": "IS_FAVORITED",
+              "checks": {
+                "favorite_channel": "mlb_cin_reds_007"
+              },
+              "true": "UNFAVORITE_WITH_INVALIDATION",
+              "false": "FAVORITE_WITH_INVALIDATION"
+            }
+          },
+          "team_abbr": "CIN",
+          "team_name": "Cincinnati Reds",
+          "tile_analytics": {
+            "TBD": "TBD"
+          }
+        },
+        {
+          "actions": {
+            "FAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "ADD TO WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "POST",
+              "label": "ADD TO WATCHLIST",
+              "payload": {
+                "channel_guid": "mlb_hou_astros_011",
+                "enabler20Flag": true,
+                "external_id": "mlb_hou_astros_011",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/mlb_hou_astros.png",
+                  "w": 1280
+                },
+                "subtitle": "Added to favorites list",
+                "title": "Houston Astros"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            },
+            "UNFAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "REMOVE FROM WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "DELETE",
+              "label": "REMOVE FROM WATCHLIST",
+              "payload": {
+                "channel_guid": "mlb_hou_astros_011",
+                "enabler20Flag": true,
+                "external_id": "mlb_hou_astros_011",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/mlb_hou_astros.png",
+                  "w": 1280
+                },
+                "subtitle": "Removed from favorites list",
+                "title": "Houston Astros"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            }
+          },
+          "analytics": {
+            "item_id": "mlb_hou_astros_011",
+            "query_id": "/drawer/favorites"
+          },
+          "focus_row_background_color": "002D62",
+          "format": "CHANNEL_CARD",
+          "image": {
+            "h": 720,
+            "url": "https://mockserverfavorites.onrender.com/1280x720/mlb_hou_astros.png",
+            "w": 1280
+          },
+          "overlay_indicators": [
+            {
+              "icon": {
+                "key": {
+                  "condition": {
+                    "decision": "IS_FAVORITED",
+                    "checks": {
+                      "favorite_channel": "mlb_hou_astros_011"
+                    },
+                    "true": "FAVORITE_HEART_FILLED",
+                    "false": "FAVORITE_HEART_EMPTY"
+                  }
+                },
+                "type": "STATIC"
+              }
+            }
+          ],
+          "primary_action": {
+            "condition": {
+              "decision": "IS_FAVORITED",
+              "checks": {
+                "favorite_channel": "mlb_hou_astros_011"
+              },
+              "true": "UNFAVORITE_WITH_INVALIDATION",
+              "false": "FAVORITE_WITH_INVALIDATION"
+            }
+          },
+          "team_abbr": "HOU",
+          "team_name": "Houston Astros",
+          "tile_analytics": {
+            "TBD": "TBD"
+          }
+        },
+        {
+          "actions": {
+            "FAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "ADD TO WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "POST",
+              "label": "ADD TO WATCHLIST",
+              "payload": {
+                "channel_guid": "mlb_bos_redsox_004",
+                "enabler20Flag": true,
+                "external_id": "mlb_bos_redsox_004",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/mlb_bos_redsox.png",
+                  "w": 1280
+                },
+                "subtitle": "Added to favorites list",
+                "title": "Boston Red Sox"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            },
+            "UNFAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "REMOVE FROM WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "DELETE",
+              "label": "REMOVE FROM WATCHLIST",
+              "payload": {
+                "channel_guid": "mlb_bos_redsox_004",
+                "enabler20Flag": true,
+                "external_id": "mlb_bos_redsox_004",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/mlb_bos_redsox.png",
+                  "w": 1280
+                },
+                "subtitle": "Removed from favorites list",
+                "title": "Boston Red Sox"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            }
+          },
+          "analytics": {
+            "item_id": "mlb_bos_redsox_004",
+            "query_id": "/drawer/favorites"
+          },
+          "focus_row_background_color": "BD3039",
+          "format": "CHANNEL_CARD",
+          "image": {
+            "h": 720,
+            "url": "https://mockserverfavorites.onrender.com/1280x720/mlb_bos_redsox.png",
+            "w": 1280
+          },
+          "overlay_indicators": [
+            {
+              "icon": {
+                "key": {
+                  "condition": {
+                    "decision": "IS_FAVORITED",
+                    "checks": {
+                      "favorite_channel": "mlb_bos_redsox_004"
+                    },
+                    "true": "FAVORITE_HEART_FILLED",
+                    "false": "FAVORITE_HEART_EMPTY"
+                  }
+                },
+                "type": "STATIC"
+              }
+            }
+          ],
+          "primary_action": {
+            "condition": {
+              "decision": "IS_FAVORITED",
+              "checks": {
+                "favorite_channel": "mlb_bos_redsox_004"
+              },
+              "true": "UNFAVORITE_WITH_INVALIDATION",
+              "false": "FAVORITE_WITH_INVALIDATION"
+            }
+          },
+          "team_abbr": "BOS",
+          "team_name": "Boston Red Sox",
+          "tile_analytics": {
+            "TBD": "TBD"
+          }
+        }
+      ],
+      "title": "Recommended Teams",
+      "total_tiles": 5
+    },
+    {
+      "alpha": "A",
+      "format": "GRID",
+      "ribbon_analytics": {
+        "AccountGuid": "65c9ca3e-217b-11ed-ba13-126882dbc557",
+        "AccountStatus": "Paid",
+        "DeviceGuid": "7b235964-439d-49dc-93ed-e7ed0ebad610",
+        "ProfileGuid": "10340350-2875-c41c-9371-1b714803851d",
+        "ProfileType": "Non Admin",
+        "ScreenName": "Home",
+        "SessionID": "",
+        "TabName": "Home",
+        "query_id": "/drawer/favorites"
+      },
+      "sub_title": "2",
+      "tiles": [
+        {
+          "actions": {
+            "FAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "ADD TO WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "POST",
+              "label": "ADD TO WATCHLIST",
+              "payload": {
+                "channel_guid": "mlb_ari_diamondbacks_001",
+                "enabler20Flag": true,
+                "external_id": "mlb_ari_diamondbacks_001",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/mlb_ari_diamondbacks.png",
+                  "w": 1280
+                },
+                "subtitle": "Added to favorites list",
+                "title": "Arizona Diamondbacks"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            },
+            "UNFAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "REMOVE FROM WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "DELETE",
+              "label": "REMOVE FROM WATCHLIST",
+              "payload": {
+                "channel_guid": "mlb_ari_diamondbacks_001",
+                "enabler20Flag": true,
+                "external_id": "mlb_ari_diamondbacks_001",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/mlb_ari_diamondbacks.png",
+                  "w": 1280
+                },
+                "subtitle": "Removed from favorites list",
+                "title": "Arizona Diamondbacks"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            }
+          },
+          "analytics": {
+            "item_id": "mlb_ari_diamondbacks_001",
+            "query_id": "/drawer/favorites"
+          },
+          "focus_row_background_color": "A71930",
+          "format": "CHANNEL_CARD",
+          "image": {
+            "h": 720,
+            "url": "https://mockserverfavorites.onrender.com/1280x720/mlb_ari_diamondbacks.png",
+            "w": 1280
+          },
+          "overlay_indicators": [
+            {
+              "icon": {
+                "key": {
+                  "condition": {
+                    "checks": {
+                      "favorite_channel": "mlb_ari_diamondbacks_001"
+                    },
+                    "decision": "IS_FAVORITED",
+                    "false": "FAVORITE_HEART_EMPTY",
+                    "true": "FAVORITE_HEART_FILLED"
+                  }
+                },
+                "type": "STATIC"
+              }
+            }
+          ],
+          "primary_action": {
+            "condition": {
+              "checks": {
+                "favorite_channel": "mlb_ari_diamondbacks_001"
+              },
+              "decision": "IS_FAVORITED",
+              "false": "FAVORITE_WITH_INVALIDATION",
+              "true": "UNFAVORITE_WITH_INVALIDATION"
+            }
+          },
+          "team_abbr": "ARI",
+          "team_name": "Arizona Diamondbacks",
+          "tile_analytics": {
+            "TBD": "TBD"
+          }
+        },
+        {
+          "actions": {
+            "FAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "ADD TO WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "POST",
+              "label": "ADD TO WATCHLIST",
+              "payload": {
+                "channel_guid": "mlb_atl_braves_002",
+                "enabler20Flag": true,
+                "external_id": "mlb_atl_braves_002",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/mlb_atl_braves.png",
+                  "w": 1280
+                },
+                "subtitle": "Added to favorites list",
+                "title": "Atlanta Braves"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            },
+            "UNFAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "REMOVE FROM WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "DELETE",
+              "label": "REMOVE FROM WATCHLIST",
+              "payload": {
+                "channel_guid": "mlb_atl_braves_002",
+                "enabler20Flag": true,
+                "external_id": "mlb_atl_braves_002",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/mlb_atl_braves.png",
+                  "w": 1280
+                },
+                "subtitle": "Removed from favorites list",
+                "title": "Atlanta Braves"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            }
+          },
+          "analytics": {
+            "item_id": "mlb_atl_braves_002",
+            "query_id": "/drawer/favorites"
+          },
+          "focus_row_background_color": "CE1141",
+          "format": "CHANNEL_CARD",
+          "image": {
+            "h": 720,
+            "url": "https://mockserverfavorites.onrender.com/1280x720/mlb_atl_braves.png",
+            "w": 1280
+          },
+          "overlay_indicators": [
+            {
+              "icon": {
+                "key": {
+                  "condition": {
+                    "checks": {
+                      "favorite_channel": "mlb_atl_braves_002"
+                    },
+                    "decision": "IS_FAVORITED",
+                    "false": "FAVORITE_HEART_EMPTY",
+                    "true": "FAVORITE_HEART_FILLED"
+                  }
+                },
+                "type": "STATIC"
+              }
+            }
+          ],
+          "primary_action": {
+            "condition": {
+              "checks": {
+                "favorite_channel": "mlb_atl_braves_002"
+              },
+              "decision": "IS_FAVORITED",
+              "false": "FAVORITE_WITH_INVALIDATION",
+              "true": "UNFAVORITE_WITH_INVALIDATION"
+            }
+          },
+          "team_abbr": "ATL",
+          "team_name": "Atlanta Braves",
+          "tile_analytics": {
+            "TBD": "TBD"
+          }
+        }
+      ],
+      "title": "A",
+      "total_tiles": 2
+    },
+    {
+      "alpha": "B",
+      "format": "GRID",
+      "ribbon_analytics": {
+        "AccountGuid": "65c9ca3e-217b-11ed-ba13-126882dbc557",
+        "AccountStatus": "Paid",
+        "DeviceGuid": "7b235964-439d-49dc-93ed-e7ed0ebad610",
+        "ProfileGuid": "10340350-2875-c41c-9371-1b714803851d",
+        "ProfileType": "Non Admin",
+        "ScreenName": "Home",
+        "SessionID": "",
+        "TabName": "Home",
+        "query_id": "/drawer/favorites"
+      },
+      "sub_title": "2",
+      "tiles": [
+        {
+          "actions": {
+            "FAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "ADD TO WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "POST",
+              "label": "ADD TO WATCHLIST",
+              "payload": {
+                "channel_guid": "mlb_bal_orioles_003",
+                "enabler20Flag": true,
+                "external_id": "mlb_bal_orioles_003",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/mlb_bal_orioles.png",
+                  "w": 1280
+                },
+                "subtitle": "Added to favorites list",
+                "title": "Baltimore Orioles"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            },
+            "UNFAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "REMOVE FROM WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "DELETE",
+              "label": "REMOVE FROM WATCHLIST",
+              "payload": {
+                "channel_guid": "mlb_bal_orioles_003",
+                "enabler20Flag": true,
+                "external_id": "mlb_bal_orioles_003",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/mlb_bal_orioles.png",
+                  "w": 1280
+                },
+                "subtitle": "Removed from favorites list",
+                "title": "Baltimore Orioles"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            }
+          },
+          "analytics": {
+            "item_id": "mlb_bal_orioles_003",
+            "query_id": "/drawer/favorites"
+          },
+          "focus_row_background_color": "DF4601",
+          "format": "CHANNEL_CARD",
+          "image": {
+            "h": 720,
+            "url": "https://mockserverfavorites.onrender.com/1280x720/mlb_bal_orioles.png",
+            "w": 1280
+          },
+          "overlay_indicators": [
+            {
+              "icon": {
+                "key": {
+                  "condition": {
+                    "checks": {
+                      "favorite_channel": "mlb_bal_orioles_003"
+                    },
+                    "decision": "IS_FAVORITED",
+                    "false": "FAVORITE_HEART_EMPTY",
+                    "true": "FAVORITE_HEART_FILLED"
+                  }
+                },
+                "type": "STATIC"
+              }
+            }
+          ],
+          "primary_action": {
+            "condition": {
+              "checks": {
+                "favorite_channel": "mlb_bal_orioles_003"
+              },
+              "decision": "IS_FAVORITED",
+              "false": "FAVORITE_WITH_INVALIDATION",
+              "true": "UNFAVORITE_WITH_INVALIDATION"
+            }
+          },
+          "team_abbr": "BAL",
+          "team_name": "Baltimore Orioles",
+          "tile_analytics": {
+            "TBD": "TBD"
+          }
+        },
+        {
+          "actions": {
+            "FAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "ADD TO WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "POST",
+              "label": "ADD TO WATCHLIST",
+              "payload": {
+                "channel_guid": "mlb_bos_redsox_004",
+                "enabler20Flag": true,
+                "external_id": "mlb_bos_redsox_004",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/mlb_bos_redsox.png",
+                  "w": 1280
+                },
+                "subtitle": "Added to favorites list",
+                "title": "Boston Red Sox"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            },
+            "UNFAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "REMOVE FROM WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "DELETE",
+              "label": "REMOVE FROM WATCHLIST",
+              "payload": {
+                "channel_guid": "mlb_bos_redsox_004",
+                "enabler20Flag": true,
+                "external_id": "mlb_bos_redsox_004",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/mlb_bos_redsox.png",
+                  "w": 1280
+                },
+                "subtitle": "Removed from favorites list",
+                "title": "Boston Red Sox"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            }
+          },
+          "analytics": {
+            "item_id": "mlb_bos_redsox_004",
+            "query_id": "/drawer/favorites"
+          },
+          "focus_row_background_color": "BD3039",
+          "format": "CHANNEL_CARD",
+          "image": {
+            "h": 720,
+            "url": "https://mockserverfavorites.onrender.com/1280x720/mlb_bos_redsox.png",
+            "w": 1280
+          },
+          "overlay_indicators": [
+            {
+              "icon": {
+                "key": {
+                  "condition": {
+                    "checks": {
+                      "favorite_channel": "mlb_bos_redsox_004"
+                    },
+                    "decision": "IS_FAVORITED",
+                    "false": "FAVORITE_HEART_EMPTY",
+                    "true": "FAVORITE_HEART_FILLED"
+                  }
+                },
+                "type": "STATIC"
+              }
+            }
+          ],
+          "primary_action": {
+            "condition": {
+              "checks": {
+                "favorite_channel": "mlb_bos_redsox_004"
+              },
+              "decision": "IS_FAVORITED",
+              "false": "FAVORITE_WITH_INVALIDATION",
+              "true": "UNFAVORITE_WITH_INVALIDATION"
+            }
+          },
+          "team_abbr": "BOS",
+          "team_name": "Boston Red Sox",
+          "tile_analytics": {
+            "TBD": "TBD"
+          }
+        }
+      ],
+      "title": "B",
+      "total_tiles": 2
+    },
+    {
+      "alpha": "C",
+      "format": "GRID",
+      "ribbon_analytics": {
+        "AccountGuid": "65c9ca3e-217b-11ed-ba13-126882dbc557",
+        "AccountStatus": "Paid",
+        "DeviceGuid": "7b235964-439d-49dc-93ed-e7ed0ebad610",
+        "ProfileGuid": "10340350-2875-c41c-9371-1b714803851d",
+        "ProfileType": "Non Admin",
+        "ScreenName": "Home",
+        "SessionID": "",
+        "TabName": "Home",
+        "query_id": "/drawer/favorites"
+      },
+      "sub_title": "4",
+      "tiles": [
+        {
+          "actions": {
+            "FAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "ADD TO WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "POST",
+              "label": "ADD TO WATCHLIST",
+              "payload": {
+                "channel_guid": "mlb_chc_cubs_005",
+                "enabler20Flag": true,
+                "external_id": "mlb_chc_cubs_005",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/mlb_chc_cubs.png",
+                  "w": 1280
+                },
+                "subtitle": "Added to favorites list",
+                "title": "Chicago Cubs"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            },
+            "UNFAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "REMOVE FROM WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "DELETE",
+              "label": "REMOVE FROM WATCHLIST",
+              "payload": {
+                "channel_guid": "mlb_chc_cubs_005",
+                "enabler20Flag": true,
+                "external_id": "mlb_chc_cubs_005",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/mlb_chc_cubs.png",
+                  "w": 1280
+                },
+                "subtitle": "Removed from favorites list",
+                "title": "Chicago Cubs"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            }
+          },
+          "analytics": {
+            "item_id": "mlb_chc_cubs_005",
+            "query_id": "/drawer/favorites"
+          },
+          "focus_row_background_color": "0E3386",
+          "format": "CHANNEL_CARD",
+          "image": {
+            "h": 720,
+            "url": "https://mockserverfavorites.onrender.com/1280x720/mlb_chc_cubs.png",
+            "w": 1280
+          },
+          "overlay_indicators": [
+            {
+              "icon": {
+                "key": {
+                  "condition": {
+                    "checks": {
+                      "favorite_channel": "mlb_chc_cubs_005"
+                    },
+                    "decision": "IS_FAVORITED",
+                    "false": "FAVORITE_HEART_EMPTY",
+                    "true": "FAVORITE_HEART_FILLED"
+                  }
+                },
+                "type": "STATIC"
+              }
+            }
+          ],
+          "primary_action": {
+            "condition": {
+              "checks": {
+                "favorite_channel": "mlb_chc_cubs_005"
+              },
+              "decision": "IS_FAVORITED",
+              "false": "FAVORITE_WITH_INVALIDATION",
+              "true": "UNFAVORITE_WITH_INVALIDATION"
+            }
+          },
+          "team_abbr": "CHC",
+          "team_name": "Chicago Cubs",
+          "tile_analytics": {
+            "TBD": "TBD"
+          }
+        },
+        {
+          "actions": {
+            "FAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "ADD TO WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "POST",
+              "label": "ADD TO WATCHLIST",
+              "payload": {
+                "channel_guid": "mlb_cws_whitesox_006",
+                "enabler20Flag": true,
+                "external_id": "mlb_cws_whitesox_006",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/mlb_cws_whitesox.png",
+                  "w": 1280
+                },
+                "subtitle": "Added to favorites list",
+                "title": "Chicago White Sox"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            },
+            "UNFAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "REMOVE FROM WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "DELETE",
+              "label": "REMOVE FROM WATCHLIST",
+              "payload": {
+                "channel_guid": "mlb_cws_whitesox_006",
+                "enabler20Flag": true,
+                "external_id": "mlb_cws_whitesox_006",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/mlb_cws_whitesox.png",
+                  "w": 1280
+                },
+                "subtitle": "Removed from favorites list",
+                "title": "Chicago White Sox"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            }
+          },
+          "analytics": {
+            "item_id": "mlb_cws_whitesox_006",
+            "query_id": "/drawer/favorites"
+          },
+          "focus_row_background_color": "27251F",
+          "format": "CHANNEL_CARD",
+          "image": {
+            "h": 720,
+            "url": "https://mockserverfavorites.onrender.com/1280x720/mlb_cws_whitesox.png",
+            "w": 1280
+          },
+          "overlay_indicators": [
+            {
+              "icon": {
+                "key": {
+                  "condition": {
+                    "checks": {
+                      "favorite_channel": "mlb_cws_whitesox_006"
+                    },
+                    "decision": "IS_FAVORITED",
+                    "false": "FAVORITE_HEART_EMPTY",
+                    "true": "FAVORITE_HEART_FILLED"
+                  }
+                },
+                "type": "STATIC"
+              }
+            }
+          ],
+          "primary_action": {
+            "condition": {
+              "checks": {
+                "favorite_channel": "mlb_cws_whitesox_006"
+              },
+              "decision": "IS_FAVORITED",
+              "false": "FAVORITE_WITH_INVALIDATION",
+              "true": "UNFAVORITE_WITH_INVALIDATION"
+            }
+          },
+          "team_abbr": "CWS",
+          "team_name": "Chicago White Sox",
+          "tile_analytics": {
+            "TBD": "TBD"
+          }
+        },
+        {
+          "actions": {
+            "FAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "ADD TO WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "POST",
+              "label": "ADD TO WATCHLIST",
+              "payload": {
+                "channel_guid": "mlb_cin_reds_007",
+                "enabler20Flag": true,
+                "external_id": "mlb_cin_reds_007",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/mlb_cin_reds.png",
+                  "w": 1280
+                },
+                "subtitle": "Added to favorites list",
+                "title": "Cincinnati Reds"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            },
+            "UNFAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "REMOVE FROM WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "DELETE",
+              "label": "REMOVE FROM WATCHLIST",
+              "payload": {
+                "channel_guid": "mlb_cin_reds_007",
+                "enabler20Flag": true,
+                "external_id": "mlb_cin_reds_007",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/mlb_cin_reds.png",
+                  "w": 1280
+                },
+                "subtitle": "Removed from favorites list",
+                "title": "Cincinnati Reds"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            }
+          },
+          "analytics": {
+            "item_id": "mlb_cin_reds_007",
+            "query_id": "/drawer/favorites"
+          },
+          "focus_row_background_color": "C6011F",
+          "format": "CHANNEL_CARD",
+          "image": {
+            "h": 720,
+            "url": "https://mockserverfavorites.onrender.com/1280x720/mlb_cin_reds.png",
+            "w": 1280
+          },
+          "overlay_indicators": [
+            {
+              "icon": {
+                "key": {
+                  "condition": {
+                    "checks": {
+                      "favorite_channel": "mlb_cin_reds_007"
+                    },
+                    "decision": "IS_FAVORITED",
+                    "false": "FAVORITE_HEART_EMPTY",
+                    "true": "FAVORITE_HEART_FILLED"
+                  }
+                },
+                "type": "STATIC"
+              }
+            }
+          ],
+          "primary_action": {
+            "condition": {
+              "checks": {
+                "favorite_channel": "mlb_cin_reds_007"
+              },
+              "decision": "IS_FAVORITED",
+              "false": "FAVORITE_WITH_INVALIDATION",
+              "true": "UNFAVORITE_WITH_INVALIDATION"
+            }
+          },
+          "team_abbr": "CIN",
+          "team_name": "Cincinnati Reds",
+          "tile_analytics": {
+            "TBD": "TBD"
+          }
+        },
+        {
+          "actions": {
+            "FAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "ADD TO WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "POST",
+              "label": "ADD TO WATCHLIST",
+              "payload": {
+                "channel_guid": "mlb_cle_guardians_008",
+                "enabler20Flag": true,
+                "external_id": "mlb_cle_guardians_008",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/mlb_cle_guardians.png",
+                  "w": 1280
+                },
+                "subtitle": "Added to favorites list",
+                "title": "Cleveland Guardians"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            },
+            "UNFAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "REMOVE FROM WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "DELETE",
+              "label": "REMOVE FROM WATCHLIST",
+              "payload": {
+                "channel_guid": "mlb_cle_guardians_008",
+                "enabler20Flag": true,
+                "external_id": "mlb_cle_guardians_008",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/mlb_cle_guardians.png",
+                  "w": 1280
+                },
+                "subtitle": "Removed from favorites list",
+                "title": "Cleveland Guardians"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            }
+          },
+          "analytics": {
+            "item_id": "mlb_cle_guardians_008",
+            "query_id": "/drawer/favorites"
+          },
+          "focus_row_background_color": "0C2340",
+          "format": "CHANNEL_CARD",
+          "image": {
+            "h": 720,
+            "url": "https://mockserverfavorites.onrender.com/1280x720/mlb_cle_guardians.png",
+            "w": 1280
+          },
+          "overlay_indicators": [
+            {
+              "icon": {
+                "key": {
+                  "condition": {
+                    "checks": {
+                      "favorite_channel": "mlb_cle_guardians_008"
+                    },
+                    "decision": "IS_FAVORITED",
+                    "false": "FAVORITE_HEART_EMPTY",
+                    "true": "FAVORITE_HEART_FILLED"
+                  }
+                },
+                "type": "STATIC"
+              }
+            }
+          ],
+          "primary_action": {
+            "condition": {
+              "checks": {
+                "favorite_channel": "mlb_cle_guardians_008"
+              },
+              "decision": "IS_FAVORITED",
+              "false": "FAVORITE_WITH_INVALIDATION",
+              "true": "UNFAVORITE_WITH_INVALIDATION"
+            }
+          },
+          "team_abbr": "CLE",
+          "team_name": "Cleveland Guardians",
+          "tile_analytics": {
+            "TBD": "TBD"
+          }
+        }
+      ],
+      "title": "C",
+      "total_tiles": 4
+    },
+    {
+      "alpha": "D",
+      "format": "GRID",
+      "ribbon_analytics": {
+        "AccountGuid": "65c9ca3e-217b-11ed-ba13-126882dbc557",
+        "AccountStatus": "Paid",
+        "DeviceGuid": "7b235964-439d-49dc-93ed-e7ed0ebad610",
+        "ProfileGuid": "10340350-2875-c41c-9371-1b714803851d",
+        "ProfileType": "Non Admin",
+        "ScreenName": "Home",
+        "SessionID": "",
+        "TabName": "Home",
+        "query_id": "/drawer/favorites"
+      },
+      "sub_title": "2",
+      "tiles": [
+        {
+          "actions": {
+            "FAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "ADD TO WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "POST",
+              "label": "ADD TO WATCHLIST",
+              "payload": {
+                "channel_guid": "mlb_col_rockies_009",
+                "enabler20Flag": true,
+                "external_id": "mlb_col_rockies_009",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/mlb_col_rockies.png",
+                  "w": 1280
+                },
+                "subtitle": "Added to favorites list",
+                "title": "Colorado Rockies"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            },
+            "UNFAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "REMOVE FROM WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "DELETE",
+              "label": "REMOVE FROM WATCHLIST",
+              "payload": {
+                "channel_guid": "mlb_col_rockies_009",
+                "enabler20Flag": true,
+                "external_id": "mlb_col_rockies_009",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/mlb_col_rockies.png",
+                  "w": 1280
+                },
+                "subtitle": "Removed from favorites list",
+                "title": "Colorado Rockies"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            }
+          },
+          "analytics": {
+            "item_id": "mlb_col_rockies_009",
+            "query_id": "/drawer/favorites"
+          },
+          "focus_row_background_color": "33006F",
+          "format": "CHANNEL_CARD",
+          "image": {
+            "h": 720,
+            "url": "https://mockserverfavorites.onrender.com/1280x720/mlb_col_rockies.png",
+            "w": 1280
+          },
+          "overlay_indicators": [
+            {
+              "icon": {
+                "key": {
+                  "condition": {
+                    "checks": {
+                      "favorite_channel": "mlb_col_rockies_009"
+                    },
+                    "decision": "IS_FAVORITED",
+                    "false": "FAVORITE_HEART_EMPTY",
+                    "true": "FAVORITE_HEART_FILLED"
+                  }
+                },
+                "type": "STATIC"
+              }
+            }
+          ],
+          "primary_action": {
+            "condition": {
+              "checks": {
+                "favorite_channel": "mlb_col_rockies_009"
+              },
+              "decision": "IS_FAVORITED",
+              "false": "FAVORITE_WITH_INVALIDATION",
+              "true": "UNFAVORITE_WITH_INVALIDATION"
+            }
+          },
+          "team_abbr": "COL",
+          "team_name": "Colorado Rockies",
+          "tile_analytics": {
+            "TBD": "TBD"
+          }
+        },
+        {
+          "actions": {
+            "FAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "ADD TO WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "POST",
+              "label": "ADD TO WATCHLIST",
+              "payload": {
+                "channel_guid": "mlb_det_tigers_010",
+                "enabler20Flag": true,
+                "external_id": "mlb_det_tigers_010",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/mlb_det_tigers.png",
+                  "w": 1280
+                },
+                "subtitle": "Added to favorites list",
+                "title": "Detroit Tigers"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            },
+            "UNFAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "REMOVE FROM WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "DELETE",
+              "label": "REMOVE FROM WATCHLIST",
+              "payload": {
+                "channel_guid": "mlb_det_tigers_010",
+                "enabler20Flag": true,
+                "external_id": "mlb_det_tigers_010",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/mlb_det_tigers.png",
+                  "w": 1280
+                },
+                "subtitle": "Removed from favorites list",
+                "title": "Detroit Tigers"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            }
+          },
+          "analytics": {
+            "item_id": "mlb_det_tigers_010",
+            "query_id": "/drawer/favorites"
+          },
+          "focus_row_background_color": "0C2340",
+          "format": "CHANNEL_CARD",
+          "image": {
+            "h": 720,
+            "url": "https://mockserverfavorites.onrender.com/1280x720/mlb_det_tigers.png",
+            "w": 1280
+          },
+          "overlay_indicators": [
+            {
+              "icon": {
+                "key": {
+                  "condition": {
+                    "checks": {
+                      "favorite_channel": "mlb_det_tigers_010"
+                    },
+                    "decision": "IS_FAVORITED",
+                    "false": "FAVORITE_HEART_EMPTY",
+                    "true": "FAVORITE_HEART_FILLED"
+                  }
+                },
+                "type": "STATIC"
+              }
+            }
+          ],
+          "primary_action": {
+            "condition": {
+              "checks": {
+                "favorite_channel": "mlb_det_tigers_010"
+              },
+              "decision": "IS_FAVORITED",
+              "false": "FAVORITE_WITH_INVALIDATION",
+              "true": "UNFAVORITE_WITH_INVALIDATION"
+            }
+          },
+          "team_abbr": "DET",
+          "team_name": "Detroit Tigers",
+          "tile_analytics": {
+            "TBD": "TBD"
+          }
+        }
+      ],
+      "title": "D",
+      "total_tiles": 2
+    },
+    {
+      "alpha": "H",
+      "format": "GRID",
+      "ribbon_analytics": {
+        "AccountGuid": "65c9ca3e-217b-11ed-ba13-126882dbc557",
+        "AccountStatus": "Paid",
+        "DeviceGuid": "7b235964-439d-49dc-93ed-e7ed0ebad610",
+        "ProfileGuid": "10340350-2875-c41c-9371-1b714803851d",
+        "ProfileType": "Non Admin",
+        "ScreenName": "Home",
+        "SessionID": "",
+        "TabName": "Home",
+        "query_id": "/drawer/favorites"
+      },
+      "sub_title": "1",
+      "tiles": [
+        {
+          "actions": {
+            "FAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "ADD TO WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "POST",
+              "label": "ADD TO WATCHLIST",
+              "payload": {
+                "channel_guid": "mlb_hou_astros_011",
+                "enabler20Flag": true,
+                "external_id": "mlb_hou_astros_011",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/mlb_hou_astros.png",
+                  "w": 1280
+                },
+                "subtitle": "Added to favorites list",
+                "title": "Houston Astros"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            },
+            "UNFAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "REMOVE FROM WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "DELETE",
+              "label": "REMOVE FROM WATCHLIST",
+              "payload": {
+                "channel_guid": "mlb_hou_astros_011",
+                "enabler20Flag": true,
+                "external_id": "mlb_hou_astros_011",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/mlb_hou_astros.png",
+                  "w": 1280
+                },
+                "subtitle": "Removed from favorites list",
+                "title": "Houston Astros"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            }
+          },
+          "analytics": {
+            "item_id": "mlb_hou_astros_011",
+            "query_id": "/drawer/favorites"
+          },
+          "focus_row_background_color": "002D62",
+          "format": "CHANNEL_CARD",
+          "image": {
+            "h": 720,
+            "url": "https://mockserverfavorites.onrender.com/1280x720/mlb_hou_astros.png",
+            "w": 1280
+          },
+          "overlay_indicators": [
+            {
+              "icon": {
+                "key": {
+                  "condition": {
+                    "checks": {
+                      "favorite_channel": "mlb_hou_astros_011"
+                    },
+                    "decision": "IS_FAVORITED",
+                    "false": "FAVORITE_HEART_EMPTY",
+                    "true": "FAVORITE_HEART_FILLED"
+                  }
+                },
+                "type": "STATIC"
+              }
+            }
+          ],
+          "primary_action": {
+            "condition": {
+              "checks": {
+                "favorite_channel": "mlb_hou_astros_011"
+              },
+              "decision": "IS_FAVORITED",
+              "false": "FAVORITE_WITH_INVALIDATION",
+              "true": "UNFAVORITE_WITH_INVALIDATION"
+            }
+          },
+          "team_abbr": "HOU",
+          "team_name": "Houston Astros",
+          "tile_analytics": {
+            "TBD": "TBD"
+          }
+        }
+      ],
+      "title": "H",
+      "total_tiles": 1
+    },
+    {
+      "alpha": "K",
+      "format": "GRID",
+      "ribbon_analytics": {
+        "AccountGuid": "65c9ca3e-217b-11ed-ba13-126882dbc557",
+        "AccountStatus": "Paid",
+        "DeviceGuid": "7b235964-439d-49dc-93ed-e7ed0ebad610",
+        "ProfileGuid": "10340350-2875-c41c-9371-1b714803851d",
+        "ProfileType": "Non Admin",
+        "ScreenName": "Home",
+        "SessionID": "",
+        "TabName": "Home",
+        "query_id": "/drawer/favorites"
+      },
+      "sub_title": "1",
+      "tiles": [
+        {
+          "actions": {
+            "FAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "ADD TO WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "POST",
+              "label": "ADD TO WATCHLIST",
+              "payload": {
+                "channel_guid": "mlb_kc_royals_012",
+                "enabler20Flag": true,
+                "external_id": "mlb_kc_royals_012",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/mlb_kc_royals.png",
+                  "w": 1280
+                },
+                "subtitle": "Added to favorites list",
+                "title": "Kansas City Royals"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            },
+            "UNFAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "REMOVE FROM WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "DELETE",
+              "label": "REMOVE FROM WATCHLIST",
+              "payload": {
+                "channel_guid": "mlb_kc_royals_012",
+                "enabler20Flag": true,
+                "external_id": "mlb_kc_royals_012",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/mlb_kc_royals.png",
+                  "w": 1280
+                },
+                "subtitle": "Removed from favorites list",
+                "title": "Kansas City Royals"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            }
+          },
+          "analytics": {
+            "item_id": "mlb_kc_royals_012",
+            "query_id": "/drawer/favorites"
+          },
+          "focus_row_background_color": "004687",
+          "format": "CHANNEL_CARD",
+          "image": {
+            "h": 720,
+            "url": "https://mockserverfavorites.onrender.com/1280x720/mlb_kc_royals.png",
+            "w": 1280
+          },
+          "overlay_indicators": [
+            {
+              "icon": {
+                "key": {
+                  "condition": {
+                    "checks": {
+                      "favorite_channel": "mlb_kc_royals_012"
+                    },
+                    "decision": "IS_FAVORITED",
+                    "false": "FAVORITE_HEART_EMPTY",
+                    "true": "FAVORITE_HEART_FILLED"
+                  }
+                },
+                "type": "STATIC"
+              }
+            }
+          ],
+          "primary_action": {
+            "condition": {
+              "checks": {
+                "favorite_channel": "mlb_kc_royals_012"
+              },
+              "decision": "IS_FAVORITED",
+              "false": "FAVORITE_WITH_INVALIDATION",
+              "true": "UNFAVORITE_WITH_INVALIDATION"
+            }
+          },
+          "team_abbr": "KC",
+          "team_name": "Kansas City Royals",
+          "tile_analytics": {
+            "TBD": "TBD"
+          }
+        }
+      ],
+      "title": "K",
+      "total_tiles": 1
+    },
+    {
+      "alpha": "L",
+      "format": "GRID",
+      "ribbon_analytics": {
+        "AccountGuid": "65c9ca3e-217b-11ed-ba13-126882dbc557",
+        "AccountStatus": "Paid",
+        "DeviceGuid": "7b235964-439d-49dc-93ed-e7ed0ebad610",
+        "ProfileGuid": "10340350-2875-c41c-9371-1b714803851d",
+        "ProfileType": "Non Admin",
+        "ScreenName": "Home",
+        "SessionID": "",
+        "TabName": "Home",
+        "query_id": "/drawer/favorites"
+      },
+      "sub_title": "2",
+      "tiles": [
+        {
+          "actions": {
+            "FAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "ADD TO WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "POST",
+              "label": "ADD TO WATCHLIST",
+              "payload": {
+                "channel_guid": "mlb_laa_angels_013",
+                "enabler20Flag": true,
+                "external_id": "mlb_laa_angels_013",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/mlb_laa_angels.png",
+                  "w": 1280
+                },
+                "subtitle": "Added to favorites list",
+                "title": "Los Angeles Angels"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            },
+            "UNFAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "REMOVE FROM WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "DELETE",
+              "label": "REMOVE FROM WATCHLIST",
+              "payload": {
+                "channel_guid": "mlb_laa_angels_013",
+                "enabler20Flag": true,
+                "external_id": "mlb_laa_angels_013",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/mlb_laa_angels.png",
+                  "w": 1280
+                },
+                "subtitle": "Removed from favorites list",
+                "title": "Los Angeles Angels"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            }
+          },
+          "analytics": {
+            "item_id": "mlb_laa_angels_013",
+            "query_id": "/drawer/favorites"
+          },
+          "focus_row_background_color": "BA0021",
+          "format": "CHANNEL_CARD",
+          "image": {
+            "h": 720,
+            "url": "https://mockserverfavorites.onrender.com/1280x720/mlb_laa_angels.png",
+            "w": 1280
+          },
+          "overlay_indicators": [
+            {
+              "icon": {
+                "key": {
+                  "condition": {
+                    "checks": {
+                      "favorite_channel": "mlb_laa_angels_013"
+                    },
+                    "decision": "IS_FAVORITED",
+                    "false": "FAVORITE_HEART_EMPTY",
+                    "true": "FAVORITE_HEART_FILLED"
+                  }
+                },
+                "type": "STATIC"
+              }
+            }
+          ],
+          "primary_action": {
+            "condition": {
+              "checks": {
+                "favorite_channel": "mlb_laa_angels_013"
+              },
+              "decision": "IS_FAVORITED",
+              "false": "FAVORITE_WITH_INVALIDATION",
+              "true": "UNFAVORITE_WITH_INVALIDATION"
+            }
+          },
+          "team_abbr": "LAA",
+          "team_name": "Los Angeles Angels",
+          "tile_analytics": {
+            "TBD": "TBD"
+          }
+        },
+        {
+          "actions": {
+            "FAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "ADD TO WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "POST",
+              "label": "ADD TO WATCHLIST",
+              "payload": {
+                "channel_guid": "mlb_lad_dodgers_014",
+                "enabler20Flag": true,
+                "external_id": "mlb_lad_dodgers_014",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/mlb_lad_dodgers.png",
+                  "w": 1280
+                },
+                "subtitle": "Added to favorites list",
+                "title": "Los Angeles Dodgers"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            },
+            "UNFAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "REMOVE FROM WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "DELETE",
+              "label": "REMOVE FROM WATCHLIST",
+              "payload": {
+                "channel_guid": "mlb_lad_dodgers_014",
+                "enabler20Flag": true,
+                "external_id": "mlb_lad_dodgers_014",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/mlb_lad_dodgers.png",
+                  "w": 1280
+                },
+                "subtitle": "Removed from favorites list",
+                "title": "Los Angeles Dodgers"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            }
+          },
+          "analytics": {
+            "item_id": "mlb_lad_dodgers_014",
+            "query_id": "/drawer/favorites"
+          },
+          "focus_row_background_color": "005A9C",
+          "format": "CHANNEL_CARD",
+          "image": {
+            "h": 720,
+            "url": "https://mockserverfavorites.onrender.com/1280x720/mlb_lad_dodgers.png",
+            "w": 1280
+          },
+          "overlay_indicators": [
+            {
+              "icon": {
+                "key": {
+                  "condition": {
+                    "checks": {
+                      "favorite_channel": "mlb_lad_dodgers_014"
+                    },
+                    "decision": "IS_FAVORITED",
+                    "false": "FAVORITE_HEART_EMPTY",
+                    "true": "FAVORITE_HEART_FILLED"
+                  }
+                },
+                "type": "STATIC"
+              }
+            }
+          ],
+          "primary_action": {
+            "condition": {
+              "checks": {
+                "favorite_channel": "mlb_lad_dodgers_014"
+              },
+              "decision": "IS_FAVORITED",
+              "false": "FAVORITE_WITH_INVALIDATION",
+              "true": "UNFAVORITE_WITH_INVALIDATION"
+            }
+          },
+          "team_abbr": "LAD",
+          "team_name": "Los Angeles Dodgers",
+          "tile_analytics": {
+            "TBD": "TBD"
+          }
+        }
+      ],
+      "title": "L",
+      "total_tiles": 2
+    },
+    {
+      "alpha": "M",
+      "format": "GRID",
+      "ribbon_analytics": {
+        "AccountGuid": "65c9ca3e-217b-11ed-ba13-126882dbc557",
+        "AccountStatus": "Paid",
+        "DeviceGuid": "7b235964-439d-49dc-93ed-e7ed0ebad610",
+        "ProfileGuid": "10340350-2875-c41c-9371-1b714803851d",
+        "ProfileType": "Non Admin",
+        "ScreenName": "Home",
+        "SessionID": "",
+        "TabName": "Home",
+        "query_id": "/drawer/favorites"
+      },
+      "sub_title": "3",
+      "tiles": [
+        {
+          "actions": {
+            "FAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "ADD TO WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "POST",
+              "label": "ADD TO WATCHLIST",
+              "payload": {
+                "channel_guid": "mlb_mia_marlins_015",
+                "enabler20Flag": true,
+                "external_id": "mlb_mia_marlins_015",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/mlb_mia_marlins.png",
+                  "w": 1280
+                },
+                "subtitle": "Added to favorites list",
+                "title": "Miami Marlins"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            },
+            "UNFAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "REMOVE FROM WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "DELETE",
+              "label": "REMOVE FROM WATCHLIST",
+              "payload": {
+                "channel_guid": "mlb_mia_marlins_015",
+                "enabler20Flag": true,
+                "external_id": "mlb_mia_marlins_015",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/mlb_mia_marlins.png",
+                  "w": 1280
+                },
+                "subtitle": "Removed from favorites list",
+                "title": "Miami Marlins"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            }
+          },
+          "analytics": {
+            "item_id": "mlb_mia_marlins_015",
+            "query_id": "/drawer/favorites"
+          },
+          "focus_row_background_color": "00A3E0",
+          "format": "CHANNEL_CARD",
+          "image": {
+            "h": 720,
+            "url": "https://mockserverfavorites.onrender.com/1280x720/mlb_mia_marlins.png",
+            "w": 1280
+          },
+          "overlay_indicators": [
+            {
+              "icon": {
+                "key": {
+                  "condition": {
+                    "checks": {
+                      "favorite_channel": "mlb_mia_marlins_015"
+                    },
+                    "decision": "IS_FAVORITED",
+                    "false": "FAVORITE_HEART_EMPTY",
+                    "true": "FAVORITE_HEART_FILLED"
+                  }
+                },
+                "type": "STATIC"
+              }
+            }
+          ],
+          "primary_action": {
+            "condition": {
+              "checks": {
+                "favorite_channel": "mlb_mia_marlins_015"
+              },
+              "decision": "IS_FAVORITED",
+              "false": "FAVORITE_WITH_INVALIDATION",
+              "true": "UNFAVORITE_WITH_INVALIDATION"
+            }
+          },
+          "team_abbr": "MIA",
+          "team_name": "Miami Marlins",
+          "tile_analytics": {
+            "TBD": "TBD"
+          }
+        },
+        {
+          "actions": {
+            "FAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "ADD TO WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "POST",
+              "label": "ADD TO WATCHLIST",
+              "payload": {
+                "channel_guid": "mlb_mil_brewers_016",
+                "enabler20Flag": true,
+                "external_id": "mlb_mil_brewers_016",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/mlb_mil_brewers.png",
+                  "w": 1280
+                },
+                "subtitle": "Added to favorites list",
+                "title": "Milwaukee Brewers"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            },
+            "UNFAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "REMOVE FROM WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "DELETE",
+              "label": "REMOVE FROM WATCHLIST",
+              "payload": {
+                "channel_guid": "mlb_mil_brewers_016",
+                "enabler20Flag": true,
+                "external_id": "mlb_mil_brewers_016",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/mlb_mil_brewers.png",
+                  "w": 1280
+                },
+                "subtitle": "Removed from favorites list",
+                "title": "Milwaukee Brewers"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            }
+          },
+          "analytics": {
+            "item_id": "mlb_mil_brewers_016",
+            "query_id": "/drawer/favorites"
+          },
+          "focus_row_background_color": "12284B",
+          "format": "CHANNEL_CARD",
+          "image": {
+            "h": 720,
+            "url": "https://mockserverfavorites.onrender.com/1280x720/mlb_mil_brewers.png",
+            "w": 1280
+          },
+          "overlay_indicators": [
+            {
+              "icon": {
+                "key": {
+                  "condition": {
+                    "checks": {
+                      "favorite_channel": "mlb_mil_brewers_016"
+                    },
+                    "decision": "IS_FAVORITED",
+                    "false": "FAVORITE_HEART_EMPTY",
+                    "true": "FAVORITE_HEART_FILLED"
+                  }
+                },
+                "type": "STATIC"
+              }
+            }
+          ],
+          "primary_action": {
+            "condition": {
+              "checks": {
+                "favorite_channel": "mlb_mil_brewers_016"
+              },
+              "decision": "IS_FAVORITED",
+              "false": "FAVORITE_WITH_INVALIDATION",
+              "true": "UNFAVORITE_WITH_INVALIDATION"
+            }
+          },
+          "team_abbr": "MIL",
+          "team_name": "Milwaukee Brewers",
+          "tile_analytics": {
+            "TBD": "TBD"
+          }
+        },
+        {
+          "actions": {
+            "FAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "ADD TO WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "POST",
+              "label": "ADD TO WATCHLIST",
+              "payload": {
+                "channel_guid": "mlb_min_twins_017",
+                "enabler20Flag": true,
+                "external_id": "mlb_min_twins_017",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/mlb_min_twins.png",
+                  "w": 1280
+                },
+                "subtitle": "Added to favorites list",
+                "title": "Minnesota Twins"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            },
+            "UNFAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "REMOVE FROM WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "DELETE",
+              "label": "REMOVE FROM WATCHLIST",
+              "payload": {
+                "channel_guid": "mlb_min_twins_017",
+                "enabler20Flag": true,
+                "external_id": "mlb_min_twins_017",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/mlb_min_twins.png",
+                  "w": 1280
+                },
+                "subtitle": "Removed from favorites list",
+                "title": "Minnesota Twins"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            }
+          },
+          "analytics": {
+            "item_id": "mlb_min_twins_017",
+            "query_id": "/drawer/favorites"
+          },
+          "focus_row_background_color": "002B5C",
+          "format": "CHANNEL_CARD",
+          "image": {
+            "h": 720,
+            "url": "https://mockserverfavorites.onrender.com/1280x720/mlb_min_twins.png",
+            "w": 1280
+          },
+          "overlay_indicators": [
+            {
+              "icon": {
+                "key": {
+                  "condition": {
+                    "checks": {
+                      "favorite_channel": "mlb_min_twins_017"
+                    },
+                    "decision": "IS_FAVORITED",
+                    "false": "FAVORITE_HEART_EMPTY",
+                    "true": "FAVORITE_HEART_FILLED"
+                  }
+                },
+                "type": "STATIC"
+              }
+            }
+          ],
+          "primary_action": {
+            "condition": {
+              "checks": {
+                "favorite_channel": "mlb_min_twins_017"
+              },
+              "decision": "IS_FAVORITED",
+              "false": "FAVORITE_WITH_INVALIDATION",
+              "true": "UNFAVORITE_WITH_INVALIDATION"
+            }
+          },
+          "team_abbr": "MIN",
+          "team_name": "Minnesota Twins",
+          "tile_analytics": {
+            "TBD": "TBD"
+          }
+        }
+      ],
+      "title": "M",
+      "total_tiles": 3
+    },
+    {
+      "alpha": "N",
+      "format": "GRID",
+      "ribbon_analytics": {
+        "AccountGuid": "65c9ca3e-217b-11ed-ba13-126882dbc557",
+        "AccountStatus": "Paid",
+        "DeviceGuid": "7b235964-439d-49dc-93ed-e7ed0ebad610",
+        "ProfileGuid": "10340350-2875-c41c-9371-1b714803851d",
+        "ProfileType": "Non Admin",
+        "ScreenName": "Home",
+        "SessionID": "",
+        "TabName": "Home",
+        "query_id": "/drawer/favorites"
+      },
+      "sub_title": "2",
+      "tiles": [
+        {
+          "actions": {
+            "FAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "ADD TO WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "POST",
+              "label": "ADD TO WATCHLIST",
+              "payload": {
+                "channel_guid": "mlb_nym_mets_018",
+                "enabler20Flag": true,
+                "external_id": "mlb_nym_mets_018",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/mlb_nym_mets.png",
+                  "w": 1280
+                },
+                "subtitle": "Added to favorites list",
+                "title": "New York Mets"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            },
+            "UNFAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "REMOVE FROM WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "DELETE",
+              "label": "REMOVE FROM WATCHLIST",
+              "payload": {
+                "channel_guid": "mlb_nym_mets_018",
+                "enabler20Flag": true,
+                "external_id": "mlb_nym_mets_018",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/mlb_nym_mets.png",
+                  "w": 1280
+                },
+                "subtitle": "Removed from favorites list",
+                "title": "New York Mets"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            }
+          },
+          "analytics": {
+            "item_id": "mlb_nym_mets_018",
+            "query_id": "/drawer/favorites"
+          },
+          "focus_row_background_color": "002D72",
+          "format": "CHANNEL_CARD",
+          "image": {
+            "h": 720,
+            "url": "https://mockserverfavorites.onrender.com/1280x720/mlb_nym_mets.png",
+            "w": 1280
+          },
+          "overlay_indicators": [
+            {
+              "icon": {
+                "key": {
+                  "condition": {
+                    "checks": {
+                      "favorite_channel": "mlb_nym_mets_018"
+                    },
+                    "decision": "IS_FAVORITED",
+                    "false": "FAVORITE_HEART_EMPTY",
+                    "true": "FAVORITE_HEART_FILLED"
+                  }
+                },
+                "type": "STATIC"
+              }
+            }
+          ],
+          "primary_action": {
+            "condition": {
+              "checks": {
+                "favorite_channel": "mlb_nym_mets_018"
+              },
+              "decision": "IS_FAVORITED",
+              "false": "FAVORITE_WITH_INVALIDATION",
+              "true": "UNFAVORITE_WITH_INVALIDATION"
+            }
+          },
+          "team_abbr": "NYM",
+          "team_name": "New York Mets",
+          "tile_analytics": {
+            "TBD": "TBD"
+          }
+        },
+        {
+          "actions": {
+            "FAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "ADD TO WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "POST",
+              "label": "ADD TO WATCHLIST",
+              "payload": {
+                "channel_guid": "mlb_nyy_yankees_019",
+                "enabler20Flag": true,
+                "external_id": "mlb_nyy_yankees_019",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/mlb_nyy_yankees.png",
+                  "w": 1280
+                },
+                "subtitle": "Added to favorites list",
+                "title": "New York Yankees"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            },
+            "UNFAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "REMOVE FROM WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "DELETE",
+              "label": "REMOVE FROM WATCHLIST",
+              "payload": {
+                "channel_guid": "mlb_nyy_yankees_019",
+                "enabler20Flag": true,
+                "external_id": "mlb_nyy_yankees_019",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/mlb_nyy_yankees.png",
+                  "w": 1280
+                },
+                "subtitle": "Removed from favorites list",
+                "title": "New York Yankees"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            }
+          },
+          "analytics": {
+            "item_id": "mlb_nyy_yankees_019",
+            "query_id": "/drawer/favorites"
+          },
+          "focus_row_background_color": "003087",
+          "format": "CHANNEL_CARD",
+          "image": {
+            "h": 720,
+            "url": "https://mockserverfavorites.onrender.com/1280x720/mlb_nyy_yankees.png",
+            "w": 1280
+          },
+          "overlay_indicators": [
+            {
+              "icon": {
+                "key": {
+                  "condition": {
+                    "checks": {
+                      "favorite_channel": "mlb_nyy_yankees_019"
+                    },
+                    "decision": "IS_FAVORITED",
+                    "false": "FAVORITE_HEART_EMPTY",
+                    "true": "FAVORITE_HEART_FILLED"
+                  }
+                },
+                "type": "STATIC"
+              }
+            }
+          ],
+          "primary_action": {
+            "condition": {
+              "checks": {
+                "favorite_channel": "mlb_nyy_yankees_019"
+              },
+              "decision": "IS_FAVORITED",
+              "false": "FAVORITE_WITH_INVALIDATION",
+              "true": "UNFAVORITE_WITH_INVALIDATION"
+            }
+          },
+          "team_abbr": "NYY",
+          "team_name": "New York Yankees",
+          "tile_analytics": {
+            "TBD": "TBD"
+          }
+        }
+      ],
+      "title": "N",
+      "total_tiles": 2
+    },
+    {
+      "alpha": "O",
+      "format": "GRID",
+      "ribbon_analytics": {
+        "AccountGuid": "65c9ca3e-217b-11ed-ba13-126882dbc557",
+        "AccountStatus": "Paid",
+        "DeviceGuid": "7b235964-439d-49dc-93ed-e7ed0ebad610",
+        "ProfileGuid": "10340350-2875-c41c-9371-1b714803851d",
+        "ProfileType": "Non Admin",
+        "ScreenName": "Home",
+        "SessionID": "",
+        "TabName": "Home",
+        "query_id": "/drawer/favorites"
+      },
+      "sub_title": "1",
+      "tiles": [
+        {
+          "actions": {
+            "FAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "ADD TO WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "POST",
+              "label": "ADD TO WATCHLIST",
+              "payload": {
+                "channel_guid": "mlb_oak_athletics_020",
+                "enabler20Flag": true,
+                "external_id": "mlb_oak_athletics_020",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/mlb_oak_athletics.png",
+                  "w": 1280
+                },
+                "subtitle": "Added to favorites list",
+                "title": "Oakland Athletics"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            },
+            "UNFAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "REMOVE FROM WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "DELETE",
+              "label": "REMOVE FROM WATCHLIST",
+              "payload": {
+                "channel_guid": "mlb_oak_athletics_020",
+                "enabler20Flag": true,
+                "external_id": "mlb_oak_athletics_020",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/mlb_oak_athletics.png",
+                  "w": 1280
+                },
+                "subtitle": "Removed from favorites list",
+                "title": "Oakland Athletics"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            }
+          },
+          "analytics": {
+            "item_id": "mlb_oak_athletics_020",
+            "query_id": "/drawer/favorites"
+          },
+          "focus_row_background_color": "003831",
+          "format": "CHANNEL_CARD",
+          "image": {
+            "h": 720,
+            "url": "https://mockserverfavorites.onrender.com/1280x720/mlb_oak_athletics.png",
+            "w": 1280
+          },
+          "overlay_indicators": [
+            {
+              "icon": {
+                "key": {
+                  "condition": {
+                    "checks": {
+                      "favorite_channel": "mlb_oak_athletics_020"
+                    },
+                    "decision": "IS_FAVORITED",
+                    "false": "FAVORITE_HEART_EMPTY",
+                    "true": "FAVORITE_HEART_FILLED"
+                  }
+                },
+                "type": "STATIC"
+              }
+            }
+          ],
+          "primary_action": {
+            "condition": {
+              "checks": {
+                "favorite_channel": "mlb_oak_athletics_020"
+              },
+              "decision": "IS_FAVORITED",
+              "false": "FAVORITE_WITH_INVALIDATION",
+              "true": "UNFAVORITE_WITH_INVALIDATION"
+            }
+          },
+          "team_abbr": "OAK",
+          "team_name": "Oakland Athletics",
+          "tile_analytics": {
+            "TBD": "TBD"
+          }
+        }
+      ],
+      "title": "O",
+      "total_tiles": 1
+    },
+    {
+      "alpha": "P",
+      "format": "GRID",
+      "ribbon_analytics": {
+        "AccountGuid": "65c9ca3e-217b-11ed-ba13-126882dbc557",
+        "AccountStatus": "Paid",
+        "DeviceGuid": "7b235964-439d-49dc-93ed-e7ed0ebad610",
+        "ProfileGuid": "10340350-2875-c41c-9371-1b714803851d",
+        "ProfileType": "Non Admin",
+        "ScreenName": "Home",
+        "SessionID": "",
+        "TabName": "Home",
+        "query_id": "/drawer/favorites"
+      },
+      "sub_title": "2",
+      "tiles": [
+        {
+          "actions": {
+            "FAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "ADD TO WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "POST",
+              "label": "ADD TO WATCHLIST",
+              "payload": {
+                "channel_guid": "mlb_phi_phillies_021",
+                "enabler20Flag": true,
+                "external_id": "mlb_phi_phillies_021",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/mlb_phi_phillies.png",
+                  "w": 1280
+                },
+                "subtitle": "Added to favorites list",
+                "title": "Philadelphia Phillies"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            },
+            "UNFAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "REMOVE FROM WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "DELETE",
+              "label": "REMOVE FROM WATCHLIST",
+              "payload": {
+                "channel_guid": "mlb_phi_phillies_021",
+                "enabler20Flag": true,
+                "external_id": "mlb_phi_phillies_021",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/mlb_phi_phillies.png",
+                  "w": 1280
+                },
+                "subtitle": "Removed from favorites list",
+                "title": "Philadelphia Phillies"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            }
+          },
+          "analytics": {
+            "item_id": "mlb_phi_phillies_021",
+            "query_id": "/drawer/favorites"
+          },
+          "focus_row_background_color": "E81828",
+          "format": "CHANNEL_CARD",
+          "image": {
+            "h": 720,
+            "url": "https://mockserverfavorites.onrender.com/1280x720/mlb_phi_phillies.png",
+            "w": 1280
+          },
+          "overlay_indicators": [
+            {
+              "icon": {
+                "key": {
+                  "condition": {
+                    "checks": {
+                      "favorite_channel": "mlb_phi_phillies_021"
+                    },
+                    "decision": "IS_FAVORITED",
+                    "false": "FAVORITE_HEART_EMPTY",
+                    "true": "FAVORITE_HEART_FILLED"
+                  }
+                },
+                "type": "STATIC"
+              }
+            }
+          ],
+          "primary_action": {
+            "condition": {
+              "checks": {
+                "favorite_channel": "mlb_phi_phillies_021"
+              },
+              "decision": "IS_FAVORITED",
+              "false": "FAVORITE_WITH_INVALIDATION",
+              "true": "UNFAVORITE_WITH_INVALIDATION"
+            }
+          },
+          "team_abbr": "PHI",
+          "team_name": "Philadelphia Phillies",
+          "tile_analytics": {
+            "TBD": "TBD"
+          }
+        },
+        {
+          "actions": {
+            "FAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "ADD TO WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "POST",
+              "label": "ADD TO WATCHLIST",
+              "payload": {
+                "channel_guid": "mlb_pit_pirates_022",
+                "enabler20Flag": true,
+                "external_id": "mlb_pit_pirates_022",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/mlb_pit_pirates.png",
+                  "w": 1280
+                },
+                "subtitle": "Added to favorites list",
+                "title": "Pittsburgh Pirates"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            },
+            "UNFAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "REMOVE FROM WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "DELETE",
+              "label": "REMOVE FROM WATCHLIST",
+              "payload": {
+                "channel_guid": "mlb_pit_pirates_022",
+                "enabler20Flag": true,
+                "external_id": "mlb_pit_pirates_022",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/mlb_pit_pirates.png",
+                  "w": 1280
+                },
+                "subtitle": "Removed from favorites list",
+                "title": "Pittsburgh Pirates"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            }
+          },
+          "analytics": {
+            "item_id": "mlb_pit_pirates_022",
+            "query_id": "/drawer/favorites"
+          },
+          "focus_row_background_color": "27251F",
+          "format": "CHANNEL_CARD",
+          "image": {
+            "h": 720,
+            "url": "https://mockserverfavorites.onrender.com/1280x720/mlb_pit_pirates.png",
+            "w": 1280
+          },
+          "overlay_indicators": [
+            {
+              "icon": {
+                "key": {
+                  "condition": {
+                    "checks": {
+                      "favorite_channel": "mlb_pit_pirates_022"
+                    },
+                    "decision": "IS_FAVORITED",
+                    "false": "FAVORITE_HEART_EMPTY",
+                    "true": "FAVORITE_HEART_FILLED"
+                  }
+                },
+                "type": "STATIC"
+              }
+            }
+          ],
+          "primary_action": {
+            "condition": {
+              "checks": {
+                "favorite_channel": "mlb_pit_pirates_022"
+              },
+              "decision": "IS_FAVORITED",
+              "false": "FAVORITE_WITH_INVALIDATION",
+              "true": "UNFAVORITE_WITH_INVALIDATION"
+            }
+          },
+          "team_abbr": "PIT",
+          "team_name": "Pittsburgh Pirates",
+          "tile_analytics": {
+            "TBD": "TBD"
+          }
+        }
+      ],
+      "title": "P",
+      "total_tiles": 2
+    },
+    {
+      "alpha": "S",
+      "format": "GRID",
+      "ribbon_analytics": {
+        "AccountGuid": "65c9ca3e-217b-11ed-ba13-126882dbc557",
+        "AccountStatus": "Paid",
+        "DeviceGuid": "7b235964-439d-49dc-93ed-e7ed0ebad610",
+        "ProfileGuid": "10340350-2875-c41c-9371-1b714803851d",
+        "ProfileType": "Non Admin",
+        "ScreenName": "Home",
+        "SessionID": "",
+        "TabName": "Home",
+        "query_id": "/drawer/favorites"
+      },
+      "sub_title": "3",
+      "tiles": [
+        {
+          "actions": {
+            "FAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "ADD TO WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "POST",
+              "label": "ADD TO WATCHLIST",
+              "payload": {
+                "channel_guid": "mlb_sd_padres_023",
+                "enabler20Flag": true,
+                "external_id": "mlb_sd_padres_023",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/mlb_sd_padres.png",
+                  "w": 1280
+                },
+                "subtitle": "Added to favorites list",
+                "title": "San Diego Padres"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            },
+            "UNFAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "REMOVE FROM WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "DELETE",
+              "label": "REMOVE FROM WATCHLIST",
+              "payload": {
+                "channel_guid": "mlb_sd_padres_023",
+                "enabler20Flag": true,
+                "external_id": "mlb_sd_padres_023",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/mlb_sd_padres.png",
+                  "w": 1280
+                },
+                "subtitle": "Removed from favorites list",
+                "title": "San Diego Padres"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            }
+          },
+          "analytics": {
+            "item_id": "mlb_sd_padres_023",
+            "query_id": "/drawer/favorites"
+          },
+          "focus_row_background_color": "2F241D",
+          "format": "CHANNEL_CARD",
+          "image": {
+            "h": 720,
+            "url": "https://mockserverfavorites.onrender.com/1280x720/mlb_sd_padres.png",
+            "w": 1280
+          },
+          "overlay_indicators": [
+            {
+              "icon": {
+                "key": {
+                  "condition": {
+                    "checks": {
+                      "favorite_channel": "mlb_sd_padres_023"
+                    },
+                    "decision": "IS_FAVORITED",
+                    "false": "FAVORITE_HEART_EMPTY",
+                    "true": "FAVORITE_HEART_FILLED"
+                  }
+                },
+                "type": "STATIC"
+              }
+            }
+          ],
+          "primary_action": {
+            "condition": {
+              "checks": {
+                "favorite_channel": "mlb_sd_padres_023"
+              },
+              "decision": "IS_FAVORITED",
+              "false": "FAVORITE_WITH_INVALIDATION",
+              "true": "UNFAVORITE_WITH_INVALIDATION"
+            }
+          },
+          "team_abbr": "SD",
+          "team_name": "San Diego Padres",
+          "tile_analytics": {
+            "TBD": "TBD"
+          }
+        },
+        {
+          "actions": {
+            "FAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "ADD TO WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "POST",
+              "label": "ADD TO WATCHLIST",
+              "payload": {
+                "channel_guid": "mlb_sf_giants_024",
+                "enabler20Flag": true,
+                "external_id": "mlb_sf_giants_024",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/mlb_sf_giants.png",
+                  "w": 1280
+                },
+                "subtitle": "Added to favorites list",
+                "title": "San Francisco Giants"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            },
+            "UNFAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "REMOVE FROM WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "DELETE",
+              "label": "REMOVE FROM WATCHLIST",
+              "payload": {
+                "channel_guid": "mlb_sf_giants_024",
+                "enabler20Flag": true,
+                "external_id": "mlb_sf_giants_024",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/mlb_sf_giants.png",
+                  "w": 1280
+                },
+                "subtitle": "Removed from favorites list",
+                "title": "San Francisco Giants"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            }
+          },
+          "analytics": {
+            "item_id": "mlb_sf_giants_024",
+            "query_id": "/drawer/favorites"
+          },
+          "focus_row_background_color": "FD5A1E",
+          "format": "CHANNEL_CARD",
+          "image": {
+            "h": 720,
+            "url": "https://mockserverfavorites.onrender.com/1280x720/mlb_sf_giants.png",
+            "w": 1280
+          },
+          "overlay_indicators": [
+            {
+              "icon": {
+                "key": {
+                  "condition": {
+                    "checks": {
+                      "favorite_channel": "mlb_sf_giants_024"
+                    },
+                    "decision": "IS_FAVORITED",
+                    "false": "FAVORITE_HEART_EMPTY",
+                    "true": "FAVORITE_HEART_FILLED"
+                  }
+                },
+                "type": "STATIC"
+              }
+            }
+          ],
+          "primary_action": {
+            "condition": {
+              "checks": {
+                "favorite_channel": "mlb_sf_giants_024"
+              },
+              "decision": "IS_FAVORITED",
+              "false": "FAVORITE_WITH_INVALIDATION",
+              "true": "UNFAVORITE_WITH_INVALIDATION"
+            }
+          },
+          "team_abbr": "SF",
+          "team_name": "San Francisco Giants",
+          "tile_analytics": {
+            "TBD": "TBD"
+          }
+        },
+        {
+          "actions": {
+            "FAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "ADD TO WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "POST",
+              "label": "ADD TO WATCHLIST",
+              "payload": {
+                "channel_guid": "mlb_sea_mariners_025",
+                "enabler20Flag": true,
+                "external_id": "mlb_sea_mariners_025",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/mlb_sea_mariners.png",
+                  "w": 1280
+                },
+                "subtitle": "Added to favorites list",
+                "title": "Seattle Mariners"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            },
+            "UNFAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "REMOVE FROM WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "DELETE",
+              "label": "REMOVE FROM WATCHLIST",
+              "payload": {
+                "channel_guid": "mlb_sea_mariners_025",
+                "enabler20Flag": true,
+                "external_id": "mlb_sea_mariners_025",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/mlb_sea_mariners.png",
+                  "w": 1280
+                },
+                "subtitle": "Removed from favorites list",
+                "title": "Seattle Mariners"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            }
+          },
+          "analytics": {
+            "item_id": "mlb_sea_mariners_025",
+            "query_id": "/drawer/favorites"
+          },
+          "focus_row_background_color": "0C2C56",
+          "format": "CHANNEL_CARD",
+          "image": {
+            "h": 720,
+            "url": "https://mockserverfavorites.onrender.com/1280x720/mlb_sea_mariners.png",
+            "w": 1280
+          },
+          "overlay_indicators": [
+            {
+              "icon": {
+                "key": {
+                  "condition": {
+                    "checks": {
+                      "favorite_channel": "mlb_sea_mariners_025"
+                    },
+                    "decision": "IS_FAVORITED",
+                    "false": "FAVORITE_HEART_EMPTY",
+                    "true": "FAVORITE_HEART_FILLED"
+                  }
+                },
+                "type": "STATIC"
+              }
+            }
+          ],
+          "primary_action": {
+            "condition": {
+              "checks": {
+                "favorite_channel": "mlb_sea_mariners_025"
+              },
+              "decision": "IS_FAVORITED",
+              "false": "FAVORITE_WITH_INVALIDATION",
+              "true": "UNFAVORITE_WITH_INVALIDATION"
+            }
+          },
+          "team_abbr": "SEA",
+          "team_name": "Seattle Mariners",
+          "tile_analytics": {
+            "TBD": "TBD"
+          }
+        }
+      ],
+      "title": "S",
+      "total_tiles": 3
+    },
+    {
+      "alpha": "T",
+      "format": "GRID",
+      "ribbon_analytics": {
+        "AccountGuid": "65c9ca3e-217b-11ed-ba13-126882dbc557",
+        "AccountStatus": "Paid",
+        "DeviceGuid": "7b235964-439d-49dc-93ed-e7ed0ebad610",
+        "ProfileGuid": "10340350-2875-c41c-9371-1b714803851d",
+        "ProfileType": "Non Admin",
+        "ScreenName": "Home",
+        "SessionID": "",
+        "TabName": "Home",
+        "query_id": "/drawer/favorites"
+      },
+      "sub_title": "3",
+      "tiles": [
+        {
+          "actions": {
+            "FAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "ADD TO WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "POST",
+              "label": "ADD TO WATCHLIST",
+              "payload": {
+                "channel_guid": "mlb_stl_cardinals_026",
+                "enabler20Flag": true,
+                "external_id": "mlb_stl_cardinals_026",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/mlb_stl_cardinals.png",
+                  "w": 1280
+                },
+                "subtitle": "Added to favorites list",
+                "title": "St. Louis Cardinals"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            },
+            "UNFAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "REMOVE FROM WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "DELETE",
+              "label": "REMOVE FROM WATCHLIST",
+              "payload": {
+                "channel_guid": "mlb_stl_cardinals_026",
+                "enabler20Flag": true,
+                "external_id": "mlb_stl_cardinals_026",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/mlb_stl_cardinals.png",
+                  "w": 1280
+                },
+                "subtitle": "Removed from favorites list",
+                "title": "St. Louis Cardinals"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            }
+          },
+          "analytics": {
+            "item_id": "mlb_stl_cardinals_026",
+            "query_id": "/drawer/favorites"
+          },
+          "focus_row_background_color": "C41E3A",
+          "format": "CHANNEL_CARD",
+          "image": {
+            "h": 720,
+            "url": "https://mockserverfavorites.onrender.com/1280x720/mlb_stl_cardinals.png",
+            "w": 1280
+          },
+          "overlay_indicators": [
+            {
+              "icon": {
+                "key": {
+                  "condition": {
+                    "checks": {
+                      "favorite_channel": "mlb_stl_cardinals_026"
+                    },
+                    "decision": "IS_FAVORITED",
+                    "false": "FAVORITE_HEART_EMPTY",
+                    "true": "FAVORITE_HEART_FILLED"
+                  }
+                },
+                "type": "STATIC"
+              }
+            }
+          ],
+          "primary_action": {
+            "condition": {
+              "checks": {
+                "favorite_channel": "mlb_stl_cardinals_026"
+              },
+              "decision": "IS_FAVORITED",
+              "false": "FAVORITE_WITH_INVALIDATION",
+              "true": "UNFAVORITE_WITH_INVALIDATION"
+            }
+          },
+          "team_abbr": "STL",
+          "team_name": "St. Louis Cardinals",
+          "tile_analytics": {
+            "TBD": "TBD"
+          }
+        },
+        {
+          "actions": {
+            "FAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "ADD TO WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "POST",
+              "label": "ADD TO WATCHLIST",
+              "payload": {
+                "channel_guid": "mlb_tb_rays_027",
+                "enabler20Flag": true,
+                "external_id": "mlb_tb_rays_027",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/mlb_tb_rays.png",
+                  "w": 1280
+                },
+                "subtitle": "Added to favorites list",
+                "title": "Tampa Bay Rays"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            },
+            "UNFAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "REMOVE FROM WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "DELETE",
+              "label": "REMOVE FROM WATCHLIST",
+              "payload": {
+                "channel_guid": "mlb_tb_rays_027",
+                "enabler20Flag": true,
+                "external_id": "mlb_tb_rays_027",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/mlb_tb_rays.png",
+                  "w": 1280
+                },
+                "subtitle": "Removed from favorites list",
+                "title": "Tampa Bay Rays"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            }
+          },
+          "analytics": {
+            "item_id": "mlb_tb_rays_027",
+            "query_id": "/drawer/favorites"
+          },
+          "focus_row_background_color": "092C5C",
+          "format": "CHANNEL_CARD",
+          "image": {
+            "h": 720,
+            "url": "https://mockserverfavorites.onrender.com/1280x720/mlb_tb_rays.png",
+            "w": 1280
+          },
+          "overlay_indicators": [
+            {
+              "icon": {
+                "key": {
+                  "condition": {
+                    "checks": {
+                      "favorite_channel": "mlb_tb_rays_027"
+                    },
+                    "decision": "IS_FAVORITED",
+                    "false": "FAVORITE_HEART_EMPTY",
+                    "true": "FAVORITE_HEART_FILLED"
+                  }
+                },
+                "type": "STATIC"
+              }
+            }
+          ],
+          "primary_action": {
+            "condition": {
+              "checks": {
+                "favorite_channel": "mlb_tb_rays_027"
+              },
+              "decision": "IS_FAVORITED",
+              "false": "FAVORITE_WITH_INVALIDATION",
+              "true": "UNFAVORITE_WITH_INVALIDATION"
+            }
+          },
+          "team_abbr": "TB",
+          "team_name": "Tampa Bay Rays",
+          "tile_analytics": {
+            "TBD": "TBD"
+          }
+        },
+        {
+          "actions": {
+            "FAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "ADD TO WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "POST",
+              "label": "ADD TO WATCHLIST",
+              "payload": {
+                "channel_guid": "mlb_tex_rangers_028",
+                "enabler20Flag": true,
+                "external_id": "mlb_tex_rangers_028",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/mlb_tex_rangers.png",
+                  "w": 1280
+                },
+                "subtitle": "Added to favorites list",
+                "title": "Texas Rangers"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            },
+            "UNFAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "REMOVE FROM WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "DELETE",
+              "label": "REMOVE FROM WATCHLIST",
+              "payload": {
+                "channel_guid": "mlb_tex_rangers_028",
+                "enabler20Flag": true,
+                "external_id": "mlb_tex_rangers_028",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/mlb_tex_rangers.png",
+                  "w": 1280
+                },
+                "subtitle": "Removed from favorites list",
+                "title": "Texas Rangers"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            }
+          },
+          "analytics": {
+            "item_id": "mlb_tex_rangers_028",
+            "query_id": "/drawer/favorites"
+          },
+          "focus_row_background_color": "003278",
+          "format": "CHANNEL_CARD",
+          "image": {
+            "h": 720,
+            "url": "https://mockserverfavorites.onrender.com/1280x720/mlb_tex_rangers.png",
+            "w": 1280
+          },
+          "overlay_indicators": [
+            {
+              "icon": {
+                "key": {
+                  "condition": {
+                    "checks": {
+                      "favorite_channel": "mlb_tex_rangers_028"
+                    },
+                    "decision": "IS_FAVORITED",
+                    "false": "FAVORITE_HEART_EMPTY",
+                    "true": "FAVORITE_HEART_FILLED"
+                  }
+                },
+                "type": "STATIC"
+              }
+            }
+          ],
+          "primary_action": {
+            "condition": {
+              "checks": {
+                "favorite_channel": "mlb_tex_rangers_028"
+              },
+              "decision": "IS_FAVORITED",
+              "false": "FAVORITE_WITH_INVALIDATION",
+              "true": "UNFAVORITE_WITH_INVALIDATION"
+            }
+          },
+          "team_abbr": "TEX",
+          "team_name": "Texas Rangers",
+          "tile_analytics": {
+            "TBD": "TBD"
+          }
+        }
+      ],
+      "title": "T",
+      "total_tiles": 3
+    },
+    {
+      "alpha": "W",
+      "format": "GRID",
+      "ribbon_analytics": {
+        "AccountGuid": "65c9ca3e-217b-11ed-ba13-126882dbc557",
+        "AccountStatus": "Paid",
+        "DeviceGuid": "7b235964-439d-49dc-93ed-e7ed0ebad610",
+        "ProfileGuid": "10340350-2875-c41c-9371-1b714803851d",
+        "ProfileType": "Non Admin",
+        "ScreenName": "Home",
+        "SessionID": "",
+        "TabName": "Home",
+        "query_id": "/drawer/favorites"
+      },
+      "sub_title": "1",
+      "tiles": [
+        {
+          "actions": {
+            "FAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "ADD TO WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "POST",
+              "label": "ADD TO WATCHLIST",
+              "payload": {
+                "channel_guid": "mlb_tor_bluejays_029",
+                "enabler20Flag": true,
+                "external_id": "mlb_tor_bluejays_029",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/mlb_tor_bluejays.png",
+                  "w": 1280
+                },
+                "subtitle": "Added to favorites list",
+                "title": "Toronto Blue Jays"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            },
+            "UNFAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "REMOVE FROM WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "DELETE",
+              "label": "REMOVE FROM WATCHLIST",
+              "payload": {
+                "channel_guid": "mlb_tor_bluejays_029",
+                "enabler20Flag": true,
+                "external_id": "mlb_tor_bluejays_029",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/mlb_tor_bluejays.png",
+                  "w": 1280
+                },
+                "subtitle": "Removed from favorites list",
+                "title": "Toronto Blue Jays"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            }
+          },
+          "analytics": {
+            "item_id": "mlb_tor_bluejays_029",
+            "query_id": "/drawer/favorites"
+          },
+          "focus_row_background_color": "134A8E",
+          "format": "CHANNEL_CARD",
+          "image": {
+            "h": 720,
+            "url": "https://mockserverfavorites.onrender.com/1280x720/mlb_tor_bluejays.png",
+            "w": 1280
+          },
+          "overlay_indicators": [
+            {
+              "icon": {
+                "key": {
+                  "condition": {
+                    "checks": {
+                      "favorite_channel": "mlb_tor_bluejays_029"
+                    },
+                    "decision": "IS_FAVORITED",
+                    "false": "FAVORITE_HEART_EMPTY",
+                    "true": "FAVORITE_HEART_FILLED"
+                  }
+                },
+                "type": "STATIC"
+              }
+            }
+          ],
+          "primary_action": {
+            "condition": {
+              "checks": {
+                "favorite_channel": "mlb_tor_bluejays_029"
+              },
+              "decision": "IS_FAVORITED",
+              "false": "FAVORITE_WITH_INVALIDATION",
+              "true": "UNFAVORITE_WITH_INVALIDATION"
+            }
+          },
+          "team_abbr": "TOR",
+          "team_name": "Toronto Blue Jays",
+          "tile_analytics": {
+            "TBD": "TBD"
+          }
+        },
+        {
+          "actions": {
+            "FAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "ADD TO WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "POST",
+              "label": "ADD TO WATCHLIST",
+              "payload": {
+                "channel_guid": "mlb_was_nationals_030",
+                "enabler20Flag": true,
+                "external_id": "mlb_was_nationals_030",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/mlb_was_nationals.png",
+                  "w": 1280
+                },
+                "subtitle": "Added to favorites list",
+                "title": "Washington Nationals"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            },
+            "UNFAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "REMOVE FROM WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "DELETE",
+              "label": "REMOVE FROM WATCHLIST",
+              "payload": {
+                "channel_guid": "mlb_was_nationals_030",
+                "enabler20Flag": true,
+                "external_id": "mlb_was_nationals_030",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/mlb_was_nationals.png",
+                  "w": 1280
+                },
+                "subtitle": "Removed from favorites list",
+                "title": "Washington Nationals"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            }
+          },
+          "analytics": {
+            "item_id": "mlb_was_nationals_030",
+            "query_id": "/drawer/favorites"
+          },
+          "focus_row_background_color": "AB0003",
+          "format": "CHANNEL_CARD",
+          "image": {
+            "h": 720,
+            "url": "https://mockserverfavorites.onrender.com/1280x720/mlb_was_nationals.png",
+            "w": 1280
+          },
+          "overlay_indicators": [
+            {
+              "icon": {
+                "key": {
+                  "condition": {
+                    "checks": {
+                      "favorite_channel": "mlb_was_nationals_030"
+                    },
+                    "decision": "IS_FAVORITED",
+                    "false": "FAVORITE_HEART_EMPTY",
+                    "true": "FAVORITE_HEART_FILLED"
+                  }
+                },
+                "type": "STATIC"
+              }
+            }
+          ],
+          "primary_action": {
+            "condition": {
+              "checks": {
+                "favorite_channel": "mlb_was_nationals_030"
+              },
+              "decision": "IS_FAVORITED",
+              "false": "FAVORITE_WITH_INVALIDATION",
+              "true": "UNFAVORITE_WITH_INVALIDATION"
+            }
+          },
+          "team_abbr": "WAS",
+          "team_name": "Washington Nationals",
+          "tile_analytics": {
+            "TBD": "TBD"
+          }
+        }
+      ],
+      "title": "W",
+      "total_tiles": 2
+    }
+  ],
+  "start_time": 1777532269,
+  "type": "FAVORITES"
+}

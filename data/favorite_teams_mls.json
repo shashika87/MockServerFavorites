@@ -1,0 +1,3455 @@
+{
+  "actions": {
+    "DRAWERV2": {
+      "http_method": "GET",
+      "url": "https://p-cmwnext.movetv.com/drawer/sports_favourites?focusedTile=favorites&sourceScreen=home"
+    }
+  },
+  "dismiss_action": "DRAWERV2",
+  "end_time": 1777618669,
+  "exclusive": false,
+  "expires_at": 1777618669,
+  "format": "DRAWERV2",
+  "header_view": {
+    "title": "Add Favorite Teams"
+  },
+  "href": "https://p-cmwnext.movetv.com/drawer/favorites?sourceScreen={sourceScreen)&stack=mls",
+  "ribbons": [
+    {
+      "icon": {
+        "key": "STAR_LOGO",
+        "type": "STATIC"
+      },
+      "format": "GRID",
+      "ribbon_analytics": {
+        "AccountGuid": "804fc3b0-6b5f-11f1-9f90-7a7bc35467e0",
+        "AccountStatus": "Paid",
+        "DeviceGuid": "069e8d22-3f57-58e1-b072-c0680d357e5a",
+        "ProfileGuid": "804fc3b0-6b5f-11f1-9f90-7a7bc35467e0",
+        "ProfileType": "Admin",
+        "query_id": "/drawer/favorites",
+        "ScreenName": "fluid-guide",
+        "SessionID": "",
+        "TabName": "Guide"
+      },
+      "sub_title": "5",
+      "tiles": [
+        {
+          "actions": {
+            "FAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "ADD TO WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "POST",
+              "label": "ADD TO WATCHLIST",
+              "payload": {
+                "channel_guid": "mls_dal_fc_007",
+                "enabler20Flag": true,
+                "external_id": "mls_dal_fc_007",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/mls_dal_fc.png",
+                  "w": 1280
+                },
+                "subtitle": "Added to favorites list",
+                "title": "FC Dallas"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            },
+            "UNFAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "REMOVE FROM WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "DELETE",
+              "label": "REMOVE FROM WATCHLIST",
+              "payload": {
+                "channel_guid": "mls_dal_fc_007",
+                "enabler20Flag": true,
+                "external_id": "mls_dal_fc_007",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/mls_dal_fc.png",
+                  "w": 1280
+                },
+                "subtitle": "Removed from favorites list",
+                "title": "FC Dallas"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            }
+          },
+          "analytics": {
+            "item_id": "mls_dal_fc_007",
+            "query_id": "/drawer/favorites"
+          },
+          "focus_row_background_color": "BF0D3E",
+          "format": "CHANNEL_CARD",
+          "image": {
+            "h": 720,
+            "url": "https://mockserverfavorites.onrender.com/1280x720/mls_dal_fc.png",
+            "w": 1280
+          },
+          "overlay_indicators": [
+            {
+              "icon": {
+                "key": {
+                  "condition": {
+                    "decision": "IS_FAVORITED",
+                    "checks": {
+                      "favorite_channel": "mls_dal_fc_007"
+                    },
+                    "true": "FAVORITE_HEART_FILLED",
+                    "false": "FAVORITE_HEART_EMPTY"
+                  }
+                },
+                "type": "STATIC"
+              }
+            }
+          ],
+          "primary_action": {
+            "condition": {
+              "decision": "IS_FAVORITED",
+              "checks": {
+                "favorite_channel": "mls_dal_fc_007"
+              },
+              "true": "UNFAVORITE_WITH_INVALIDATION",
+              "false": "FAVORITE_WITH_INVALIDATION"
+            }
+          },
+          "team_abbr": "DAL",
+          "team_name": "FC Dallas",
+          "tile_analytics": {
+            "TBD": "TBD"
+          }
+        },
+        {
+          "actions": {
+            "FAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "ADD TO WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "POST",
+              "label": "ADD TO WATCHLIST",
+              "payload": {
+                "channel_guid": "mls_hou_dynamo_008",
+                "enabler20Flag": true,
+                "external_id": "mls_hou_dynamo_008",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/mls_hou_dynamo.png",
+                  "w": 1280
+                },
+                "subtitle": "Added to favorites list",
+                "title": "Houston Dynamo FC"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            },
+            "UNFAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "REMOVE FROM WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "DELETE",
+              "label": "REMOVE FROM WATCHLIST",
+              "payload": {
+                "channel_guid": "mls_hou_dynamo_008",
+                "enabler20Flag": true,
+                "external_id": "mls_hou_dynamo_008",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/mls_hou_dynamo.png",
+                  "w": 1280
+                },
+                "subtitle": "Removed from favorites list",
+                "title": "Houston Dynamo FC"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            }
+          },
+          "analytics": {
+            "item_id": "mls_hou_dynamo_008",
+            "query_id": "/drawer/favorites"
+          },
+          "focus_row_background_color": "F68712",
+          "format": "CHANNEL_CARD",
+          "image": {
+            "h": 720,
+            "url": "https://mockserverfavorites.onrender.com/1280x720/mls_hou_dynamo.png",
+            "w": 1280
+          },
+          "overlay_indicators": [
+            {
+              "icon": {
+                "key": {
+                  "condition": {
+                    "decision": "IS_FAVORITED",
+                    "checks": {
+                      "favorite_channel": "mls_hou_dynamo_008"
+                    },
+                    "true": "FAVORITE_HEART_FILLED",
+                    "false": "FAVORITE_HEART_EMPTY"
+                  }
+                },
+                "type": "STATIC"
+              }
+            }
+          ],
+          "primary_action": {
+            "condition": {
+              "decision": "IS_FAVORITED",
+              "checks": {
+                "favorite_channel": "mls_hou_dynamo_008"
+              },
+              "true": "UNFAVORITE_WITH_INVALIDATION",
+              "false": "FAVORITE_WITH_INVALIDATION"
+            }
+          },
+          "team_abbr": "HOU",
+          "team_name": "Houston Dynamo FC",
+          "tile_analytics": {
+            "TBD": "TBD"
+          }
+        },
+        {
+          "actions": {
+            "FAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "ADD TO WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "POST",
+              "label": "ADD TO WATCHLIST",
+              "payload": {
+                "channel_guid": "mls_por_timbers_020",
+                "enabler20Flag": true,
+                "external_id": "mls_por_timbers_020",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/mls_por_timbers.png",
+                  "w": 1280
+                },
+                "subtitle": "Added to favorites list",
+                "title": "Portland Timbers"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            },
+            "UNFAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "REMOVE FROM WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "DELETE",
+              "label": "REMOVE FROM WATCHLIST",
+              "payload": {
+                "channel_guid": "mls_por_timbers_020",
+                "enabler20Flag": true,
+                "external_id": "mls_por_timbers_020",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/mls_por_timbers.png",
+                  "w": 1280
+                },
+                "subtitle": "Removed from favorites list",
+                "title": "Portland Timbers"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            }
+          },
+          "analytics": {
+            "item_id": "mls_por_timbers_020",
+            "query_id": "/drawer/favorites"
+          },
+          "focus_row_background_color": "004812",
+          "format": "CHANNEL_CARD",
+          "image": {
+            "h": 720,
+            "url": "https://mockserverfavorites.onrender.com/1280x720/mls_por_timbers.png",
+            "w": 1280
+          },
+          "overlay_indicators": [
+            {
+              "icon": {
+                "key": {
+                  "condition": {
+                    "decision": "IS_FAVORITED",
+                    "checks": {
+                      "favorite_channel": "mls_por_timbers_020"
+                    },
+                    "true": "FAVORITE_HEART_FILLED",
+                    "false": "FAVORITE_HEART_EMPTY"
+                  }
+                },
+                "type": "STATIC"
+              }
+            }
+          ],
+          "primary_action": {
+            "condition": {
+              "decision": "IS_FAVORITED",
+              "checks": {
+                "favorite_channel": "mls_por_timbers_020"
+              },
+              "true": "UNFAVORITE_WITH_INVALIDATION",
+              "false": "FAVORITE_WITH_INVALIDATION"
+            }
+          },
+          "team_abbr": "POR",
+          "team_name": "Portland Timbers",
+          "tile_analytics": {
+            "TBD": "TBD"
+          }
+        },
+        {
+          "actions": {
+            "FAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "ADD TO WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "POST",
+              "label": "ADD TO WATCHLIST",
+              "payload": {
+                "channel_guid": "mls_min_united_012",
+                "enabler20Flag": true,
+                "external_id": "mls_min_united_012",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/mls_min_united.png",
+                  "w": 1280
+                },
+                "subtitle": "Added to favorites list",
+                "title": "Minnesota United FC"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            },
+            "UNFAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "REMOVE FROM WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "DELETE",
+              "label": "REMOVE FROM WATCHLIST",
+              "payload": {
+                "channel_guid": "mls_min_united_012",
+                "enabler20Flag": true,
+                "external_id": "mls_min_united_012",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/mls_min_united.png",
+                  "w": 1280
+                },
+                "subtitle": "Removed from favorites list",
+                "title": "Minnesota United FC"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            }
+          },
+          "analytics": {
+            "item_id": "mls_min_united_012",
+            "query_id": "/drawer/favorites"
+          },
+          "focus_row_background_color": "231F20",
+          "format": "CHANNEL_CARD",
+          "image": {
+            "h": 720,
+            "url": "https://mockserverfavorites.onrender.com/1280x720/mls_min_united.png",
+            "w": 1280
+          },
+          "overlay_indicators": [
+            {
+              "icon": {
+                "key": {
+                  "condition": {
+                    "decision": "IS_FAVORITED",
+                    "checks": {
+                      "favorite_channel": "mls_min_united_012"
+                    },
+                    "true": "FAVORITE_HEART_FILLED",
+                    "false": "FAVORITE_HEART_EMPTY"
+                  }
+                },
+                "type": "STATIC"
+              }
+            }
+          ],
+          "primary_action": {
+            "condition": {
+              "decision": "IS_FAVORITED",
+              "checks": {
+                "favorite_channel": "mls_min_united_012"
+              },
+              "true": "UNFAVORITE_WITH_INVALIDATION",
+              "false": "FAVORITE_WITH_INVALIDATION"
+            }
+          },
+          "team_abbr": "MIN",
+          "team_name": "Minnesota United FC",
+          "tile_analytics": {
+            "TBD": "TBD"
+          }
+        },
+        {
+          "actions": {
+            "FAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "ADD TO WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "POST",
+              "label": "ADD TO WATCHLIST",
+              "payload": {
+                "channel_guid": "mls_lafc_010",
+                "enabler20Flag": true,
+                "external_id": "mls_lafc_010",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/mls_lafc.png",
+                  "w": 1280
+                },
+                "subtitle": "Added to favorites list",
+                "title": "Los Angeles FC"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            },
+            "UNFAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "REMOVE FROM WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "DELETE",
+              "label": "REMOVE FROM WATCHLIST",
+              "payload": {
+                "channel_guid": "mls_lafc_010",
+                "enabler20Flag": true,
+                "external_id": "mls_lafc_010",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/mls_lafc.png",
+                  "w": 1280
+                },
+                "subtitle": "Removed from favorites list",
+                "title": "Los Angeles FC"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            }
+          },
+          "analytics": {
+            "item_id": "mls_lafc_010",
+            "query_id": "/drawer/favorites"
+          },
+          "focus_row_background_color": "000000",
+          "format": "CHANNEL_CARD",
+          "image": {
+            "h": 720,
+            "url": "https://mockserverfavorites.onrender.com/1280x720/mls_lafc.png",
+            "w": 1280
+          },
+          "overlay_indicators": [
+            {
+              "icon": {
+                "key": {
+                  "condition": {
+                    "decision": "IS_FAVORITED",
+                    "checks": {
+                      "favorite_channel": "mls_lafc_010"
+                    },
+                    "true": "FAVORITE_HEART_FILLED",
+                    "false": "FAVORITE_HEART_EMPTY"
+                  }
+                },
+                "type": "STATIC"
+              }
+            }
+          ],
+          "primary_action": {
+            "condition": {
+              "decision": "IS_FAVORITED",
+              "checks": {
+                "favorite_channel": "mls_lafc_010"
+              },
+              "true": "UNFAVORITE_WITH_INVALIDATION",
+              "false": "FAVORITE_WITH_INVALIDATION"
+            }
+          },
+          "team_abbr": "LAFC",
+          "team_name": "Los Angeles FC",
+          "tile_analytics": {
+            "TBD": "TBD"
+          }
+        }
+      ],
+      "title": "Recommended Teams",
+      "total_tiles": 5
+    },
+    {
+      "alpha": "A",
+      "format": "GRID",
+      "ribbon_analytics": {
+        "AccountGuid": "65c9ca3e-217b-11ed-ba13-126882dbc557",
+        "AccountStatus": "Paid",
+        "DeviceGuid": "7b235964-439d-49dc-93ed-e7ed0ebad610",
+        "ProfileGuid": "10340350-2875-c41c-9371-1b714803851d",
+        "ProfileType": "Non Admin",
+        "ScreenName": "Home",
+        "SessionID": "",
+        "TabName": "Home",
+        "query_id": "/drawer/favorites"
+      },
+      "sub_title": "2",
+      "tiles": [
+        {
+          "actions": {
+            "FAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "ADD TO WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "POST",
+              "label": "ADD TO WATCHLIST",
+              "payload": {
+                "channel_guid": "mls_atl_united_001",
+                "enabler20Flag": true,
+                "external_id": "mls_atl_united_001",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/mls_atl_united.png",
+                  "w": 1280
+                },
+                "subtitle": "Added to favorites list",
+                "title": "Atlanta United FC"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            },
+            "UNFAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "REMOVE FROM WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "DELETE",
+              "label": "REMOVE FROM WATCHLIST",
+              "payload": {
+                "channel_guid": "mls_atl_united_001",
+                "enabler20Flag": true,
+                "external_id": "mls_atl_united_001",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/mls_atl_united.png",
+                  "w": 1280
+                },
+                "subtitle": "Removed from favorites list",
+                "title": "Atlanta United FC"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            }
+          },
+          "analytics": {
+            "item_id": "mls_atl_united_001",
+            "query_id": "/drawer/favorites"
+          },
+          "focus_row_background_color": "80000A",
+          "format": "CHANNEL_CARD",
+          "image": {
+            "h": 720,
+            "url": "https://mockserverfavorites.onrender.com/1280x720/mls_atl_united.png",
+            "w": 1280
+          },
+          "overlay_indicators": [
+            {
+              "icon": {
+                "key": {
+                  "condition": {
+                    "checks": {
+                      "favorite_channel": "mls_atl_united_001"
+                    },
+                    "decision": "IS_FAVORITED",
+                    "false": "FAVORITE_HEART_EMPTY",
+                    "true": "FAVORITE_HEART_FILLED"
+                  }
+                },
+                "type": "STATIC"
+              }
+            }
+          ],
+          "primary_action": {
+            "condition": {
+              "checks": {
+                "favorite_channel": "mls_atl_united_001"
+              },
+              "decision": "IS_FAVORITED",
+              "false": "FAVORITE_WITH_INVALIDATION",
+              "true": "UNFAVORITE_WITH_INVALIDATION"
+            }
+          },
+          "team_abbr": "ATL",
+          "team_name": "Atlanta United FC",
+          "tile_analytics": {
+            "TBD": "TBD"
+          }
+        },
+        {
+          "actions": {
+            "FAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "ADD TO WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "POST",
+              "label": "ADD TO WATCHLIST",
+              "payload": {
+                "channel_guid": "mls_atx_fc_002",
+                "enabler20Flag": true,
+                "external_id": "mls_atx_fc_002",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/mls_atx_fc.png",
+                  "w": 1280
+                },
+                "subtitle": "Added to favorites list",
+                "title": "Austin FC"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            },
+            "UNFAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "REMOVE FROM WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "DELETE",
+              "label": "REMOVE FROM WATCHLIST",
+              "payload": {
+                "channel_guid": "mls_atx_fc_002",
+                "enabler20Flag": true,
+                "external_id": "mls_atx_fc_002",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/mls_atx_fc.png",
+                  "w": 1280
+                },
+                "subtitle": "Removed from favorites list",
+                "title": "Austin FC"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            }
+          },
+          "analytics": {
+            "item_id": "mls_atx_fc_002",
+            "query_id": "/drawer/favorites"
+          },
+          "focus_row_background_color": "00B140",
+          "format": "CHANNEL_CARD",
+          "image": {
+            "h": 720,
+            "url": "https://mockserverfavorites.onrender.com/1280x720/mls_atx_fc.png",
+            "w": 1280
+          },
+          "overlay_indicators": [
+            {
+              "icon": {
+                "key": {
+                  "condition": {
+                    "checks": {
+                      "favorite_channel": "mls_atx_fc_002"
+                    },
+                    "decision": "IS_FAVORITED",
+                    "false": "FAVORITE_HEART_EMPTY",
+                    "true": "FAVORITE_HEART_FILLED"
+                  }
+                },
+                "type": "STATIC"
+              }
+            }
+          ],
+          "primary_action": {
+            "condition": {
+              "checks": {
+                "favorite_channel": "mls_atx_fc_002"
+              },
+              "decision": "IS_FAVORITED",
+              "false": "FAVORITE_WITH_INVALIDATION",
+              "true": "UNFAVORITE_WITH_INVALIDATION"
+            }
+          },
+          "team_abbr": "ATX",
+          "team_name": "Austin FC",
+          "tile_analytics": {
+            "TBD": "TBD"
+          }
+        }
+      ],
+      "title": "A",
+      "total_tiles": 2
+    },
+    {
+      "alpha": "C",
+      "format": "GRID",
+      "ribbon_analytics": {
+        "AccountGuid": "65c9ca3e-217b-11ed-ba13-126882dbc557",
+        "AccountStatus": "Paid",
+        "DeviceGuid": "7b235964-439d-49dc-93ed-e7ed0ebad610",
+        "ProfileGuid": "10340350-2875-c41c-9371-1b714803851d",
+        "ProfileType": "Non Admin",
+        "ScreenName": "Home",
+        "SessionID": "",
+        "TabName": "Home",
+        "query_id": "/drawer/favorites"
+      },
+      "sub_title": "3",
+      "tiles": [
+        {
+          "actions": {
+            "FAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "ADD TO WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "POST",
+              "label": "ADD TO WATCHLIST",
+              "payload": {
+                "channel_guid": "mls_chi_fire_003",
+                "enabler20Flag": true,
+                "external_id": "mls_chi_fire_003",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/mls_chi_fire.png",
+                  "w": 1280
+                },
+                "subtitle": "Added to favorites list",
+                "title": "Chicago Fire FC"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            },
+            "UNFAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "REMOVE FROM WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "DELETE",
+              "label": "REMOVE FROM WATCHLIST",
+              "payload": {
+                "channel_guid": "mls_chi_fire_003",
+                "enabler20Flag": true,
+                "external_id": "mls_chi_fire_003",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/mls_chi_fire.png",
+                  "w": 1280
+                },
+                "subtitle": "Removed from favorites list",
+                "title": "Chicago Fire FC"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            }
+          },
+          "analytics": {
+            "item_id": "mls_chi_fire_003",
+            "query_id": "/drawer/favorites"
+          },
+          "focus_row_background_color": "141B4D",
+          "format": "CHANNEL_CARD",
+          "image": {
+            "h": 720,
+            "url": "https://mockserverfavorites.onrender.com/1280x720/mls_chi_fire.png",
+            "w": 1280
+          },
+          "overlay_indicators": [
+            {
+              "icon": {
+                "key": {
+                  "condition": {
+                    "checks": {
+                      "favorite_channel": "mls_chi_fire_003"
+                    },
+                    "decision": "IS_FAVORITED",
+                    "false": "FAVORITE_HEART_EMPTY",
+                    "true": "FAVORITE_HEART_FILLED"
+                  }
+                },
+                "type": "STATIC"
+              }
+            }
+          ],
+          "primary_action": {
+            "condition": {
+              "checks": {
+                "favorite_channel": "mls_chi_fire_003"
+              },
+              "decision": "IS_FAVORITED",
+              "false": "FAVORITE_WITH_INVALIDATION",
+              "true": "UNFAVORITE_WITH_INVALIDATION"
+            }
+          },
+          "team_abbr": "CHI",
+          "team_name": "Chicago Fire FC",
+          "tile_analytics": {
+            "TBD": "TBD"
+          }
+        },
+        {
+          "actions": {
+            "FAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "ADD TO WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "POST",
+              "label": "ADD TO WATCHLIST",
+              "payload": {
+                "channel_guid": "mls_cin_fc_004",
+                "enabler20Flag": true,
+                "external_id": "mls_cin_fc_004",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/mls_cin_fc.png",
+                  "w": 1280
+                },
+                "subtitle": "Added to favorites list",
+                "title": "FC Cincinnati"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            },
+            "UNFAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "REMOVE FROM WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "DELETE",
+              "label": "REMOVE FROM WATCHLIST",
+              "payload": {
+                "channel_guid": "mls_cin_fc_004",
+                "enabler20Flag": true,
+                "external_id": "mls_cin_fc_004",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/mls_cin_fc.png",
+                  "w": 1280
+                },
+                "subtitle": "Removed from favorites list",
+                "title": "FC Cincinnati"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            }
+          },
+          "analytics": {
+            "item_id": "mls_cin_fc_004",
+            "query_id": "/drawer/favorites"
+          },
+          "focus_row_background_color": "F05323",
+          "format": "CHANNEL_CARD",
+          "image": {
+            "h": 720,
+            "url": "https://mockserverfavorites.onrender.com/1280x720/mls_cin_fc.png",
+            "w": 1280
+          },
+          "overlay_indicators": [
+            {
+              "icon": {
+                "key": {
+                  "condition": {
+                    "checks": {
+                      "favorite_channel": "mls_cin_fc_004"
+                    },
+                    "decision": "IS_FAVORITED",
+                    "false": "FAVORITE_HEART_EMPTY",
+                    "true": "FAVORITE_HEART_FILLED"
+                  }
+                },
+                "type": "STATIC"
+              }
+            }
+          ],
+          "primary_action": {
+            "condition": {
+              "checks": {
+                "favorite_channel": "mls_cin_fc_004"
+              },
+              "decision": "IS_FAVORITED",
+              "false": "FAVORITE_WITH_INVALIDATION",
+              "true": "UNFAVORITE_WITH_INVALIDATION"
+            }
+          },
+          "team_abbr": "CIN",
+          "team_name": "FC Cincinnati",
+          "tile_analytics": {
+            "TBD": "TBD"
+          }
+        },
+        {
+          "actions": {
+            "FAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "ADD TO WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "POST",
+              "label": "ADD TO WATCHLIST",
+              "payload": {
+                "channel_guid": "mls_col_rapids_005",
+                "enabler20Flag": true,
+                "external_id": "mls_col_rapids_005",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/mls_col_rapids.png",
+                  "w": 1280
+                },
+                "subtitle": "Added to favorites list",
+                "title": "Colorado Rapids"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            },
+            "UNFAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "REMOVE FROM WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "DELETE",
+              "label": "REMOVE FROM WATCHLIST",
+              "payload": {
+                "channel_guid": "mls_col_rapids_005",
+                "enabler20Flag": true,
+                "external_id": "mls_col_rapids_005",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/mls_col_rapids.png",
+                  "w": 1280
+                },
+                "subtitle": "Removed from favorites list",
+                "title": "Colorado Rapids"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            }
+          },
+          "analytics": {
+            "item_id": "mls_col_rapids_005",
+            "query_id": "/drawer/favorites"
+          },
+          "focus_row_background_color": "862633",
+          "format": "CHANNEL_CARD",
+          "image": {
+            "h": 720,
+            "url": "https://mockserverfavorites.onrender.com/1280x720/mls_col_rapids.png",
+            "w": 1280
+          },
+          "overlay_indicators": [
+            {
+              "icon": {
+                "key": {
+                  "condition": {
+                    "checks": {
+                      "favorite_channel": "mls_col_rapids_005"
+                    },
+                    "decision": "IS_FAVORITED",
+                    "false": "FAVORITE_HEART_EMPTY",
+                    "true": "FAVORITE_HEART_FILLED"
+                  }
+                },
+                "type": "STATIC"
+              }
+            }
+          ],
+          "primary_action": {
+            "condition": {
+              "checks": {
+                "favorite_channel": "mls_col_rapids_005"
+              },
+              "decision": "IS_FAVORITED",
+              "false": "FAVORITE_WITH_INVALIDATION",
+              "true": "UNFAVORITE_WITH_INVALIDATION"
+            }
+          },
+          "team_abbr": "COL",
+          "team_name": "Colorado Rapids",
+          "tile_analytics": {
+            "TBD": "TBD"
+          }
+        }
+      ],
+      "title": "C",
+      "total_tiles": 3
+    },
+    {
+      "alpha": "D",
+      "format": "GRID",
+      "ribbon_analytics": {
+        "AccountGuid": "65c9ca3e-217b-11ed-ba13-126882dbc557",
+        "AccountStatus": "Paid",
+        "DeviceGuid": "7b235964-439d-49dc-93ed-e7ed0ebad610",
+        "ProfileGuid": "10340350-2875-c41c-9371-1b714803851d",
+        "ProfileType": "Non Admin",
+        "ScreenName": "Home",
+        "SessionID": "",
+        "TabName": "Home",
+        "query_id": "/drawer/favorites"
+      },
+      "sub_title": "2",
+      "tiles": [
+        {
+          "actions": {
+            "FAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "ADD TO WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "POST",
+              "label": "ADD TO WATCHLIST",
+              "payload": {
+                "channel_guid": "mls_clb_crew_006",
+                "enabler20Flag": true,
+                "external_id": "mls_clb_crew_006",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/mls_clb_crew.png",
+                  "w": 1280
+                },
+                "subtitle": "Added to favorites list",
+                "title": "Columbus Crew"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            },
+            "UNFAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "REMOVE FROM WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "DELETE",
+              "label": "REMOVE FROM WATCHLIST",
+              "payload": {
+                "channel_guid": "mls_clb_crew_006",
+                "enabler20Flag": true,
+                "external_id": "mls_clb_crew_006",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/mls_clb_crew.png",
+                  "w": 1280
+                },
+                "subtitle": "Removed from favorites list",
+                "title": "Columbus Crew"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            }
+          },
+          "analytics": {
+            "item_id": "mls_clb_crew_006",
+            "query_id": "/drawer/favorites"
+          },
+          "focus_row_background_color": "000000",
+          "format": "CHANNEL_CARD",
+          "image": {
+            "h": 720,
+            "url": "https://mockserverfavorites.onrender.com/1280x720/mls_clb_crew.png",
+            "w": 1280
+          },
+          "overlay_indicators": [
+            {
+              "icon": {
+                "key": {
+                  "condition": {
+                    "checks": {
+                      "favorite_channel": "mls_clb_crew_006"
+                    },
+                    "decision": "IS_FAVORITED",
+                    "false": "FAVORITE_HEART_EMPTY",
+                    "true": "FAVORITE_HEART_FILLED"
+                  }
+                },
+                "type": "STATIC"
+              }
+            }
+          ],
+          "primary_action": {
+            "condition": {
+              "checks": {
+                "favorite_channel": "mls_clb_crew_006"
+              },
+              "decision": "IS_FAVORITED",
+              "false": "FAVORITE_WITH_INVALIDATION",
+              "true": "UNFAVORITE_WITH_INVALIDATION"
+            }
+          },
+          "team_abbr": "CLB",
+          "team_name": "Columbus Crew",
+          "tile_analytics": {
+            "TBD": "TBD"
+          }
+        },
+        {
+          "actions": {
+            "FAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "ADD TO WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "POST",
+              "label": "ADD TO WATCHLIST",
+              "payload": {
+                "channel_guid": "mls_dal_fc_007",
+                "enabler20Flag": true,
+                "external_id": "mls_dal_fc_007",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/mls_dal_fc.png",
+                  "w": 1280
+                },
+                "subtitle": "Added to favorites list",
+                "title": "FC Dallas"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            },
+            "UNFAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "REMOVE FROM WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "DELETE",
+              "label": "REMOVE FROM WATCHLIST",
+              "payload": {
+                "channel_guid": "mls_dal_fc_007",
+                "enabler20Flag": true,
+                "external_id": "mls_dal_fc_007",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/mls_dal_fc.png",
+                  "w": 1280
+                },
+                "subtitle": "Removed from favorites list",
+                "title": "FC Dallas"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            }
+          },
+          "analytics": {
+            "item_id": "mls_dal_fc_007",
+            "query_id": "/drawer/favorites"
+          },
+          "focus_row_background_color": "BF0D3E",
+          "format": "CHANNEL_CARD",
+          "image": {
+            "h": 720,
+            "url": "https://mockserverfavorites.onrender.com/1280x720/mls_dal_fc.png",
+            "w": 1280
+          },
+          "overlay_indicators": [
+            {
+              "icon": {
+                "key": {
+                  "condition": {
+                    "checks": {
+                      "favorite_channel": "mls_dal_fc_007"
+                    },
+                    "decision": "IS_FAVORITED",
+                    "false": "FAVORITE_HEART_EMPTY",
+                    "true": "FAVORITE_HEART_FILLED"
+                  }
+                },
+                "type": "STATIC"
+              }
+            }
+          ],
+          "primary_action": {
+            "condition": {
+              "checks": {
+                "favorite_channel": "mls_dal_fc_007"
+              },
+              "decision": "IS_FAVORITED",
+              "false": "FAVORITE_WITH_INVALIDATION",
+              "true": "UNFAVORITE_WITH_INVALIDATION"
+            }
+          },
+          "team_abbr": "DAL",
+          "team_name": "FC Dallas",
+          "tile_analytics": {
+            "TBD": "TBD"
+          }
+        }
+      ],
+      "title": "D",
+      "total_tiles": 2
+    },
+    {
+      "alpha": "H",
+      "format": "GRID",
+      "ribbon_analytics": {
+        "AccountGuid": "65c9ca3e-217b-11ed-ba13-126882dbc557",
+        "AccountStatus": "Paid",
+        "DeviceGuid": "7b235964-439d-49dc-93ed-e7ed0ebad610",
+        "ProfileGuid": "10340350-2875-c41c-9371-1b714803851d",
+        "ProfileType": "Non Admin",
+        "ScreenName": "Home",
+        "SessionID": "",
+        "TabName": "Home",
+        "query_id": "/drawer/favorites"
+      },
+      "sub_title": "1",
+      "tiles": [
+        {
+          "actions": {
+            "FAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "ADD TO WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "POST",
+              "label": "ADD TO WATCHLIST",
+              "payload": {
+                "channel_guid": "mls_hou_dynamo_008",
+                "enabler20Flag": true,
+                "external_id": "mls_hou_dynamo_008",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/mls_hou_dynamo.png",
+                  "w": 1280
+                },
+                "subtitle": "Added to favorites list",
+                "title": "Houston Dynamo FC"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            },
+            "UNFAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "REMOVE FROM WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "DELETE",
+              "label": "REMOVE FROM WATCHLIST",
+              "payload": {
+                "channel_guid": "mls_hou_dynamo_008",
+                "enabler20Flag": true,
+                "external_id": "mls_hou_dynamo_008",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/mls_hou_dynamo.png",
+                  "w": 1280
+                },
+                "subtitle": "Removed from favorites list",
+                "title": "Houston Dynamo FC"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            }
+          },
+          "analytics": {
+            "item_id": "mls_hou_dynamo_008",
+            "query_id": "/drawer/favorites"
+          },
+          "focus_row_background_color": "F68712",
+          "format": "CHANNEL_CARD",
+          "image": {
+            "h": 720,
+            "url": "https://mockserverfavorites.onrender.com/1280x720/mls_hou_dynamo.png",
+            "w": 1280
+          },
+          "overlay_indicators": [
+            {
+              "icon": {
+                "key": {
+                  "condition": {
+                    "checks": {
+                      "favorite_channel": "mls_hou_dynamo_008"
+                    },
+                    "decision": "IS_FAVORITED",
+                    "false": "FAVORITE_HEART_EMPTY",
+                    "true": "FAVORITE_HEART_FILLED"
+                  }
+                },
+                "type": "STATIC"
+              }
+            }
+          ],
+          "primary_action": {
+            "condition": {
+              "checks": {
+                "favorite_channel": "mls_hou_dynamo_008"
+              },
+              "decision": "IS_FAVORITED",
+              "false": "FAVORITE_WITH_INVALIDATION",
+              "true": "UNFAVORITE_WITH_INVALIDATION"
+            }
+          },
+          "team_abbr": "HOU",
+          "team_name": "Houston Dynamo FC",
+          "tile_analytics": {
+            "TBD": "TBD"
+          }
+        }
+      ],
+      "title": "H",
+      "total_tiles": 1
+    },
+    {
+      "alpha": "I",
+      "format": "GRID",
+      "ribbon_analytics": {
+        "AccountGuid": "65c9ca3e-217b-11ed-ba13-126882dbc557",
+        "AccountStatus": "Paid",
+        "DeviceGuid": "7b235964-439d-49dc-93ed-e7ed0ebad610",
+        "ProfileGuid": "10340350-2875-c41c-9371-1b714803851d",
+        "ProfileType": "Non Admin",
+        "ScreenName": "Home",
+        "SessionID": "",
+        "TabName": "Home",
+        "query_id": "/drawer/favorites"
+      },
+      "sub_title": "1",
+      "tiles": [
+        {
+          "actions": {
+            "FAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "ADD TO WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "POST",
+              "label": "ADD TO WATCHLIST",
+              "payload": {
+                "channel_guid": "mls_mia_inter_009",
+                "enabler20Flag": true,
+                "external_id": "mls_mia_inter_009",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/mls_mia_inter.png",
+                  "w": 1280
+                },
+                "subtitle": "Added to favorites list",
+                "title": "Inter Miami CF"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            },
+            "UNFAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "REMOVE FROM WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "DELETE",
+              "label": "REMOVE FROM WATCHLIST",
+              "payload": {
+                "channel_guid": "mls_mia_inter_009",
+                "enabler20Flag": true,
+                "external_id": "mls_mia_inter_009",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/mls_mia_inter.png",
+                  "w": 1280
+                },
+                "subtitle": "Removed from favorites list",
+                "title": "Inter Miami CF"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            }
+          },
+          "analytics": {
+            "item_id": "mls_mia_inter_009",
+            "query_id": "/drawer/favorites"
+          },
+          "focus_row_background_color": "F7B5CD",
+          "format": "CHANNEL_CARD",
+          "image": {
+            "h": 720,
+            "url": "https://mockserverfavorites.onrender.com/1280x720/mls_mia_inter.png",
+            "w": 1280
+          },
+          "overlay_indicators": [
+            {
+              "icon": {
+                "key": {
+                  "condition": {
+                    "checks": {
+                      "favorite_channel": "mls_mia_inter_009"
+                    },
+                    "decision": "IS_FAVORITED",
+                    "false": "FAVORITE_HEART_EMPTY",
+                    "true": "FAVORITE_HEART_FILLED"
+                  }
+                },
+                "type": "STATIC"
+              }
+            }
+          ],
+          "primary_action": {
+            "condition": {
+              "checks": {
+                "favorite_channel": "mls_mia_inter_009"
+              },
+              "decision": "IS_FAVORITED",
+              "false": "FAVORITE_WITH_INVALIDATION",
+              "true": "UNFAVORITE_WITH_INVALIDATION"
+            }
+          },
+          "team_abbr": "MIA",
+          "team_name": "Inter Miami CF",
+          "tile_analytics": {
+            "TBD": "TBD"
+          }
+        }
+      ],
+      "title": "I",
+      "total_tiles": 1
+    },
+    {
+      "alpha": "L",
+      "format": "GRID",
+      "ribbon_analytics": {
+        "AccountGuid": "65c9ca3e-217b-11ed-ba13-126882dbc557",
+        "AccountStatus": "Paid",
+        "DeviceGuid": "7b235964-439d-49dc-93ed-e7ed0ebad610",
+        "ProfileGuid": "10340350-2875-c41c-9371-1b714803851d",
+        "ProfileType": "Non Admin",
+        "ScreenName": "Home",
+        "SessionID": "",
+        "TabName": "Home",
+        "query_id": "/drawer/favorites"
+      },
+      "sub_title": "2",
+      "tiles": [
+        {
+          "actions": {
+            "FAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "ADD TO WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "POST",
+              "label": "ADD TO WATCHLIST",
+              "payload": {
+                "channel_guid": "mls_lafc_010",
+                "enabler20Flag": true,
+                "external_id": "mls_lafc_010",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/mls_lafc.png",
+                  "w": 1280
+                },
+                "subtitle": "Added to favorites list",
+                "title": "Los Angeles FC"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            },
+            "UNFAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "REMOVE FROM WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "DELETE",
+              "label": "REMOVE FROM WATCHLIST",
+              "payload": {
+                "channel_guid": "mls_lafc_010",
+                "enabler20Flag": true,
+                "external_id": "mls_lafc_010",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/mls_lafc.png",
+                  "w": 1280
+                },
+                "subtitle": "Removed from favorites list",
+                "title": "Los Angeles FC"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            }
+          },
+          "analytics": {
+            "item_id": "mls_lafc_010",
+            "query_id": "/drawer/favorites"
+          },
+          "focus_row_background_color": "000000",
+          "format": "CHANNEL_CARD",
+          "image": {
+            "h": 720,
+            "url": "https://mockserverfavorites.onrender.com/1280x720/mls_lafc.png",
+            "w": 1280
+          },
+          "overlay_indicators": [
+            {
+              "icon": {
+                "key": {
+                  "condition": {
+                    "checks": {
+                      "favorite_channel": "mls_lafc_010"
+                    },
+                    "decision": "IS_FAVORITED",
+                    "false": "FAVORITE_HEART_EMPTY",
+                    "true": "FAVORITE_HEART_FILLED"
+                  }
+                },
+                "type": "STATIC"
+              }
+            }
+          ],
+          "primary_action": {
+            "condition": {
+              "checks": {
+                "favorite_channel": "mls_lafc_010"
+              },
+              "decision": "IS_FAVORITED",
+              "false": "FAVORITE_WITH_INVALIDATION",
+              "true": "UNFAVORITE_WITH_INVALIDATION"
+            }
+          },
+          "team_abbr": "LAFC",
+          "team_name": "Los Angeles FC",
+          "tile_analytics": {
+            "TBD": "TBD"
+          }
+        },
+        {
+          "actions": {
+            "FAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "ADD TO WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "POST",
+              "label": "ADD TO WATCHLIST",
+              "payload": {
+                "channel_guid": "mls_lag_galaxy_011",
+                "enabler20Flag": true,
+                "external_id": "mls_lag_galaxy_011",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/mls_lag_galaxy.png",
+                  "w": 1280
+                },
+                "subtitle": "Added to favorites list",
+                "title": "LA Galaxy"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            },
+            "UNFAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "REMOVE FROM WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "DELETE",
+              "label": "REMOVE FROM WATCHLIST",
+              "payload": {
+                "channel_guid": "mls_lag_galaxy_011",
+                "enabler20Flag": true,
+                "external_id": "mls_lag_galaxy_011",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/mls_lag_galaxy.png",
+                  "w": 1280
+                },
+                "subtitle": "Removed from favorites list",
+                "title": "LA Galaxy"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            }
+          },
+          "analytics": {
+            "item_id": "mls_lag_galaxy_011",
+            "query_id": "/drawer/favorites"
+          },
+          "focus_row_background_color": "00245D",
+          "format": "CHANNEL_CARD",
+          "image": {
+            "h": 720,
+            "url": "https://mockserverfavorites.onrender.com/1280x720/mls_lag_galaxy.png",
+            "w": 1280
+          },
+          "overlay_indicators": [
+            {
+              "icon": {
+                "key": {
+                  "condition": {
+                    "checks": {
+                      "favorite_channel": "mls_lag_galaxy_011"
+                    },
+                    "decision": "IS_FAVORITED",
+                    "false": "FAVORITE_HEART_EMPTY",
+                    "true": "FAVORITE_HEART_FILLED"
+                  }
+                },
+                "type": "STATIC"
+              }
+            }
+          ],
+          "primary_action": {
+            "condition": {
+              "checks": {
+                "favorite_channel": "mls_lag_galaxy_011"
+              },
+              "decision": "IS_FAVORITED",
+              "false": "FAVORITE_WITH_INVALIDATION",
+              "true": "UNFAVORITE_WITH_INVALIDATION"
+            }
+          },
+          "team_abbr": "LAG",
+          "team_name": "LA Galaxy",
+          "tile_analytics": {
+            "TBD": "TBD"
+          }
+        }
+      ],
+      "title": "L",
+      "total_tiles": 2
+    },
+    {
+      "alpha": "M",
+      "format": "GRID",
+      "ribbon_analytics": {
+        "AccountGuid": "65c9ca3e-217b-11ed-ba13-126882dbc557",
+        "AccountStatus": "Paid",
+        "DeviceGuid": "7b235964-439d-49dc-93ed-e7ed0ebad610",
+        "ProfileGuid": "10340350-2875-c41c-9371-1b714803851d",
+        "ProfileType": "Non Admin",
+        "ScreenName": "Home",
+        "SessionID": "",
+        "TabName": "Home",
+        "query_id": "/drawer/favorites"
+      },
+      "sub_title": "2",
+      "tiles": [
+        {
+          "actions": {
+            "FAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "ADD TO WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "POST",
+              "label": "ADD TO WATCHLIST",
+              "payload": {
+                "channel_guid": "mls_min_united_012",
+                "enabler20Flag": true,
+                "external_id": "mls_min_united_012",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/mls_min_united.png",
+                  "w": 1280
+                },
+                "subtitle": "Added to favorites list",
+                "title": "Minnesota United FC"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            },
+            "UNFAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "REMOVE FROM WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "DELETE",
+              "label": "REMOVE FROM WATCHLIST",
+              "payload": {
+                "channel_guid": "mls_min_united_012",
+                "enabler20Flag": true,
+                "external_id": "mls_min_united_012",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/mls_min_united.png",
+                  "w": 1280
+                },
+                "subtitle": "Removed from favorites list",
+                "title": "Minnesota United FC"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            }
+          },
+          "analytics": {
+            "item_id": "mls_min_united_012",
+            "query_id": "/drawer/favorites"
+          },
+          "focus_row_background_color": "231F20",
+          "format": "CHANNEL_CARD",
+          "image": {
+            "h": 720,
+            "url": "https://mockserverfavorites.onrender.com/1280x720/mls_min_united.png",
+            "w": 1280
+          },
+          "overlay_indicators": [
+            {
+              "icon": {
+                "key": {
+                  "condition": {
+                    "checks": {
+                      "favorite_channel": "mls_min_united_012"
+                    },
+                    "decision": "IS_FAVORITED",
+                    "false": "FAVORITE_HEART_EMPTY",
+                    "true": "FAVORITE_HEART_FILLED"
+                  }
+                },
+                "type": "STATIC"
+              }
+            }
+          ],
+          "primary_action": {
+            "condition": {
+              "checks": {
+                "favorite_channel": "mls_min_united_012"
+              },
+              "decision": "IS_FAVORITED",
+              "false": "FAVORITE_WITH_INVALIDATION",
+              "true": "UNFAVORITE_WITH_INVALIDATION"
+            }
+          },
+          "team_abbr": "MIN",
+          "team_name": "Minnesota United FC",
+          "tile_analytics": {
+            "TBD": "TBD"
+          }
+        },
+        {
+          "actions": {
+            "FAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "ADD TO WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "POST",
+              "label": "ADD TO WATCHLIST",
+              "payload": {
+                "channel_guid": "mls_mtl_cf_013",
+                "enabler20Flag": true,
+                "external_id": "mls_mtl_cf_013",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/mls_mtl_cf.png",
+                  "w": 1280
+                },
+                "subtitle": "Added to favorites list",
+                "title": "CF Montreal"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            },
+            "UNFAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "REMOVE FROM WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "DELETE",
+              "label": "REMOVE FROM WATCHLIST",
+              "payload": {
+                "channel_guid": "mls_mtl_cf_013",
+                "enabler20Flag": true,
+                "external_id": "mls_mtl_cf_013",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/mls_mtl_cf.png",
+                  "w": 1280
+                },
+                "subtitle": "Removed from favorites list",
+                "title": "CF Montreal"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            }
+          },
+          "analytics": {
+            "item_id": "mls_mtl_cf_013",
+            "query_id": "/drawer/favorites"
+          },
+          "focus_row_background_color": "0033A1",
+          "format": "CHANNEL_CARD",
+          "image": {
+            "h": 720,
+            "url": "https://mockserverfavorites.onrender.com/1280x720/mls_mtl_cf.png",
+            "w": 1280
+          },
+          "overlay_indicators": [
+            {
+              "icon": {
+                "key": {
+                  "condition": {
+                    "checks": {
+                      "favorite_channel": "mls_mtl_cf_013"
+                    },
+                    "decision": "IS_FAVORITED",
+                    "false": "FAVORITE_HEART_EMPTY",
+                    "true": "FAVORITE_HEART_FILLED"
+                  }
+                },
+                "type": "STATIC"
+              }
+            }
+          ],
+          "primary_action": {
+            "condition": {
+              "checks": {
+                "favorite_channel": "mls_mtl_cf_013"
+              },
+              "decision": "IS_FAVORITED",
+              "false": "FAVORITE_WITH_INVALIDATION",
+              "true": "UNFAVORITE_WITH_INVALIDATION"
+            }
+          },
+          "team_abbr": "MTL",
+          "team_name": "CF Montreal",
+          "tile_analytics": {
+            "TBD": "TBD"
+          }
+        }
+      ],
+      "title": "M",
+      "total_tiles": 2
+    },
+    {
+      "alpha": "N",
+      "format": "GRID",
+      "ribbon_analytics": {
+        "AccountGuid": "65c9ca3e-217b-11ed-ba13-126882dbc557",
+        "AccountStatus": "Paid",
+        "DeviceGuid": "7b235964-439d-49dc-93ed-e7ed0ebad610",
+        "ProfileGuid": "10340350-2875-c41c-9371-1b714803851d",
+        "ProfileType": "Non Admin",
+        "ScreenName": "Home",
+        "SessionID": "",
+        "TabName": "Home",
+        "query_id": "/drawer/favorites"
+      },
+      "sub_title": "4",
+      "tiles": [
+        {
+          "actions": {
+            "FAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "ADD TO WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "POST",
+              "label": "ADD TO WATCHLIST",
+              "payload": {
+                "channel_guid": "mls_nsh_sc_014",
+                "enabler20Flag": true,
+                "external_id": "mls_nsh_sc_014",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/mls_nsh_sc.png",
+                  "w": 1280
+                },
+                "subtitle": "Added to favorites list",
+                "title": "Nashville SC"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            },
+            "UNFAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "REMOVE FROM WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "DELETE",
+              "label": "REMOVE FROM WATCHLIST",
+              "payload": {
+                "channel_guid": "mls_nsh_sc_014",
+                "enabler20Flag": true,
+                "external_id": "mls_nsh_sc_014",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/mls_nsh_sc.png",
+                  "w": 1280
+                },
+                "subtitle": "Removed from favorites list",
+                "title": "Nashville SC"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            }
+          },
+          "analytics": {
+            "item_id": "mls_nsh_sc_014",
+            "query_id": "/drawer/favorites"
+          },
+          "focus_row_background_color": "ECE83A",
+          "format": "CHANNEL_CARD",
+          "image": {
+            "h": 720,
+            "url": "https://mockserverfavorites.onrender.com/1280x720/mls_nsh_sc.png",
+            "w": 1280
+          },
+          "overlay_indicators": [
+            {
+              "icon": {
+                "key": {
+                  "condition": {
+                    "checks": {
+                      "favorite_channel": "mls_nsh_sc_014"
+                    },
+                    "decision": "IS_FAVORITED",
+                    "false": "FAVORITE_HEART_EMPTY",
+                    "true": "FAVORITE_HEART_FILLED"
+                  }
+                },
+                "type": "STATIC"
+              }
+            }
+          ],
+          "primary_action": {
+            "condition": {
+              "checks": {
+                "favorite_channel": "mls_nsh_sc_014"
+              },
+              "decision": "IS_FAVORITED",
+              "false": "FAVORITE_WITH_INVALIDATION",
+              "true": "UNFAVORITE_WITH_INVALIDATION"
+            }
+          },
+          "team_abbr": "NSH",
+          "team_name": "Nashville SC",
+          "tile_analytics": {
+            "TBD": "TBD"
+          }
+        },
+        {
+          "actions": {
+            "FAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "ADD TO WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "POST",
+              "label": "ADD TO WATCHLIST",
+              "payload": {
+                "channel_guid": "mls_ne_revolution_015",
+                "enabler20Flag": true,
+                "external_id": "mls_ne_revolution_015",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/mls_ne_revolution.png",
+                  "w": 1280
+                },
+                "subtitle": "Added to favorites list",
+                "title": "New England Revolution"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            },
+            "UNFAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "REMOVE FROM WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "DELETE",
+              "label": "REMOVE FROM WATCHLIST",
+              "payload": {
+                "channel_guid": "mls_ne_revolution_015",
+                "enabler20Flag": true,
+                "external_id": "mls_ne_revolution_015",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/mls_ne_revolution.png",
+                  "w": 1280
+                },
+                "subtitle": "Removed from favorites list",
+                "title": "New England Revolution"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            }
+          },
+          "analytics": {
+            "item_id": "mls_ne_revolution_015",
+            "query_id": "/drawer/favorites"
+          },
+          "focus_row_background_color": "0A2240",
+          "format": "CHANNEL_CARD",
+          "image": {
+            "h": 720,
+            "url": "https://mockserverfavorites.onrender.com/1280x720/mls_ne_revolution.png",
+            "w": 1280
+          },
+          "overlay_indicators": [
+            {
+              "icon": {
+                "key": {
+                  "condition": {
+                    "checks": {
+                      "favorite_channel": "mls_ne_revolution_015"
+                    },
+                    "decision": "IS_FAVORITED",
+                    "false": "FAVORITE_HEART_EMPTY",
+                    "true": "FAVORITE_HEART_FILLED"
+                  }
+                },
+                "type": "STATIC"
+              }
+            }
+          ],
+          "primary_action": {
+            "condition": {
+              "checks": {
+                "favorite_channel": "mls_ne_revolution_015"
+              },
+              "decision": "IS_FAVORITED",
+              "false": "FAVORITE_WITH_INVALIDATION",
+              "true": "UNFAVORITE_WITH_INVALIDATION"
+            }
+          },
+          "team_abbr": "NE",
+          "team_name": "New England Revolution",
+          "tile_analytics": {
+            "TBD": "TBD"
+          }
+        },
+        {
+          "actions": {
+            "FAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "ADD TO WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "POST",
+              "label": "ADD TO WATCHLIST",
+              "payload": {
+                "channel_guid": "mls_nyc_fc_016",
+                "enabler20Flag": true,
+                "external_id": "mls_nyc_fc_016",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/mls_nyc_fc.png",
+                  "w": 1280
+                },
+                "subtitle": "Added to favorites list",
+                "title": "New York City FC"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            },
+            "UNFAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "REMOVE FROM WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "DELETE",
+              "label": "REMOVE FROM WATCHLIST",
+              "payload": {
+                "channel_guid": "mls_nyc_fc_016",
+                "enabler20Flag": true,
+                "external_id": "mls_nyc_fc_016",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/mls_nyc_fc.png",
+                  "w": 1280
+                },
+                "subtitle": "Removed from favorites list",
+                "title": "New York City FC"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            }
+          },
+          "analytics": {
+            "item_id": "mls_nyc_fc_016",
+            "query_id": "/drawer/favorites"
+          },
+          "focus_row_background_color": "6CACE4",
+          "format": "CHANNEL_CARD",
+          "image": {
+            "h": 720,
+            "url": "https://mockserverfavorites.onrender.com/1280x720/mls_nyc_fc.png",
+            "w": 1280
+          },
+          "overlay_indicators": [
+            {
+              "icon": {
+                "key": {
+                  "condition": {
+                    "checks": {
+                      "favorite_channel": "mls_nyc_fc_016"
+                    },
+                    "decision": "IS_FAVORITED",
+                    "false": "FAVORITE_HEART_EMPTY",
+                    "true": "FAVORITE_HEART_FILLED"
+                  }
+                },
+                "type": "STATIC"
+              }
+            }
+          ],
+          "primary_action": {
+            "condition": {
+              "checks": {
+                "favorite_channel": "mls_nyc_fc_016"
+              },
+              "decision": "IS_FAVORITED",
+              "false": "FAVORITE_WITH_INVALIDATION",
+              "true": "UNFAVORITE_WITH_INVALIDATION"
+            }
+          },
+          "team_abbr": "NYC",
+          "team_name": "New York City FC",
+          "tile_analytics": {
+            "TBD": "TBD"
+          }
+        },
+        {
+          "actions": {
+            "FAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "ADD TO WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "POST",
+              "label": "ADD TO WATCHLIST",
+              "payload": {
+                "channel_guid": "mls_nyrb_redbulls_017",
+                "enabler20Flag": true,
+                "external_id": "mls_nyrb_redbulls_017",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/mls_nyrb_redbulls.png",
+                  "w": 1280
+                },
+                "subtitle": "Added to favorites list",
+                "title": "New York Red Bulls"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            },
+            "UNFAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "REMOVE FROM WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "DELETE",
+              "label": "REMOVE FROM WATCHLIST",
+              "payload": {
+                "channel_guid": "mls_nyrb_redbulls_017",
+                "enabler20Flag": true,
+                "external_id": "mls_nyrb_redbulls_017",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/mls_nyrb_redbulls.png",
+                  "w": 1280
+                },
+                "subtitle": "Removed from favorites list",
+                "title": "New York Red Bulls"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            }
+          },
+          "analytics": {
+            "item_id": "mls_nyrb_redbulls_017",
+            "query_id": "/drawer/favorites"
+          },
+          "focus_row_background_color": "ED1E36",
+          "format": "CHANNEL_CARD",
+          "image": {
+            "h": 720,
+            "url": "https://mockserverfavorites.onrender.com/1280x720/mls_nyrb_redbulls.png",
+            "w": 1280
+          },
+          "overlay_indicators": [
+            {
+              "icon": {
+                "key": {
+                  "condition": {
+                    "checks": {
+                      "favorite_channel": "mls_nyrb_redbulls_017"
+                    },
+                    "decision": "IS_FAVORITED",
+                    "false": "FAVORITE_HEART_EMPTY",
+                    "true": "FAVORITE_HEART_FILLED"
+                  }
+                },
+                "type": "STATIC"
+              }
+            }
+          ],
+          "primary_action": {
+            "condition": {
+              "checks": {
+                "favorite_channel": "mls_nyrb_redbulls_017"
+              },
+              "decision": "IS_FAVORITED",
+              "false": "FAVORITE_WITH_INVALIDATION",
+              "true": "UNFAVORITE_WITH_INVALIDATION"
+            }
+          },
+          "team_abbr": "NYRB",
+          "team_name": "New York Red Bulls",
+          "tile_analytics": {
+            "TBD": "TBD"
+          }
+        }
+      ],
+      "title": "N",
+      "total_tiles": 4
+    },
+    {
+      "alpha": "O",
+      "format": "GRID",
+      "ribbon_analytics": {
+        "AccountGuid": "65c9ca3e-217b-11ed-ba13-126882dbc557",
+        "AccountStatus": "Paid",
+        "DeviceGuid": "7b235964-439d-49dc-93ed-e7ed0ebad610",
+        "ProfileGuid": "10340350-2875-c41c-9371-1b714803851d",
+        "ProfileType": "Non Admin",
+        "ScreenName": "Home",
+        "SessionID": "",
+        "TabName": "Home",
+        "query_id": "/drawer/favorites"
+      },
+      "sub_title": "1",
+      "tiles": [
+        {
+          "actions": {
+            "FAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "ADD TO WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "POST",
+              "label": "ADD TO WATCHLIST",
+              "payload": {
+                "channel_guid": "mls_orl_city_018",
+                "enabler20Flag": true,
+                "external_id": "mls_orl_city_018",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/mls_orl_city.png",
+                  "w": 1280
+                },
+                "subtitle": "Added to favorites list",
+                "title": "Orlando City SC"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            },
+            "UNFAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "REMOVE FROM WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "DELETE",
+              "label": "REMOVE FROM WATCHLIST",
+              "payload": {
+                "channel_guid": "mls_orl_city_018",
+                "enabler20Flag": true,
+                "external_id": "mls_orl_city_018",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/mls_orl_city.png",
+                  "w": 1280
+                },
+                "subtitle": "Removed from favorites list",
+                "title": "Orlando City SC"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            }
+          },
+          "analytics": {
+            "item_id": "mls_orl_city_018",
+            "query_id": "/drawer/favorites"
+          },
+          "focus_row_background_color": "633492",
+          "format": "CHANNEL_CARD",
+          "image": {
+            "h": 720,
+            "url": "https://mockserverfavorites.onrender.com/1280x720/mls_orl_city.png",
+            "w": 1280
+          },
+          "overlay_indicators": [
+            {
+              "icon": {
+                "key": {
+                  "condition": {
+                    "checks": {
+                      "favorite_channel": "mls_orl_city_018"
+                    },
+                    "decision": "IS_FAVORITED",
+                    "false": "FAVORITE_HEART_EMPTY",
+                    "true": "FAVORITE_HEART_FILLED"
+                  }
+                },
+                "type": "STATIC"
+              }
+            }
+          ],
+          "primary_action": {
+            "condition": {
+              "checks": {
+                "favorite_channel": "mls_orl_city_018"
+              },
+              "decision": "IS_FAVORITED",
+              "false": "FAVORITE_WITH_INVALIDATION",
+              "true": "UNFAVORITE_WITH_INVALIDATION"
+            }
+          },
+          "team_abbr": "ORL",
+          "team_name": "Orlando City SC",
+          "tile_analytics": {
+            "TBD": "TBD"
+          }
+        }
+      ],
+      "title": "O",
+      "total_tiles": 1
+    },
+    {
+      "alpha": "P",
+      "format": "GRID",
+      "ribbon_analytics": {
+        "AccountGuid": "65c9ca3e-217b-11ed-ba13-126882dbc557",
+        "AccountStatus": "Paid",
+        "DeviceGuid": "7b235964-439d-49dc-93ed-e7ed0ebad610",
+        "ProfileGuid": "10340350-2875-c41c-9371-1b714803851d",
+        "ProfileType": "Non Admin",
+        "ScreenName": "Home",
+        "SessionID": "",
+        "TabName": "Home",
+        "query_id": "/drawer/favorites"
+      },
+      "sub_title": "2",
+      "tiles": [
+        {
+          "actions": {
+            "FAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "ADD TO WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "POST",
+              "label": "ADD TO WATCHLIST",
+              "payload": {
+                "channel_guid": "mls_phi_union_019",
+                "enabler20Flag": true,
+                "external_id": "mls_phi_union_019",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/mls_phi_union.png",
+                  "w": 1280
+                },
+                "subtitle": "Added to favorites list",
+                "title": "Philadelphia Union"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            },
+            "UNFAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "REMOVE FROM WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "DELETE",
+              "label": "REMOVE FROM WATCHLIST",
+              "payload": {
+                "channel_guid": "mls_phi_union_019",
+                "enabler20Flag": true,
+                "external_id": "mls_phi_union_019",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/mls_phi_union.png",
+                  "w": 1280
+                },
+                "subtitle": "Removed from favorites list",
+                "title": "Philadelphia Union"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            }
+          },
+          "analytics": {
+            "item_id": "mls_phi_union_019",
+            "query_id": "/drawer/favorites"
+          },
+          "focus_row_background_color": "071B2C",
+          "format": "CHANNEL_CARD",
+          "image": {
+            "h": 720,
+            "url": "https://mockserverfavorites.onrender.com/1280x720/mls_phi_union.png",
+            "w": 1280
+          },
+          "overlay_indicators": [
+            {
+              "icon": {
+                "key": {
+                  "condition": {
+                    "checks": {
+                      "favorite_channel": "mls_phi_union_019"
+                    },
+                    "decision": "IS_FAVORITED",
+                    "false": "FAVORITE_HEART_EMPTY",
+                    "true": "FAVORITE_HEART_FILLED"
+                  }
+                },
+                "type": "STATIC"
+              }
+            }
+          ],
+          "primary_action": {
+            "condition": {
+              "checks": {
+                "favorite_channel": "mls_phi_union_019"
+              },
+              "decision": "IS_FAVORITED",
+              "false": "FAVORITE_WITH_INVALIDATION",
+              "true": "UNFAVORITE_WITH_INVALIDATION"
+            }
+          },
+          "team_abbr": "PHI",
+          "team_name": "Philadelphia Union",
+          "tile_analytics": {
+            "TBD": "TBD"
+          }
+        },
+        {
+          "actions": {
+            "FAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "ADD TO WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "POST",
+              "label": "ADD TO WATCHLIST",
+              "payload": {
+                "channel_guid": "mls_por_timbers_020",
+                "enabler20Flag": true,
+                "external_id": "mls_por_timbers_020",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/mls_por_timbers.png",
+                  "w": 1280
+                },
+                "subtitle": "Added to favorites list",
+                "title": "Portland Timbers"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            },
+            "UNFAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "REMOVE FROM WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "DELETE",
+              "label": "REMOVE FROM WATCHLIST",
+              "payload": {
+                "channel_guid": "mls_por_timbers_020",
+                "enabler20Flag": true,
+                "external_id": "mls_por_timbers_020",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/mls_por_timbers.png",
+                  "w": 1280
+                },
+                "subtitle": "Removed from favorites list",
+                "title": "Portland Timbers"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            }
+          },
+          "analytics": {
+            "item_id": "mls_por_timbers_020",
+            "query_id": "/drawer/favorites"
+          },
+          "focus_row_background_color": "004812",
+          "format": "CHANNEL_CARD",
+          "image": {
+            "h": 720,
+            "url": "https://mockserverfavorites.onrender.com/1280x720/mls_por_timbers.png",
+            "w": 1280
+          },
+          "overlay_indicators": [
+            {
+              "icon": {
+                "key": {
+                  "condition": {
+                    "checks": {
+                      "favorite_channel": "mls_por_timbers_020"
+                    },
+                    "decision": "IS_FAVORITED",
+                    "false": "FAVORITE_HEART_EMPTY",
+                    "true": "FAVORITE_HEART_FILLED"
+                  }
+                },
+                "type": "STATIC"
+              }
+            }
+          ],
+          "primary_action": {
+            "condition": {
+              "checks": {
+                "favorite_channel": "mls_por_timbers_020"
+              },
+              "decision": "IS_FAVORITED",
+              "false": "FAVORITE_WITH_INVALIDATION",
+              "true": "UNFAVORITE_WITH_INVALIDATION"
+            }
+          },
+          "team_abbr": "POR",
+          "team_name": "Portland Timbers",
+          "tile_analytics": {
+            "TBD": "TBD"
+          }
+        }
+      ],
+      "title": "P",
+      "total_tiles": 2
+    },
+    {
+      "alpha": "R",
+      "format": "GRID",
+      "ribbon_analytics": {
+        "AccountGuid": "65c9ca3e-217b-11ed-ba13-126882dbc557",
+        "AccountStatus": "Paid",
+        "DeviceGuid": "7b235964-439d-49dc-93ed-e7ed0ebad610",
+        "ProfileGuid": "10340350-2875-c41c-9371-1b714803851d",
+        "ProfileType": "Non Admin",
+        "ScreenName": "Home",
+        "SessionID": "",
+        "TabName": "Home",
+        "query_id": "/drawer/favorites"
+      },
+      "sub_title": "1",
+      "tiles": [
+        {
+          "actions": {
+            "FAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "ADD TO WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "POST",
+              "label": "ADD TO WATCHLIST",
+              "payload": {
+                "channel_guid": "mls_rsl_021",
+                "enabler20Flag": true,
+                "external_id": "mls_rsl_021",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/mls_rsl.png",
+                  "w": 1280
+                },
+                "subtitle": "Added to favorites list",
+                "title": "Real Salt Lake"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            },
+            "UNFAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "REMOVE FROM WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "DELETE",
+              "label": "REMOVE FROM WATCHLIST",
+              "payload": {
+                "channel_guid": "mls_rsl_021",
+                "enabler20Flag": true,
+                "external_id": "mls_rsl_021",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/mls_rsl.png",
+                  "w": 1280
+                },
+                "subtitle": "Removed from favorites list",
+                "title": "Real Salt Lake"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            }
+          },
+          "analytics": {
+            "item_id": "mls_rsl_021",
+            "query_id": "/drawer/favorites"
+          },
+          "focus_row_background_color": "B30838",
+          "format": "CHANNEL_CARD",
+          "image": {
+            "h": 720,
+            "url": "https://mockserverfavorites.onrender.com/1280x720/mls_rsl.png",
+            "w": 1280
+          },
+          "overlay_indicators": [
+            {
+              "icon": {
+                "key": {
+                  "condition": {
+                    "checks": {
+                      "favorite_channel": "mls_rsl_021"
+                    },
+                    "decision": "IS_FAVORITED",
+                    "false": "FAVORITE_HEART_EMPTY",
+                    "true": "FAVORITE_HEART_FILLED"
+                  }
+                },
+                "type": "STATIC"
+              }
+            }
+          ],
+          "primary_action": {
+            "condition": {
+              "checks": {
+                "favorite_channel": "mls_rsl_021"
+              },
+              "decision": "IS_FAVORITED",
+              "false": "FAVORITE_WITH_INVALIDATION",
+              "true": "UNFAVORITE_WITH_INVALIDATION"
+            }
+          },
+          "team_abbr": "RSL",
+          "team_name": "Real Salt Lake",
+          "tile_analytics": {
+            "TBD": "TBD"
+          }
+        }
+      ],
+      "title": "R",
+      "total_tiles": 1
+    },
+    {
+      "alpha": "S",
+      "format": "GRID",
+      "ribbon_analytics": {
+        "AccountGuid": "65c9ca3e-217b-11ed-ba13-126882dbc557",
+        "AccountStatus": "Paid",
+        "DeviceGuid": "7b235964-439d-49dc-93ed-e7ed0ebad610",
+        "ProfileGuid": "10340350-2875-c41c-9371-1b714803851d",
+        "ProfileType": "Non Admin",
+        "ScreenName": "Home",
+        "SessionID": "",
+        "TabName": "Home",
+        "query_id": "/drawer/favorites"
+      },
+      "sub_title": "3",
+      "tiles": [
+        {
+          "actions": {
+            "FAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "ADD TO WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "POST",
+              "label": "ADD TO WATCHLIST",
+              "payload": {
+                "channel_guid": "mls_sj_earthquakes_022",
+                "enabler20Flag": true,
+                "external_id": "mls_sj_earthquakes_022",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/mls_sj_earthquakes.png",
+                  "w": 1280
+                },
+                "subtitle": "Added to favorites list",
+                "title": "San Jose Earthquakes"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            },
+            "UNFAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "REMOVE FROM WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "DELETE",
+              "label": "REMOVE FROM WATCHLIST",
+              "payload": {
+                "channel_guid": "mls_sj_earthquakes_022",
+                "enabler20Flag": true,
+                "external_id": "mls_sj_earthquakes_022",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/mls_sj_earthquakes.png",
+                  "w": 1280
+                },
+                "subtitle": "Removed from favorites list",
+                "title": "San Jose Earthquakes"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            }
+          },
+          "analytics": {
+            "item_id": "mls_sj_earthquakes_022",
+            "query_id": "/drawer/favorites"
+          },
+          "focus_row_background_color": "0067B1",
+          "format": "CHANNEL_CARD",
+          "image": {
+            "h": 720,
+            "url": "https://mockserverfavorites.onrender.com/1280x720/mls_sj_earthquakes.png",
+            "w": 1280
+          },
+          "overlay_indicators": [
+            {
+              "icon": {
+                "key": {
+                  "condition": {
+                    "checks": {
+                      "favorite_channel": "mls_sj_earthquakes_022"
+                    },
+                    "decision": "IS_FAVORITED",
+                    "false": "FAVORITE_HEART_EMPTY",
+                    "true": "FAVORITE_HEART_FILLED"
+                  }
+                },
+                "type": "STATIC"
+              }
+            }
+          ],
+          "primary_action": {
+            "condition": {
+              "checks": {
+                "favorite_channel": "mls_sj_earthquakes_022"
+              },
+              "decision": "IS_FAVORITED",
+              "false": "FAVORITE_WITH_INVALIDATION",
+              "true": "UNFAVORITE_WITH_INVALIDATION"
+            }
+          },
+          "team_abbr": "SJ",
+          "team_name": "San Jose Earthquakes",
+          "tile_analytics": {
+            "TBD": "TBD"
+          }
+        },
+        {
+          "actions": {
+            "FAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "ADD TO WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "POST",
+              "label": "ADD TO WATCHLIST",
+              "payload": {
+                "channel_guid": "mls_sea_sounders_023",
+                "enabler20Flag": true,
+                "external_id": "mls_sea_sounders_023",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/mls_sea_sounders.png",
+                  "w": 1280
+                },
+                "subtitle": "Added to favorites list",
+                "title": "Seattle Sounders FC"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            },
+            "UNFAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "REMOVE FROM WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "DELETE",
+              "label": "REMOVE FROM WATCHLIST",
+              "payload": {
+                "channel_guid": "mls_sea_sounders_023",
+                "enabler20Flag": true,
+                "external_id": "mls_sea_sounders_023",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/mls_sea_sounders.png",
+                  "w": 1280
+                },
+                "subtitle": "Removed from favorites list",
+                "title": "Seattle Sounders FC"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            }
+          },
+          "analytics": {
+            "item_id": "mls_sea_sounders_023",
+            "query_id": "/drawer/favorites"
+          },
+          "focus_row_background_color": "005595",
+          "format": "CHANNEL_CARD",
+          "image": {
+            "h": 720,
+            "url": "https://mockserverfavorites.onrender.com/1280x720/mls_sea_sounders.png",
+            "w": 1280
+          },
+          "overlay_indicators": [
+            {
+              "icon": {
+                "key": {
+                  "condition": {
+                    "checks": {
+                      "favorite_channel": "mls_sea_sounders_023"
+                    },
+                    "decision": "IS_FAVORITED",
+                    "false": "FAVORITE_HEART_EMPTY",
+                    "true": "FAVORITE_HEART_FILLED"
+                  }
+                },
+                "type": "STATIC"
+              }
+            }
+          ],
+          "primary_action": {
+            "condition": {
+              "checks": {
+                "favorite_channel": "mls_sea_sounders_023"
+              },
+              "decision": "IS_FAVORITED",
+              "false": "FAVORITE_WITH_INVALIDATION",
+              "true": "UNFAVORITE_WITH_INVALIDATION"
+            }
+          },
+          "team_abbr": "SEA",
+          "team_name": "Seattle Sounders FC",
+          "tile_analytics": {
+            "TBD": "TBD"
+          }
+        },
+        {
+          "actions": {
+            "FAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "ADD TO WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "POST",
+              "label": "ADD TO WATCHLIST",
+              "payload": {
+                "channel_guid": "mls_skc_024",
+                "enabler20Flag": true,
+                "external_id": "mls_skc_024",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/mls_skc.png",
+                  "w": 1280
+                },
+                "subtitle": "Added to favorites list",
+                "title": "Sporting Kansas City"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            },
+            "UNFAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "REMOVE FROM WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "DELETE",
+              "label": "REMOVE FROM WATCHLIST",
+              "payload": {
+                "channel_guid": "mls_skc_024",
+                "enabler20Flag": true,
+                "external_id": "mls_skc_024",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/mls_skc.png",
+                  "w": 1280
+                },
+                "subtitle": "Removed from favorites list",
+                "title": "Sporting Kansas City"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            }
+          },
+          "analytics": {
+            "item_id": "mls_skc_024",
+            "query_id": "/drawer/favorites"
+          },
+          "focus_row_background_color": "002F65",
+          "format": "CHANNEL_CARD",
+          "image": {
+            "h": 720,
+            "url": "https://mockserverfavorites.onrender.com/1280x720/mls_skc.png",
+            "w": 1280
+          },
+          "overlay_indicators": [
+            {
+              "icon": {
+                "key": {
+                  "condition": {
+                    "checks": {
+                      "favorite_channel": "mls_skc_024"
+                    },
+                    "decision": "IS_FAVORITED",
+                    "false": "FAVORITE_HEART_EMPTY",
+                    "true": "FAVORITE_HEART_FILLED"
+                  }
+                },
+                "type": "STATIC"
+              }
+            }
+          ],
+          "primary_action": {
+            "condition": {
+              "checks": {
+                "favorite_channel": "mls_skc_024"
+              },
+              "decision": "IS_FAVORITED",
+              "false": "FAVORITE_WITH_INVALIDATION",
+              "true": "UNFAVORITE_WITH_INVALIDATION"
+            }
+          },
+          "team_abbr": "SKC",
+          "team_name": "Sporting Kansas City",
+          "tile_analytics": {
+            "TBD": "TBD"
+          }
+        }
+      ],
+      "title": "S",
+      "total_tiles": 3
+    },
+    {
+      "alpha": "T",
+      "format": "GRID",
+      "ribbon_analytics": {
+        "AccountGuid": "65c9ca3e-217b-11ed-ba13-126882dbc557",
+        "AccountStatus": "Paid",
+        "DeviceGuid": "7b235964-439d-49dc-93ed-e7ed0ebad610",
+        "ProfileGuid": "10340350-2875-c41c-9371-1b714803851d",
+        "ProfileType": "Non Admin",
+        "ScreenName": "Home",
+        "SessionID": "",
+        "TabName": "Home",
+        "query_id": "/drawer/favorites"
+      },
+      "sub_title": "1",
+      "tiles": [
+        {
+          "actions": {
+            "FAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "ADD TO WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "POST",
+              "label": "ADD TO WATCHLIST",
+              "payload": {
+                "channel_guid": "mls_tor_fc_025",
+                "enabler20Flag": true,
+                "external_id": "mls_tor_fc_025",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/mls_tor_fc.png",
+                  "w": 1280
+                },
+                "subtitle": "Added to favorites list",
+                "title": "Toronto FC"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            },
+            "UNFAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "REMOVE FROM WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "DELETE",
+              "label": "REMOVE FROM WATCHLIST",
+              "payload": {
+                "channel_guid": "mls_tor_fc_025",
+                "enabler20Flag": true,
+                "external_id": "mls_tor_fc_025",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/mls_tor_fc.png",
+                  "w": 1280
+                },
+                "subtitle": "Removed from favorites list",
+                "title": "Toronto FC"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            }
+          },
+          "analytics": {
+            "item_id": "mls_tor_fc_025",
+            "query_id": "/drawer/favorites"
+          },
+          "focus_row_background_color": "B81137",
+          "format": "CHANNEL_CARD",
+          "image": {
+            "h": 720,
+            "url": "https://mockserverfavorites.onrender.com/1280x720/mls_tor_fc.png",
+            "w": 1280
+          },
+          "overlay_indicators": [
+            {
+              "icon": {
+                "key": {
+                  "condition": {
+                    "checks": {
+                      "favorite_channel": "mls_tor_fc_025"
+                    },
+                    "decision": "IS_FAVORITED",
+                    "false": "FAVORITE_HEART_EMPTY",
+                    "true": "FAVORITE_HEART_FILLED"
+                  }
+                },
+                "type": "STATIC"
+              }
+            }
+          ],
+          "primary_action": {
+            "condition": {
+              "checks": {
+                "favorite_channel": "mls_tor_fc_025"
+              },
+              "decision": "IS_FAVORITED",
+              "false": "FAVORITE_WITH_INVALIDATION",
+              "true": "UNFAVORITE_WITH_INVALIDATION"
+            }
+          },
+          "team_abbr": "TOR",
+          "team_name": "Toronto FC",
+          "tile_analytics": {
+            "TBD": "TBD"
+          }
+        }
+      ],
+      "title": "T",
+      "total_tiles": 1
+    },
+    {
+      "alpha": "V",
+      "format": "GRID",
+      "ribbon_analytics": {
+        "AccountGuid": "65c9ca3e-217b-11ed-ba13-126882dbc557",
+        "AccountStatus": "Paid",
+        "DeviceGuid": "7b235964-439d-49dc-93ed-e7ed0ebad610",
+        "ProfileGuid": "10340350-2875-c41c-9371-1b714803851d",
+        "ProfileType": "Non Admin",
+        "ScreenName": "Home",
+        "SessionID": "",
+        "TabName": "Home",
+        "query_id": "/drawer/favorites"
+      },
+      "sub_title": "1",
+      "tiles": [
+        {
+          "actions": {
+            "FAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "ADD TO WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "POST",
+              "label": "ADD TO WATCHLIST",
+              "payload": {
+                "channel_guid": "mls_van_whitecaps_026",
+                "enabler20Flag": true,
+                "external_id": "mls_van_whitecaps_026",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/mls_van_whitecaps.png",
+                  "w": 1280
+                },
+                "subtitle": "Added to favorites list",
+                "title": "Vancouver Whitecaps FC"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            },
+            "UNFAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "REMOVE FROM WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "DELETE",
+              "label": "REMOVE FROM WATCHLIST",
+              "payload": {
+                "channel_guid": "mls_van_whitecaps_026",
+                "enabler20Flag": true,
+                "external_id": "mls_van_whitecaps_026",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/mls_van_whitecaps.png",
+                  "w": 1280
+                },
+                "subtitle": "Removed from favorites list",
+                "title": "Vancouver Whitecaps FC"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            }
+          },
+          "analytics": {
+            "item_id": "mls_van_whitecaps_026",
+            "query_id": "/drawer/favorites"
+          },
+          "focus_row_background_color": "00245E",
+          "format": "CHANNEL_CARD",
+          "image": {
+            "h": 720,
+            "url": "https://mockserverfavorites.onrender.com/1280x720/mls_van_whitecaps.png",
+            "w": 1280
+          },
+          "overlay_indicators": [
+            {
+              "icon": {
+                "key": {
+                  "condition": {
+                    "checks": {
+                      "favorite_channel": "mls_van_whitecaps_026"
+                    },
+                    "decision": "IS_FAVORITED",
+                    "false": "FAVORITE_HEART_EMPTY",
+                    "true": "FAVORITE_HEART_FILLED"
+                  }
+                },
+                "type": "STATIC"
+              }
+            }
+          ],
+          "primary_action": {
+            "condition": {
+              "checks": {
+                "favorite_channel": "mls_van_whitecaps_026"
+              },
+              "decision": "IS_FAVORITED",
+              "false": "FAVORITE_WITH_INVALIDATION",
+              "true": "UNFAVORITE_WITH_INVALIDATION"
+            }
+          },
+          "team_abbr": "VAN",
+          "team_name": "Vancouver Whitecaps FC",
+          "tile_analytics": {
+            "TBD": "TBD"
+          }
+        }
+      ],
+      "title": "V",
+      "total_tiles": 1
+    }
+  ],
+  "start_time": 1777532269,
+  "type": "FAVORITES"
+}

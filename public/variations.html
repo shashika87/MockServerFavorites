@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>League Variations</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: #0d1117;
+      color: #e6edf3;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 48px 24px;
+    }
+
+    h1 {
+      font-size: 1.75rem;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+
+    .subtitle {
+      color: #8b949e;
+      margin-bottom: 40px;
+      text-align: center;
+      max-width: 520px;
+      line-height: 1.5;
+    }
+
+    .tiles {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      width: 100%;
+      max-width: 760px;
+    }
+
+    .tile {
+      background: #161b22;
+      border: 2px solid #30363d;
+      border-radius: 12px;
+      padding: 32px 24px;
+      cursor: pointer;
+      transition: border-color 0.2s, background 0.2s, transform 0.15s;
+      text-align: center;
+    }
+
+    .tile:hover {
+      border-color: #58a6ff;
+      background: #1c2128;
+      transform: translateY(-2px);
+    }
+
+    .tile.active {
+      border-color: #3fb950;
+      background: #122117;
+    }
+
+    .tile-title {
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+
+    .tile-desc {
+      font-size: 0.85rem;
+      color: #8b949e;
+      line-height: 1.4;
+    }
+
+    .status {
+      margin-top: 36px;
+      padding: 16px 24px;
+      background: #161b22;
+      border: 1px solid #30363d;
+      border-radius: 8px;
+      font-size: 0.9rem;
+      max-width: 760px;
+      width: 100%;
+      text-align: center;
+    }
+
+    .status strong { color: #3fb950; }
+
+    .endpoint {
+      margin-top: 16px;
+      font-size: 0.8rem;
+      color: #8b949e;
+      word-break: break-all;
+    }
+
+    .endpoint code {
+      color: #79c0ff;
+      background: #0d1117;
+      padding: 2px 6px;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+  <h1>League Variations</h1>
+  <p class="subtitle">
+    Select a variation below. The chosen mock response will be served from
+    <code>/drawer/sports_favorites</code> for all clients.
+  </p>
+
+  <div class="tiles" id="tiles">
+    <div class="tile" data-variant="1">
+      <div class="tile-title">League Variation1</div>
+      <div class="tile-desc">Full menu — all 7 sports with placeholder subtitle</div>
+    </div>
+    <div class="tile" data-variant="2">
+      <div class="tile-title">League Variation2</div>
+      <div class="tile-desc">Reduced menu — NFL, NBA, MLB only</div>
+    </div>
+    <div class="tile" data-variant="3">
+      <div class="tile-title">League Variation3</div>
+      <div class="tile-desc">Populated favorites — sports with team counts</div>
+    </div>
+  </div>
+
+  <div class="status" id="status">Loading current selection…</div>
+  <p class="endpoint">
+    Active endpoint:
+    <code id="endpoint">/drawer/sports_favorites</code>
+  </p>
+
+  <script>
+    const tiles = document.querySelectorAll(".tile");
+    const statusEl = document.getElementById("status");
+
+    function setActiveUI(variant) {
+      tiles.forEach((tile) => {
+        tile.classList.toggle("active", tile.dataset.variant === String(variant));
+      });
+
+      const labels = {
+        1: "League Variation1",
+        2: "League Variation2",
+        3: "League Variation3",
+      };
+
+      statusEl.innerHTML = variant
+        ? `Active: <strong>${labels[variant]}</strong> → serving <strong>favorite_teams_v${variant}.json</strong>`
+        : "Active: <strong>Default</strong> → serving <strong>favorite_teams.json</strong>";
+    }
+
+    async function loadActive() {
+      const res = await fetch("/drawer/variations/active");
+      const data = await res.json();
+      setActiveUI(data.variant);
+    }
+
+    async function selectVariant(variant) {
+      const res = await fetch("/drawer/variations/select", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ variant: Number(variant) }),
+      });
+
+      if (!res.ok) {
+        statusEl.textContent = "Failed to update variation.";
+        return;
+      }
+
+      const data = await res.json();
+      setActiveUI(data.variant);
+    }
+
+    tiles.forEach((tile) => {
+      tile.addEventListener("click", () => selectVariant(tile.dataset.variant));
+    });
+
+    loadActive();
+  </script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+{
+  "name": "ssfavorite-mock-server",
+  "version": "1.0.0",
+  "description": "Mock backend for the SSFavorite Qt app.",
+  "private": true,
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "sync-tile-images": "node scripts/sync-tile-images.js",
+    "add-star-logo-ribbons": "node scripts/add-star-logo-ribbons.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "sharp": "^0.35.2"
+  }
+}

@@ -1,0 +1,4000 @@
+{
+  "actions": {
+    "DRAWERV2": {
+      "http_method": "GET",
+      "url": "https://p-cmwnext.movetv.com/drawer/sports_favourites?focusedTile=favorites&sourceScreen=home"
+    }
+  },
+  "dismiss_action": "DRAWERV2",
+  "end_time": 1777618669,
+  "exclusive": false,
+  "expires_at": 1777618669,
+  "format": "DRAWERV2",
+  "header_view": {
+    "title": "Add Favorite Teams"
+  },
+  "href": "https://p-cmwnext.movetv.com/drawer/favorites?sourceScreen={sourceScreen)&stack=nfl",
+  "ribbons": [
+    {
+      "icon": {
+        "key": "STAR_LOGO",
+        "type": "STATIC"
+      },
+      "format": "GRID",
+      "ribbon_analytics": {
+        "AccountGuid": "804fc3b0-6b5f-11f1-9f90-7a7bc35467e0",
+        "AccountStatus": "Paid",
+        "DeviceGuid": "069e8d22-3f57-58e1-b072-c0680d357e5a",
+        "ProfileGuid": "804fc3b0-6b5f-11f1-9f90-7a7bc35467e0",
+        "ProfileType": "Admin",
+        "query_id": "/drawer/favorites",
+        "ScreenName": "fluid-guide",
+        "SessionID": "",
+        "TabName": "Guide"
+      },
+      "sub_title": "5",
+      "tiles": [
+        {
+          "actions": {
+            "FAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "ADD TO WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "POST",
+              "label": "ADD TO WATCHLIST",
+              "payload": {
+                "channel_guid": "nfl_nyj_jets_024",
+                "enabler20Flag": true,
+                "external_id": "nfl_nyj_jets_024",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/nfl_nyj_jets.png",
+                  "w": 1280
+                },
+                "subtitle": "Added to favorites list",
+                "title": "New York Jets"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            },
+            "UNFAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "REMOVE FROM WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "DELETE",
+              "label": "REMOVE FROM WATCHLIST",
+              "payload": {
+                "channel_guid": "nfl_nyj_jets_024",
+                "enabler20Flag": true,
+                "external_id": "nfl_nyj_jets_024",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/nfl_nyj_jets.png",
+                  "w": 1280
+                },
+                "subtitle": "Removed from favorites list",
+                "title": "New York Jets"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            }
+          },
+          "analytics": {
+            "item_id": "nfl_nyj_jets_024",
+            "query_id": "/drawer/favorites"
+          },
+          "focus_row_background_color": "125740",
+          "format": "CHANNEL_CARD",
+          "image": {
+            "h": 720,
+            "url": "https://mockserverfavorites.onrender.com/1280x720/nfl_nyj_jets.png",
+            "w": 1280
+          },
+          "overlay_indicators": [
+            {
+              "icon": {
+                "key": {
+                  "condition": {
+                    "decision": "IS_FAVORITED",
+                    "checks": {
+                      "favorite_channel": "nfl_nyj_jets_024"
+                    },
+                    "true": "FAVORITE_HEART_FILLED",
+                    "false": "FAVORITE_HEART_EMPTY"
+                  }
+                },
+                "type": "STATIC"
+              }
+            }
+          ],
+          "primary_action": {
+            "condition": {
+              "decision": "IS_FAVORITED",
+              "checks": {
+                "favorite_channel": "nfl_nyj_jets_024"
+              },
+              "true": "UNFAVORITE_WITH_INVALIDATION",
+              "false": "FAVORITE_WITH_INVALIDATION"
+            }
+          },
+          "team_abbr": "NYJ",
+          "team_name": "New York Jets",
+          "tile_analytics": {
+            "TBD": "TBD"
+          }
+        },
+        {
+          "actions": {
+            "FAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "ADD TO WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "POST",
+              "label": "ADD TO WATCHLIST",
+              "payload": {
+                "channel_guid": "nfl_det_lions_011",
+                "enabler20Flag": true,
+                "external_id": "nfl_det_lions_011",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/nfl_det_lions.png",
+                  "w": 1280
+                },
+                "subtitle": "Added to favorites list",
+                "title": "Detroit Lions"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            },
+            "UNFAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "REMOVE FROM WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "DELETE",
+              "label": "REMOVE FROM WATCHLIST",
+              "payload": {
+                "channel_guid": "nfl_det_lions_011",
+                "enabler20Flag": true,
+                "external_id": "nfl_det_lions_011",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/nfl_det_lions.png",
+                  "w": 1280
+                },
+                "subtitle": "Removed from favorites list",
+                "title": "Detroit Lions"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            }
+          },
+          "analytics": {
+            "item_id": "nfl_det_lions_011",
+            "query_id": "/drawer/favorites"
+          },
+          "focus_row_background_color": "0076B6",
+          "format": "CHANNEL_CARD",
+          "image": {
+            "h": 720,
+            "url": "https://mockserverfavorites.onrender.com/1280x720/nfl_det_lions.png",
+            "w": 1280
+          },
+          "overlay_indicators": [
+            {
+              "icon": {
+                "key": {
+                  "condition": {
+                    "decision": "IS_FAVORITED",
+                    "checks": {
+                      "favorite_channel": "nfl_det_lions_011"
+                    },
+                    "true": "FAVORITE_HEART_FILLED",
+                    "false": "FAVORITE_HEART_EMPTY"
+                  }
+                },
+                "type": "STATIC"
+              }
+            }
+          ],
+          "primary_action": {
+            "condition": {
+              "decision": "IS_FAVORITED",
+              "checks": {
+                "favorite_channel": "nfl_det_lions_011"
+              },
+              "true": "UNFAVORITE_WITH_INVALIDATION",
+              "false": "FAVORITE_WITH_INVALIDATION"
+            }
+          },
+          "team_abbr": "DET",
+          "team_name": "Detroit Lions",
+          "tile_analytics": {
+            "TBD": "TBD"
+          }
+        },
+        {
+          "actions": {
+            "FAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "ADD TO WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "POST",
+              "label": "ADD TO WATCHLIST",
+              "payload": {
+                "channel_guid": "nfl_mia_dolphins_019",
+                "enabler20Flag": true,
+                "external_id": "nfl_mia_dolphins_019",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/nfl_mia_dolphins.png",
+                  "w": 1280
+                },
+                "subtitle": "Added to favorites list",
+                "title": "Miami Dolphins"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            },
+            "UNFAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "REMOVE FROM WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "DELETE",
+              "label": "REMOVE FROM WATCHLIST",
+              "payload": {
+                "channel_guid": "nfl_mia_dolphins_019",
+                "enabler20Flag": true,
+                "external_id": "nfl_mia_dolphins_019",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/nfl_mia_dolphins.png",
+                  "w": 1280
+                },
+                "subtitle": "Removed from favorites list",
+                "title": "Miami Dolphins"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            }
+          },
+          "analytics": {
+            "item_id": "nfl_mia_dolphins_019",
+            "query_id": "/drawer/favorites"
+          },
+          "focus_row_background_color": "008E97",
+          "format": "CHANNEL_CARD",
+          "image": {
+            "h": 720,
+            "url": "https://mockserverfavorites.onrender.com/1280x720/nfl_mia_dolphins.png",
+            "w": 1280
+          },
+          "overlay_indicators": [
+            {
+              "icon": {
+                "key": {
+                  "condition": {
+                    "decision": "IS_FAVORITED",
+                    "checks": {
+                      "favorite_channel": "nfl_mia_dolphins_019"
+                    },
+                    "true": "FAVORITE_HEART_FILLED",
+                    "false": "FAVORITE_HEART_EMPTY"
+                  }
+                },
+                "type": "STATIC"
+              }
+            }
+          ],
+          "primary_action": {
+            "condition": {
+              "decision": "IS_FAVORITED",
+              "checks": {
+                "favorite_channel": "nfl_mia_dolphins_019"
+              },
+              "true": "UNFAVORITE_WITH_INVALIDATION",
+              "false": "FAVORITE_WITH_INVALIDATION"
+            }
+          },
+          "team_abbr": "MIA",
+          "team_name": "Miami Dolphins",
+          "tile_analytics": {
+            "TBD": "TBD"
+          }
+        },
+        {
+          "actions": {
+            "FAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "ADD TO WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "POST",
+              "label": "ADD TO WATCHLIST",
+              "payload": {
+                "channel_guid": "nfl_ne_patriots_021",
+                "enabler20Flag": true,
+                "external_id": "nfl_ne_patriots_021",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/nfl_ne_patriots.png",
+                  "w": 1280
+                },
+                "subtitle": "Added to favorites list",
+                "title": "New England Patriots"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            },
+            "UNFAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "REMOVE FROM WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "DELETE",
+              "label": "REMOVE FROM WATCHLIST",
+              "payload": {
+                "channel_guid": "nfl_ne_patriots_021",
+                "enabler20Flag": true,
+                "external_id": "nfl_ne_patriots_021",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/nfl_ne_patriots.png",
+                  "w": 1280
+                },
+                "subtitle": "Removed from favorites list",
+                "title": "New England Patriots"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            }
+          },
+          "analytics": {
+            "item_id": "nfl_ne_patriots_021",
+            "query_id": "/drawer/favorites"
+          },
+          "focus_row_background_color": "002244",
+          "format": "CHANNEL_CARD",
+          "image": {
+            "h": 720,
+            "url": "https://mockserverfavorites.onrender.com/1280x720/nfl_ne_patriots.png",
+            "w": 1280
+          },
+          "overlay_indicators": [
+            {
+              "icon": {
+                "key": {
+                  "condition": {
+                    "decision": "IS_FAVORITED",
+                    "checks": {
+                      "favorite_channel": "nfl_ne_patriots_021"
+                    },
+                    "true": "FAVORITE_HEART_FILLED",
+                    "false": "FAVORITE_HEART_EMPTY"
+                  }
+                },
+                "type": "STATIC"
+              }
+            }
+          ],
+          "primary_action": {
+            "condition": {
+              "decision": "IS_FAVORITED",
+              "checks": {
+                "favorite_channel": "nfl_ne_patriots_021"
+              },
+              "true": "UNFAVORITE_WITH_INVALIDATION",
+              "false": "FAVORITE_WITH_INVALIDATION"
+            }
+          },
+          "team_abbr": "NE",
+          "team_name": "New England Patriots",
+          "tile_analytics": {
+            "TBD": "TBD"
+          }
+        },
+        {
+          "actions": {
+            "FAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "ADD TO WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "POST",
+              "label": "ADD TO WATCHLIST",
+              "payload": {
+                "channel_guid": "nfl_gb_packers_012",
+                "enabler20Flag": true,
+                "external_id": "nfl_gb_packers_012",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/nfl_gb_packers.png",
+                  "w": 1280
+                },
+                "subtitle": "Added to favorites list",
+                "title": "Green Bay Packers"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            },
+            "UNFAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "REMOVE FROM WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "DELETE",
+              "label": "REMOVE FROM WATCHLIST",
+              "payload": {
+                "channel_guid": "nfl_gb_packers_012",
+                "enabler20Flag": true,
+                "external_id": "nfl_gb_packers_012",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/nfl_gb_packers.png",
+                  "w": 1280
+                },
+                "subtitle": "Removed from favorites list",
+                "title": "Green Bay Packers"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            }
+          },
+          "analytics": {
+            "item_id": "nfl_gb_packers_012",
+            "query_id": "/drawer/favorites"
+          },
+          "focus_row_background_color": "203731",
+          "format": "CHANNEL_CARD",
+          "image": {
+            "h": 720,
+            "url": "https://mockserverfavorites.onrender.com/1280x720/nfl_gb_packers.png",
+            "w": 1280
+          },
+          "overlay_indicators": [
+            {
+              "icon": {
+                "key": {
+                  "condition": {
+                    "decision": "IS_FAVORITED",
+                    "checks": {
+                      "favorite_channel": "nfl_gb_packers_012"
+                    },
+                    "true": "FAVORITE_HEART_FILLED",
+                    "false": "FAVORITE_HEART_EMPTY"
+                  }
+                },
+                "type": "STATIC"
+              }
+            }
+          ],
+          "primary_action": {
+            "condition": {
+              "decision": "IS_FAVORITED",
+              "checks": {
+                "favorite_channel": "nfl_gb_packers_012"
+              },
+              "true": "UNFAVORITE_WITH_INVALIDATION",
+              "false": "FAVORITE_WITH_INVALIDATION"
+            }
+          },
+          "team_abbr": "GB",
+          "team_name": "Green Bay Packers",
+          "tile_analytics": {
+            "TBD": "TBD"
+          }
+        }
+      ],
+      "title": "Recommended Teams",
+      "total_tiles": 5
+    },
+    {
+      "alpha": "A",
+      "format": "GRID",
+      "ribbon_analytics": {
+        "AccountGuid": "65c9ca3e-217b-11ed-ba13-126882dbc557",
+        "AccountStatus": "Paid",
+        "DeviceGuid": "7b235964-439d-49dc-93ed-e7ed0ebad610",
+        "ProfileGuid": "10340350-2875-c41c-9371-1b714803851d",
+        "ProfileType": "Non Admin",
+        "ScreenName": "Home",
+        "SessionID": "",
+        "TabName": "Home",
+        "query_id": "/drawer/favorites"
+      },
+      "sub_title": "2",
+      "tiles": [
+        {
+          "actions": {
+            "FAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "ADD TO WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "POST",
+              "label": "ADD TO WATCHLIST",
+              "payload": {
+                "channel_guid": "nfl_ari_cardinals_001",
+                "enabler20Flag": true,
+                "external_id": "nfl_ari_cardinals_001",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/nfl_ari_cardinals.png",
+                  "w": 1280
+                },
+                "subtitle": "Added to favorites list",
+                "title": "Arizona Cardinals"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            },
+            "UNFAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "REMOVE FROM WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "DELETE",
+              "label": "REMOVE FROM WATCHLIST",
+              "payload": {
+                "channel_guid": "nfl_ari_cardinals_001",
+                "enabler20Flag": true,
+                "external_id": "nfl_ari_cardinals_001",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/nfl_ari_cardinals.png",
+                  "w": 1280
+                },
+                "subtitle": "Removed from favorites list",
+                "title": "Arizona Cardinals"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            }
+          },
+          "analytics": {
+            "item_id": "nfl_ari_cardinals_001",
+            "query_id": "/drawer/favorites"
+          },
+          "focus_row_background_color": "97233F",
+          "format": "CHANNEL_CARD",
+          "image": {
+            "h": 720,
+            "url": "https://mockserverfavorites.onrender.com/1280x720/nfl_ari_cardinals.png",
+            "w": 1280
+          },
+          "overlay_indicators": [
+            {
+              "icon": {
+                "key": {
+                  "condition": {
+                    "checks": {
+                      "favorite_channel": "nfl_ari_cardinals_001"
+                    },
+                    "decision": "IS_FAVORITED",
+                    "false": "FAVORITE_HEART_EMPTY",
+                    "true": "FAVORITE_HEART_FILLED"
+                  }
+                },
+                "type": "STATIC"
+              }
+            }
+          ],
+          "primary_action": {
+            "condition": {
+              "checks": {
+                "favorite_channel": "nfl_ari_cardinals_001"
+              },
+              "decision": "IS_FAVORITED",
+              "false": "FAVORITE_WITH_INVALIDATION",
+              "true": "UNFAVORITE_WITH_INVALIDATION"
+            }
+          },
+          "team_abbr": "ARI",
+          "team_name": "Arizona Cardinals",
+          "tile_analytics": {
+            "TBD": "TBD"
+          }
+        },
+        {
+          "actions": {
+            "FAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "ADD TO WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "POST",
+              "label": "ADD TO WATCHLIST",
+              "payload": {
+                "channel_guid": "nfl_atl_falcons_002",
+                "enabler20Flag": true,
+                "external_id": "nfl_atl_falcons_002",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/nfl_atl_falcons.png",
+                  "w": 1280
+                },
+                "subtitle": "Added to favorites list",
+                "title": "Atlanta Falcons"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            },
+            "UNFAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "REMOVE FROM WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "DELETE",
+              "label": "REMOVE FROM WATCHLIST",
+              "payload": {
+                "channel_guid": "nfl_atl_falcons_002",
+                "enabler20Flag": true,
+                "external_id": "nfl_atl_falcons_002",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/nfl_atl_falcons.png",
+                  "w": 1280
+                },
+                "subtitle": "Removed from favorites list",
+                "title": "Atlanta Falcons"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            }
+          },
+          "analytics": {
+            "item_id": "nfl_atl_falcons_002",
+            "query_id": "/drawer/favorites"
+          },
+          "focus_row_background_color": "A71930",
+          "format": "CHANNEL_CARD",
+          "image": {
+            "h": 720,
+            "url": "https://mockserverfavorites.onrender.com/1280x720/nfl_atl_falcons.png",
+            "w": 1280
+          },
+          "overlay_indicators": [
+            {
+              "icon": {
+                "key": {
+                  "condition": {
+                    "checks": {
+                      "favorite_channel": "nfl_atl_falcons_002"
+                    },
+                    "decision": "IS_FAVORITED",
+                    "false": "FAVORITE_HEART_EMPTY",
+                    "true": "FAVORITE_HEART_FILLED"
+                  }
+                },
+                "type": "STATIC"
+              }
+            }
+          ],
+          "primary_action": {
+            "condition": {
+              "checks": {
+                "favorite_channel": "nfl_atl_falcons_002"
+              },
+              "decision": "IS_FAVORITED",
+              "false": "FAVORITE_WITH_INVALIDATION",
+              "true": "UNFAVORITE_WITH_INVALIDATION"
+            }
+          },
+          "team_abbr": "ATL",
+          "team_name": "Atlanta Falcons",
+          "tile_analytics": {
+            "TBD": "TBD"
+          }
+        }
+      ],
+      "title": "A",
+      "total_tiles": 2
+    },
+    {
+      "alpha": "B",
+      "format": "GRID",
+      "ribbon_analytics": {
+        "AccountGuid": "65c9ca3e-217b-11ed-ba13-126882dbc557",
+        "AccountStatus": "Paid",
+        "DeviceGuid": "7b235964-439d-49dc-93ed-e7ed0ebad610",
+        "ProfileGuid": "10340350-2875-c41c-9371-1b714803851d",
+        "ProfileType": "Non Admin",
+        "ScreenName": "Home",
+        "SessionID": "",
+        "TabName": "Home",
+        "query_id": "/drawer/favorites"
+      },
+      "sub_title": "2",
+      "tiles": [
+        {
+          "actions": {
+            "FAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "ADD TO WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "POST",
+              "label": "ADD TO WATCHLIST",
+              "payload": {
+                "channel_guid": "nfl_bal_ravens_003",
+                "enabler20Flag": true,
+                "external_id": "nfl_bal_ravens_003",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/nfl_bal_ravens.png",
+                  "w": 1280
+                },
+                "subtitle": "Added to favorites list",
+                "title": "Baltimore Ravens"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            },
+            "UNFAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "REMOVE FROM WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "DELETE",
+              "label": "REMOVE FROM WATCHLIST",
+              "payload": {
+                "channel_guid": "nfl_bal_ravens_003",
+                "enabler20Flag": true,
+                "external_id": "nfl_bal_ravens_003",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/nfl_bal_ravens.png",
+                  "w": 1280
+                },
+                "subtitle": "Removed from favorites list",
+                "title": "Baltimore Ravens"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            }
+          },
+          "analytics": {
+            "item_id": "nfl_bal_ravens_003",
+            "query_id": "/drawer/favorites"
+          },
+          "focus_row_background_color": "241773",
+          "format": "CHANNEL_CARD",
+          "image": {
+            "h": 720,
+            "url": "https://mockserverfavorites.onrender.com/1280x720/nfl_bal_ravens.png",
+            "w": 1280
+          },
+          "overlay_indicators": [
+            {
+              "icon": {
+                "key": {
+                  "condition": {
+                    "checks": {
+                      "favorite_channel": "nfl_bal_ravens_003"
+                    },
+                    "decision": "IS_FAVORITED",
+                    "false": "FAVORITE_HEART_EMPTY",
+                    "true": "FAVORITE_HEART_FILLED"
+                  }
+                },
+                "type": "STATIC"
+              }
+            }
+          ],
+          "primary_action": {
+            "condition": {
+              "checks": {
+                "favorite_channel": "nfl_bal_ravens_003"
+              },
+              "decision": "IS_FAVORITED",
+              "false": "FAVORITE_WITH_INVALIDATION",
+              "true": "UNFAVORITE_WITH_INVALIDATION"
+            }
+          },
+          "team_abbr": "BAL",
+          "team_name": "Baltimore Ravens",
+          "tile_analytics": {
+            "TBD": "TBD"
+          }
+        },
+        {
+          "actions": {
+            "FAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "ADD TO WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "POST",
+              "label": "ADD TO WATCHLIST",
+              "payload": {
+                "channel_guid": "nfl_buf_bills_004",
+                "enabler20Flag": true,
+                "external_id": "nfl_buf_bills_004",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/nfl_buf_bills.png",
+                  "w": 1280
+                },
+                "subtitle": "Added to favorites list",
+                "title": "Buffalo Bills"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            },
+            "UNFAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "REMOVE FROM WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "DELETE",
+              "label": "REMOVE FROM WATCHLIST",
+              "payload": {
+                "channel_guid": "nfl_buf_bills_004",
+                "enabler20Flag": true,
+                "external_id": "nfl_buf_bills_004",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/nfl_buf_bills.png",
+                  "w": 1280
+                },
+                "subtitle": "Removed from favorites list",
+                "title": "Buffalo Bills"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            }
+          },
+          "analytics": {
+            "item_id": "nfl_buf_bills_004",
+            "query_id": "/drawer/favorites"
+          },
+          "focus_row_background_color": "00338D",
+          "format": "CHANNEL_CARD",
+          "image": {
+            "h": 720,
+            "url": "https://mockserverfavorites.onrender.com/1280x720/nfl_buf_bills.png",
+            "w": 1280
+          },
+          "overlay_indicators": [
+            {
+              "icon": {
+                "key": {
+                  "condition": {
+                    "checks": {
+                      "favorite_channel": "nfl_buf_bills_004"
+                    },
+                    "decision": "IS_FAVORITED",
+                    "false": "FAVORITE_HEART_EMPTY",
+                    "true": "FAVORITE_HEART_FILLED"
+                  }
+                },
+                "type": "STATIC"
+              }
+            }
+          ],
+          "primary_action": {
+            "condition": {
+              "checks": {
+                "favorite_channel": "nfl_buf_bills_004"
+              },
+              "decision": "IS_FAVORITED",
+              "false": "FAVORITE_WITH_INVALIDATION",
+              "true": "UNFAVORITE_WITH_INVALIDATION"
+            }
+          },
+          "team_abbr": "BUF",
+          "team_name": "Buffalo Bills",
+          "tile_analytics": {
+            "TBD": "TBD"
+          }
+        }
+      ],
+      "title": "B",
+      "total_tiles": 2
+    },
+    {
+      "alpha": "C",
+      "format": "GRID",
+      "ribbon_analytics": {
+        "AccountGuid": "65c9ca3e-217b-11ed-ba13-126882dbc557",
+        "AccountStatus": "Paid",
+        "DeviceGuid": "7b235964-439d-49dc-93ed-e7ed0ebad610",
+        "ProfileGuid": "10340350-2875-c41c-9371-1b714803851d",
+        "ProfileType": "Non Admin",
+        "ScreenName": "Home",
+        "SessionID": "",
+        "TabName": "Home",
+        "query_id": "/drawer/favorites"
+      },
+      "sub_title": "4",
+      "tiles": [
+        {
+          "actions": {
+            "FAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "ADD TO WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "POST",
+              "label": "ADD TO WATCHLIST",
+              "payload": {
+                "channel_guid": "nfl_car_panthers_005",
+                "enabler20Flag": true,
+                "external_id": "nfl_car_panthers_005",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/nfl_car_panthers.png",
+                  "w": 1280
+                },
+                "subtitle": "Added to favorites list",
+                "title": "Carolina Panthers"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            },
+            "UNFAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "REMOVE FROM WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "DELETE",
+              "label": "REMOVE FROM WATCHLIST",
+              "payload": {
+                "channel_guid": "nfl_car_panthers_005",
+                "enabler20Flag": true,
+                "external_id": "nfl_car_panthers_005",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/nfl_car_panthers.png",
+                  "w": 1280
+                },
+                "subtitle": "Removed from favorites list",
+                "title": "Carolina Panthers"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            }
+          },
+          "analytics": {
+            "item_id": "nfl_car_panthers_005",
+            "query_id": "/drawer/favorites"
+          },
+          "focus_row_background_color": "0085CA",
+          "format": "CHANNEL_CARD",
+          "image": {
+            "h": 720,
+            "url": "https://mockserverfavorites.onrender.com/1280x720/nfl_car_panthers.png",
+            "w": 1280
+          },
+          "overlay_indicators": [
+            {
+              "icon": {
+                "key": {
+                  "condition": {
+                    "checks": {
+                      "favorite_channel": "nfl_car_panthers_005"
+                    },
+                    "decision": "IS_FAVORITED",
+                    "false": "FAVORITE_HEART_EMPTY",
+                    "true": "FAVORITE_HEART_FILLED"
+                  }
+                },
+                "type": "STATIC"
+              }
+            }
+          ],
+          "primary_action": {
+            "condition": {
+              "checks": {
+                "favorite_channel": "nfl_car_panthers_005"
+              },
+              "decision": "IS_FAVORITED",
+              "false": "FAVORITE_WITH_INVALIDATION",
+              "true": "UNFAVORITE_WITH_INVALIDATION"
+            }
+          },
+          "team_abbr": "CAR",
+          "team_name": "Carolina Panthers",
+          "tile_analytics": {
+            "TBD": "TBD"
+          }
+        },
+        {
+          "actions": {
+            "FAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "ADD TO WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "POST",
+              "label": "ADD TO WATCHLIST",
+              "payload": {
+                "channel_guid": "nfl_chi_bears_006",
+                "enabler20Flag": true,
+                "external_id": "nfl_chi_bears_006",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/nfl_chi_bears.png",
+                  "w": 1280
+                },
+                "subtitle": "Added to favorites list",
+                "title": "Chicago Bears"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            },
+            "UNFAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "REMOVE FROM WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "DELETE",
+              "label": "REMOVE FROM WATCHLIST",
+              "payload": {
+                "channel_guid": "nfl_chi_bears_006",
+                "enabler20Flag": true,
+                "external_id": "nfl_chi_bears_006",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/nfl_chi_bears.png",
+                  "w": 1280
+                },
+                "subtitle": "Removed from favorites list",
+                "title": "Chicago Bears"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            }
+          },
+          "analytics": {
+            "item_id": "nfl_chi_bears_006",
+            "query_id": "/drawer/favorites"
+          },
+          "focus_row_background_color": "0B162A",
+          "format": "CHANNEL_CARD",
+          "image": {
+            "h": 720,
+            "url": "https://mockserverfavorites.onrender.com/1280x720/nfl_chi_bears.png",
+            "w": 1280
+          },
+          "overlay_indicators": [
+            {
+              "icon": {
+                "key": {
+                  "condition": {
+                    "checks": {
+                      "favorite_channel": "nfl_chi_bears_006"
+                    },
+                    "decision": "IS_FAVORITED",
+                    "false": "FAVORITE_HEART_EMPTY",
+                    "true": "FAVORITE_HEART_FILLED"
+                  }
+                },
+                "type": "STATIC"
+              }
+            }
+          ],
+          "primary_action": {
+            "condition": {
+              "checks": {
+                "favorite_channel": "nfl_chi_bears_006"
+              },
+              "decision": "IS_FAVORITED",
+              "false": "FAVORITE_WITH_INVALIDATION",
+              "true": "UNFAVORITE_WITH_INVALIDATION"
+            }
+          },
+          "team_abbr": "CHI",
+          "team_name": "Chicago Bears",
+          "tile_analytics": {
+            "TBD": "TBD"
+          }
+        },
+        {
+          "actions": {
+            "FAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "ADD TO WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "POST",
+              "label": "ADD TO WATCHLIST",
+              "payload": {
+                "channel_guid": "nfl_cin_bengals_007",
+                "enabler20Flag": true,
+                "external_id": "nfl_cin_bengals_007",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/nfl_cin_bengals.png",
+                  "w": 1280
+                },
+                "subtitle": "Added to favorites list",
+                "title": "Cincinnati Bengals"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            },
+            "UNFAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "REMOVE FROM WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "DELETE",
+              "label": "REMOVE FROM WATCHLIST",
+              "payload": {
+                "channel_guid": "nfl_cin_bengals_007",
+                "enabler20Flag": true,
+                "external_id": "nfl_cin_bengals_007",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/nfl_cin_bengals.png",
+                  "w": 1280
+                },
+                "subtitle": "Removed from favorites list",
+                "title": "Cincinnati Bengals"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            }
+          },
+          "analytics": {
+            "item_id": "nfl_cin_bengals_007",
+            "query_id": "/drawer/favorites"
+          },
+          "focus_row_background_color": "FB4F14",
+          "format": "CHANNEL_CARD",
+          "image": {
+            "h": 720,
+            "url": "https://mockserverfavorites.onrender.com/1280x720/nfl_cin_bengals.png",
+            "w": 1280
+          },
+          "overlay_indicators": [
+            {
+              "icon": {
+                "key": {
+                  "condition": {
+                    "checks": {
+                      "favorite_channel": "nfl_cin_bengals_007"
+                    },
+                    "decision": "IS_FAVORITED",
+                    "false": "FAVORITE_HEART_EMPTY",
+                    "true": "FAVORITE_HEART_FILLED"
+                  }
+                },
+                "type": "STATIC"
+              }
+            }
+          ],
+          "primary_action": {
+            "condition": {
+              "checks": {
+                "favorite_channel": "nfl_cin_bengals_007"
+              },
+              "decision": "IS_FAVORITED",
+              "false": "FAVORITE_WITH_INVALIDATION",
+              "true": "UNFAVORITE_WITH_INVALIDATION"
+            }
+          },
+          "team_abbr": "CIN",
+          "team_name": "Cincinnati Bengals",
+          "tile_analytics": {
+            "TBD": "TBD"
+          }
+        },
+        {
+          "actions": {
+            "FAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "ADD TO WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "POST",
+              "label": "ADD TO WATCHLIST",
+              "payload": {
+                "channel_guid": "nfl_cle_browns_008",
+                "enabler20Flag": true,
+                "external_id": "nfl_cle_browns_008",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/nfl_cle_browns.png",
+                  "w": 1280
+                },
+                "subtitle": "Added to favorites list",
+                "title": "Cleveland Browns"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            },
+            "UNFAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "REMOVE FROM WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "DELETE",
+              "label": "REMOVE FROM WATCHLIST",
+              "payload": {
+                "channel_guid": "nfl_cle_browns_008",
+                "enabler20Flag": true,
+                "external_id": "nfl_cle_browns_008",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/nfl_cle_browns.png",
+                  "w": 1280
+                },
+                "subtitle": "Removed from favorites list",
+                "title": "Cleveland Browns"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            }
+          },
+          "analytics": {
+            "item_id": "nfl_cle_browns_008",
+            "query_id": "/drawer/favorites"
+          },
+          "focus_row_background_color": "311D00",
+          "format": "CHANNEL_CARD",
+          "image": {
+            "h": 720,
+            "url": "https://mockserverfavorites.onrender.com/1280x720/nfl_cle_browns.png",
+            "w": 1280
+          },
+          "overlay_indicators": [
+            {
+              "icon": {
+                "key": {
+                  "condition": {
+                    "checks": {
+                      "favorite_channel": "nfl_cle_browns_008"
+                    },
+                    "decision": "IS_FAVORITED",
+                    "false": "FAVORITE_HEART_EMPTY",
+                    "true": "FAVORITE_HEART_FILLED"
+                  }
+                },
+                "type": "STATIC"
+              }
+            }
+          ],
+          "primary_action": {
+            "condition": {
+              "checks": {
+                "favorite_channel": "nfl_cle_browns_008"
+              },
+              "decision": "IS_FAVORITED",
+              "false": "FAVORITE_WITH_INVALIDATION",
+              "true": "UNFAVORITE_WITH_INVALIDATION"
+            }
+          },
+          "team_abbr": "CLE",
+          "team_name": "Cleveland Browns",
+          "tile_analytics": {
+            "TBD": "TBD"
+          }
+        }
+      ],
+      "title": "C",
+      "total_tiles": 4
+    },
+    {
+      "alpha": "D",
+      "format": "GRID",
+      "ribbon_analytics": {
+        "AccountGuid": "65c9ca3e-217b-11ed-ba13-126882dbc557",
+        "AccountStatus": "Paid",
+        "DeviceGuid": "7b235964-439d-49dc-93ed-e7ed0ebad610",
+        "ProfileGuid": "10340350-2875-c41c-9371-1b714803851d",
+        "ProfileType": "Non Admin",
+        "ScreenName": "Home",
+        "SessionID": "",
+        "TabName": "Home",
+        "query_id": "/drawer/favorites"
+      },
+      "sub_title": "3",
+      "tiles": [
+        {
+          "actions": {
+            "FAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "ADD TO WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "POST",
+              "label": "ADD TO WATCHLIST",
+              "payload": {
+                "channel_guid": "nfl_dal_cowboys_009",
+                "enabler20Flag": true,
+                "external_id": "nfl_dal_cowboys_009",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/nfl_dal_cowboys.png",
+                  "w": 1280
+                },
+                "subtitle": "Added to favorites list",
+                "title": "Dallas Cowboys"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            },
+            "UNFAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "REMOVE FROM WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "DELETE",
+              "label": "REMOVE FROM WATCHLIST",
+              "payload": {
+                "channel_guid": "nfl_dal_cowboys_009",
+                "enabler20Flag": true,
+                "external_id": "nfl_dal_cowboys_009",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/nfl_dal_cowboys.png",
+                  "w": 1280
+                },
+                "subtitle": "Removed from favorites list",
+                "title": "Dallas Cowboys"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            }
+          },
+          "analytics": {
+            "item_id": "nfl_dal_cowboys_009",
+            "query_id": "/drawer/favorites"
+          },
+          "focus_row_background_color": "003594",
+          "format": "CHANNEL_CARD",
+          "image": {
+            "h": 720,
+            "url": "https://mockserverfavorites.onrender.com/1280x720/nfl_dal_cowboys.png",
+            "w": 1280
+          },
+          "overlay_indicators": [
+            {
+              "icon": {
+                "key": {
+                  "condition": {
+                    "checks": {
+                      "favorite_channel": "nfl_dal_cowboys_009"
+                    },
+                    "decision": "IS_FAVORITED",
+                    "false": "FAVORITE_HEART_EMPTY",
+                    "true": "FAVORITE_HEART_FILLED"
+                  }
+                },
+                "type": "STATIC"
+              }
+            }
+          ],
+          "primary_action": {
+            "condition": {
+              "checks": {
+                "favorite_channel": "nfl_dal_cowboys_009"
+              },
+              "decision": "IS_FAVORITED",
+              "false": "FAVORITE_WITH_INVALIDATION",
+              "true": "UNFAVORITE_WITH_INVALIDATION"
+            }
+          },
+          "team_abbr": "DAL",
+          "team_name": "Dallas Cowboys",
+          "tile_analytics": {
+            "TBD": "TBD"
+          }
+        },
+        {
+          "actions": {
+            "FAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "ADD TO WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "POST",
+              "label": "ADD TO WATCHLIST",
+              "payload": {
+                "channel_guid": "nfl_den_broncos_010",
+                "enabler20Flag": true,
+                "external_id": "nfl_den_broncos_010",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/nfl_den_broncos.png",
+                  "w": 1280
+                },
+                "subtitle": "Added to favorites list",
+                "title": "Denver Broncos"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            },
+            "UNFAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "REMOVE FROM WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "DELETE",
+              "label": "REMOVE FROM WATCHLIST",
+              "payload": {
+                "channel_guid": "nfl_den_broncos_010",
+                "enabler20Flag": true,
+                "external_id": "nfl_den_broncos_010",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/nfl_den_broncos.png",
+                  "w": 1280
+                },
+                "subtitle": "Removed from favorites list",
+                "title": "Denver Broncos"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            }
+          },
+          "analytics": {
+            "item_id": "nfl_den_broncos_010",
+            "query_id": "/drawer/favorites"
+          },
+          "focus_row_background_color": "FB4F14",
+          "format": "CHANNEL_CARD",
+          "image": {
+            "h": 720,
+            "url": "https://mockserverfavorites.onrender.com/1280x720/nfl_den_broncos.png",
+            "w": 1280
+          },
+          "overlay_indicators": [
+            {
+              "icon": {
+                "key": {
+                  "condition": {
+                    "checks": {
+                      "favorite_channel": "nfl_den_broncos_010"
+                    },
+                    "decision": "IS_FAVORITED",
+                    "false": "FAVORITE_HEART_EMPTY",
+                    "true": "FAVORITE_HEART_FILLED"
+                  }
+                },
+                "type": "STATIC"
+              }
+            }
+          ],
+          "primary_action": {
+            "condition": {
+              "checks": {
+                "favorite_channel": "nfl_den_broncos_010"
+              },
+              "decision": "IS_FAVORITED",
+              "false": "FAVORITE_WITH_INVALIDATION",
+              "true": "UNFAVORITE_WITH_INVALIDATION"
+            }
+          },
+          "team_abbr": "DEN",
+          "team_name": "Denver Broncos",
+          "tile_analytics": {
+            "TBD": "TBD"
+          }
+        },
+        {
+          "actions": {
+            "FAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "ADD TO WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "POST",
+              "label": "ADD TO WATCHLIST",
+              "payload": {
+                "channel_guid": "nfl_det_lions_011",
+                "enabler20Flag": true,
+                "external_id": "nfl_det_lions_011",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/nfl_det_lions.png",
+                  "w": 1280
+                },
+                "subtitle": "Added to favorites list",
+                "title": "Detroit Lions"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            },
+            "UNFAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "REMOVE FROM WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "DELETE",
+              "label": "REMOVE FROM WATCHLIST",
+              "payload": {
+                "channel_guid": "nfl_det_lions_011",
+                "enabler20Flag": true,
+                "external_id": "nfl_det_lions_011",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/nfl_det_lions.png",
+                  "w": 1280
+                },
+                "subtitle": "Removed from favorites list",
+                "title": "Detroit Lions"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            }
+          },
+          "analytics": {
+            "item_id": "nfl_det_lions_011",
+            "query_id": "/drawer/favorites"
+          },
+          "focus_row_background_color": "0076B6",
+          "format": "CHANNEL_CARD",
+          "image": {
+            "h": 720,
+            "url": "https://mockserverfavorites.onrender.com/1280x720/nfl_det_lions.png",
+            "w": 1280
+          },
+          "overlay_indicators": [
+            {
+              "icon": {
+                "key": {
+                  "condition": {
+                    "checks": {
+                      "favorite_channel": "nfl_det_lions_011"
+                    },
+                    "decision": "IS_FAVORITED",
+                    "false": "FAVORITE_HEART_EMPTY",
+                    "true": "FAVORITE_HEART_FILLED"
+                  }
+                },
+                "type": "STATIC"
+              }
+            }
+          ],
+          "primary_action": {
+            "condition": {
+              "checks": {
+                "favorite_channel": "nfl_det_lions_011"
+              },
+              "decision": "IS_FAVORITED",
+              "false": "FAVORITE_WITH_INVALIDATION",
+              "true": "UNFAVORITE_WITH_INVALIDATION"
+            }
+          },
+          "team_abbr": "DET",
+          "team_name": "Detroit Lions",
+          "tile_analytics": {
+            "TBD": "TBD"
+          }
+        }
+      ],
+      "title": "D",
+      "total_tiles": 3
+    },
+    {
+      "alpha": "G",
+      "format": "GRID",
+      "ribbon_analytics": {
+        "AccountGuid": "65c9ca3e-217b-11ed-ba13-126882dbc557",
+        "AccountStatus": "Paid",
+        "DeviceGuid": "7b235964-439d-49dc-93ed-e7ed0ebad610",
+        "ProfileGuid": "10340350-2875-c41c-9371-1b714803851d",
+        "ProfileType": "Non Admin",
+        "ScreenName": "Home",
+        "SessionID": "",
+        "TabName": "Home",
+        "query_id": "/drawer/favorites"
+      },
+      "sub_title": "1",
+      "tiles": [
+        {
+          "actions": {
+            "FAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "ADD TO WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "POST",
+              "label": "ADD TO WATCHLIST",
+              "payload": {
+                "channel_guid": "nfl_gb_packers_012",
+                "enabler20Flag": true,
+                "external_id": "nfl_gb_packers_012",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/nfl_gb_packers.png",
+                  "w": 1280
+                },
+                "subtitle": "Added to favorites list",
+                "title": "Green Bay Packers"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            },
+            "UNFAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "REMOVE FROM WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "DELETE",
+              "label": "REMOVE FROM WATCHLIST",
+              "payload": {
+                "channel_guid": "nfl_gb_packers_012",
+                "enabler20Flag": true,
+                "external_id": "nfl_gb_packers_012",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/nfl_gb_packers.png",
+                  "w": 1280
+                },
+                "subtitle": "Removed from favorites list",
+                "title": "Green Bay Packers"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            }
+          },
+          "analytics": {
+            "item_id": "nfl_gb_packers_012",
+            "query_id": "/drawer/favorites"
+          },
+          "focus_row_background_color": "203731",
+          "format": "CHANNEL_CARD",
+          "image": {
+            "h": 720,
+            "url": "https://mockserverfavorites.onrender.com/1280x720/nfl_gb_packers.png",
+            "w": 1280
+          },
+          "overlay_indicators": [
+            {
+              "icon": {
+                "key": {
+                  "condition": {
+                    "checks": {
+                      "favorite_channel": "nfl_gb_packers_012"
+                    },
+                    "decision": "IS_FAVORITED",
+                    "false": "FAVORITE_HEART_EMPTY",
+                    "true": "FAVORITE_HEART_FILLED"
+                  }
+                },
+                "type": "STATIC"
+              }
+            }
+          ],
+          "primary_action": {
+            "condition": {
+              "checks": {
+                "favorite_channel": "nfl_gb_packers_012"
+              },
+              "decision": "IS_FAVORITED",
+              "false": "FAVORITE_WITH_INVALIDATION",
+              "true": "UNFAVORITE_WITH_INVALIDATION"
+            }
+          },
+          "team_abbr": "GB",
+          "team_name": "Green Bay Packers",
+          "tile_analytics": {
+            "TBD": "TBD"
+          }
+        }
+      ],
+      "title": "G",
+      "total_tiles": 1
+    },
+    {
+      "alpha": "H",
+      "format": "GRID",
+      "ribbon_analytics": {
+        "AccountGuid": "65c9ca3e-217b-11ed-ba13-126882dbc557",
+        "AccountStatus": "Paid",
+        "DeviceGuid": "7b235964-439d-49dc-93ed-e7ed0ebad610",
+        "ProfileGuid": "10340350-2875-c41c-9371-1b714803851d",
+        "ProfileType": "Non Admin",
+        "ScreenName": "Home",
+        "SessionID": "",
+        "TabName": "Home",
+        "query_id": "/drawer/favorites"
+      },
+      "sub_title": "1",
+      "tiles": [
+        {
+          "actions": {
+            "FAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "ADD TO WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "POST",
+              "label": "ADD TO WATCHLIST",
+              "payload": {
+                "channel_guid": "nfl_hou_texans_013",
+                "enabler20Flag": true,
+                "external_id": "nfl_hou_texans_013",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/nfl_hou_texans.png",
+                  "w": 1280
+                },
+                "subtitle": "Added to favorites list",
+                "title": "Houston Texans"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            },
+            "UNFAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "REMOVE FROM WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "DELETE",
+              "label": "REMOVE FROM WATCHLIST",
+              "payload": {
+                "channel_guid": "nfl_hou_texans_013",
+                "enabler20Flag": true,
+                "external_id": "nfl_hou_texans_013",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/nfl_hou_texans.png",
+                  "w": 1280
+                },
+                "subtitle": "Removed from favorites list",
+                "title": "Houston Texans"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            }
+          },
+          "analytics": {
+            "item_id": "nfl_hou_texans_013",
+            "query_id": "/drawer/favorites"
+          },
+          "focus_row_background_color": "03202F",
+          "format": "CHANNEL_CARD",
+          "image": {
+            "h": 720,
+            "url": "https://mockserverfavorites.onrender.com/1280x720/nfl_hou_texans.png",
+            "w": 1280
+          },
+          "overlay_indicators": [
+            {
+              "icon": {
+                "key": {
+                  "condition": {
+                    "checks": {
+                      "favorite_channel": "nfl_hou_texans_013"
+                    },
+                    "decision": "IS_FAVORITED",
+                    "false": "FAVORITE_HEART_EMPTY",
+                    "true": "FAVORITE_HEART_FILLED"
+                  }
+                },
+                "type": "STATIC"
+              }
+            }
+          ],
+          "primary_action": {
+            "condition": {
+              "checks": {
+                "favorite_channel": "nfl_hou_texans_013"
+              },
+              "decision": "IS_FAVORITED",
+              "false": "FAVORITE_WITH_INVALIDATION",
+              "true": "UNFAVORITE_WITH_INVALIDATION"
+            }
+          },
+          "team_abbr": "HOU",
+          "team_name": "Houston Texans",
+          "tile_analytics": {
+            "TBD": "TBD"
+          }
+        }
+      ],
+      "title": "H",
+      "total_tiles": 1
+    },
+    {
+      "alpha": "I",
+      "format": "GRID",
+      "ribbon_analytics": {
+        "AccountGuid": "65c9ca3e-217b-11ed-ba13-126882dbc557",
+        "AccountStatus": "Paid",
+        "DeviceGuid": "7b235964-439d-49dc-93ed-e7ed0ebad610",
+        "ProfileGuid": "10340350-2875-c41c-9371-1b714803851d",
+        "ProfileType": "Non Admin",
+        "ScreenName": "Home",
+        "SessionID": "",
+        "TabName": "Home",
+        "query_id": "/drawer/favorites"
+      },
+      "sub_title": "1",
+      "tiles": [
+        {
+          "actions": {
+            "FAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "ADD TO WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "POST",
+              "label": "ADD TO WATCHLIST",
+              "payload": {
+                "channel_guid": "nfl_ind_colts_014",
+                "enabler20Flag": true,
+                "external_id": "nfl_ind_colts_014",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/nfl_ind_colts.png",
+                  "w": 1280
+                },
+                "subtitle": "Added to favorites list",
+                "title": "Indianapolis Colts"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            },
+            "UNFAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "REMOVE FROM WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "DELETE",
+              "label": "REMOVE FROM WATCHLIST",
+              "payload": {
+                "channel_guid": "nfl_ind_colts_014",
+                "enabler20Flag": true,
+                "external_id": "nfl_ind_colts_014",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/nfl_ind_colts.png",
+                  "w": 1280
+                },
+                "subtitle": "Removed from favorites list",
+                "title": "Indianapolis Colts"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            }
+          },
+          "analytics": {
+            "item_id": "nfl_ind_colts_014",
+            "query_id": "/drawer/favorites"
+          },
+          "focus_row_background_color": "002C5F",
+          "format": "CHANNEL_CARD",
+          "image": {
+            "h": 720,
+            "url": "https://mockserverfavorites.onrender.com/1280x720/nfl_ind_colts.png",
+            "w": 1280
+          },
+          "overlay_indicators": [
+            {
+              "icon": {
+                "key": {
+                  "condition": {
+                    "checks": {
+                      "favorite_channel": "nfl_ind_colts_014"
+                    },
+                    "decision": "IS_FAVORITED",
+                    "false": "FAVORITE_HEART_EMPTY",
+                    "true": "FAVORITE_HEART_FILLED"
+                  }
+                },
+                "type": "STATIC"
+              }
+            }
+          ],
+          "primary_action": {
+            "condition": {
+              "checks": {
+                "favorite_channel": "nfl_ind_colts_014"
+              },
+              "decision": "IS_FAVORITED",
+              "false": "FAVORITE_WITH_INVALIDATION",
+              "true": "UNFAVORITE_WITH_INVALIDATION"
+            }
+          },
+          "team_abbr": "IND",
+          "team_name": "Indianapolis Colts",
+          "tile_analytics": {
+            "TBD": "TBD"
+          }
+        }
+      ],
+      "title": "I",
+      "total_tiles": 1
+    },
+    {
+      "alpha": "J",
+      "format": "GRID",
+      "ribbon_analytics": {
+        "AccountGuid": "65c9ca3e-217b-11ed-ba13-126882dbc557",
+        "AccountStatus": "Paid",
+        "DeviceGuid": "7b235964-439d-49dc-93ed-e7ed0ebad610",
+        "ProfileGuid": "10340350-2875-c41c-9371-1b714803851d",
+        "ProfileType": "Non Admin",
+        "ScreenName": "Home",
+        "SessionID": "",
+        "TabName": "Home",
+        "query_id": "/drawer/favorites"
+      },
+      "sub_title": "1",
+      "tiles": [
+        {
+          "actions": {
+            "FAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "ADD TO WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "POST",
+              "label": "ADD TO WATCHLIST",
+              "payload": {
+                "channel_guid": "nfl_jax_jaguars_015",
+                "enabler20Flag": true,
+                "external_id": "nfl_jax_jaguars_015",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/nfl_jax_jaguars.png",
+                  "w": 1280
+                },
+                "subtitle": "Added to favorites list",
+                "title": "Jacksonville Jaguars"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            },
+            "UNFAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "REMOVE FROM WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "DELETE",
+              "label": "REMOVE FROM WATCHLIST",
+              "payload": {
+                "channel_guid": "nfl_jax_jaguars_015",
+                "enabler20Flag": true,
+                "external_id": "nfl_jax_jaguars_015",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/nfl_jax_jaguars.png",
+                  "w": 1280
+                },
+                "subtitle": "Removed from favorites list",
+                "title": "Jacksonville Jaguars"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            }
+          },
+          "analytics": {
+            "item_id": "nfl_jax_jaguars_015",
+            "query_id": "/drawer/favorites"
+          },
+          "focus_row_background_color": "006778",
+          "format": "CHANNEL_CARD",
+          "image": {
+            "h": 720,
+            "url": "https://mockserverfavorites.onrender.com/1280x720/nfl_jax_jaguars.png",
+            "w": 1280
+          },
+          "overlay_indicators": [
+            {
+              "icon": {
+                "key": {
+                  "condition": {
+                    "checks": {
+                      "favorite_channel": "nfl_jax_jaguars_015"
+                    },
+                    "decision": "IS_FAVORITED",
+                    "false": "FAVORITE_HEART_EMPTY",
+                    "true": "FAVORITE_HEART_FILLED"
+                  }
+                },
+                "type": "STATIC"
+              }
+            }
+          ],
+          "primary_action": {
+            "condition": {
+              "checks": {
+                "favorite_channel": "nfl_jax_jaguars_015"
+              },
+              "decision": "IS_FAVORITED",
+              "false": "FAVORITE_WITH_INVALIDATION",
+              "true": "UNFAVORITE_WITH_INVALIDATION"
+            }
+          },
+          "team_abbr": "JAX",
+          "team_name": "Jacksonville Jaguars",
+          "tile_analytics": {
+            "TBD": "TBD"
+          }
+        }
+      ],
+      "title": "J",
+      "total_tiles": 1
+    },
+    {
+      "alpha": "K",
+      "format": "GRID",
+      "ribbon_analytics": {
+        "AccountGuid": "65c9ca3e-217b-11ed-ba13-126882dbc557",
+        "AccountStatus": "Paid",
+        "DeviceGuid": "7b235964-439d-49dc-93ed-e7ed0ebad610",
+        "ProfileGuid": "10340350-2875-c41c-9371-1b714803851d",
+        "ProfileType": "Non Admin",
+        "ScreenName": "Home",
+        "SessionID": "",
+        "TabName": "Home",
+        "query_id": "/drawer/favorites"
+      },
+      "sub_title": "1",
+      "tiles": [
+        {
+          "actions": {
+            "FAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "ADD TO WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "POST",
+              "label": "ADD TO WATCHLIST",
+              "payload": {
+                "channel_guid": "nfl_kc_chiefs_016",
+                "enabler20Flag": true,
+                "external_id": "nfl_kc_chiefs_016",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/nfl_kc_chiefs.png",
+                  "w": 1280
+                },
+                "subtitle": "Added to favorites list",
+                "title": "Kansas City Chiefs"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            },
+            "UNFAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "REMOVE FROM WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "DELETE",
+              "label": "REMOVE FROM WATCHLIST",
+              "payload": {
+                "channel_guid": "nfl_kc_chiefs_016",
+                "enabler20Flag": true,
+                "external_id": "nfl_kc_chiefs_016",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/nfl_kc_chiefs.png",
+                  "w": 1280
+                },
+                "subtitle": "Removed from favorites list",
+                "title": "Kansas City Chiefs"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            }
+          },
+          "analytics": {
+            "item_id": "nfl_kc_chiefs_016",
+            "query_id": "/drawer/favorites"
+          },
+          "focus_row_background_color": "E31837",
+          "format": "CHANNEL_CARD",
+          "image": {
+            "h": 720,
+            "url": "https://mockserverfavorites.onrender.com/1280x720/nfl_kc_chiefs.png",
+            "w": 1280
+          },
+          "overlay_indicators": [
+            {
+              "icon": {
+                "key": {
+                  "condition": {
+                    "checks": {
+                      "favorite_channel": "nfl_kc_chiefs_016"
+                    },
+                    "decision": "IS_FAVORITED",
+                    "false": "FAVORITE_HEART_EMPTY",
+                    "true": "FAVORITE_HEART_FILLED"
+                  }
+                },
+                "type": "STATIC"
+              }
+            }
+          ],
+          "primary_action": {
+            "condition": {
+              "checks": {
+                "favorite_channel": "nfl_kc_chiefs_016"
+              },
+              "decision": "IS_FAVORITED",
+              "false": "FAVORITE_WITH_INVALIDATION",
+              "true": "UNFAVORITE_WITH_INVALIDATION"
+            }
+          },
+          "team_abbr": "KC",
+          "team_name": "Kansas City Chiefs",
+          "tile_analytics": {
+            "TBD": "TBD"
+          }
+        }
+      ],
+      "title": "K",
+      "total_tiles": 1
+    },
+    {
+      "alpha": "L",
+      "format": "GRID",
+      "ribbon_analytics": {
+        "AccountGuid": "65c9ca3e-217b-11ed-ba13-126882dbc557",
+        "AccountStatus": "Paid",
+        "DeviceGuid": "7b235964-439d-49dc-93ed-e7ed0ebad610",
+        "ProfileGuid": "10340350-2875-c41c-9371-1b714803851d",
+        "ProfileType": "Non Admin",
+        "ScreenName": "Home",
+        "SessionID": "",
+        "TabName": "Home",
+        "query_id": "/drawer/favorites"
+      },
+      "sub_title": "2",
+      "tiles": [
+        {
+          "actions": {
+            "FAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "ADD TO WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "POST",
+              "label": "ADD TO WATCHLIST",
+              "payload": {
+                "channel_guid": "nfl_lv_raiders_017",
+                "enabler20Flag": true,
+                "external_id": "nfl_lv_raiders_017",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/nfl_lv_raiders.png",
+                  "w": 1280
+                },
+                "subtitle": "Added to favorites list",
+                "title": "Las Vegas Raiders"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            },
+            "UNFAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "REMOVE FROM WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "DELETE",
+              "label": "REMOVE FROM WATCHLIST",
+              "payload": {
+                "channel_guid": "nfl_lv_raiders_017",
+                "enabler20Flag": true,
+                "external_id": "nfl_lv_raiders_017",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/nfl_lv_raiders.png",
+                  "w": 1280
+                },
+                "subtitle": "Removed from favorites list",
+                "title": "Las Vegas Raiders"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            }
+          },
+          "analytics": {
+            "item_id": "nfl_lv_raiders_017",
+            "query_id": "/drawer/favorites"
+          },
+          "focus_row_background_color": "000000",
+          "format": "CHANNEL_CARD",
+          "image": {
+            "h": 720,
+            "url": "https://mockserverfavorites.onrender.com/1280x720/nfl_lv_raiders.png",
+            "w": 1280
+          },
+          "overlay_indicators": [
+            {
+              "icon": {
+                "key": {
+                  "condition": {
+                    "checks": {
+                      "favorite_channel": "nfl_lv_raiders_017"
+                    },
+                    "decision": "IS_FAVORITED",
+                    "false": "FAVORITE_HEART_EMPTY",
+                    "true": "FAVORITE_HEART_FILLED"
+                  }
+                },
+                "type": "STATIC"
+              }
+            }
+          ],
+          "primary_action": {
+            "condition": {
+              "checks": {
+                "favorite_channel": "nfl_lv_raiders_017"
+              },
+              "decision": "IS_FAVORITED",
+              "false": "FAVORITE_WITH_INVALIDATION",
+              "true": "UNFAVORITE_WITH_INVALIDATION"
+            }
+          },
+          "team_abbr": "LV",
+          "team_name": "Las Vegas Raiders",
+          "tile_analytics": {
+            "TBD": "TBD"
+          }
+        },
+        {
+          "actions": {
+            "FAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "ADD TO WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "POST",
+              "label": "ADD TO WATCHLIST",
+              "payload": {
+                "channel_guid": "nfl_lac_chargers_018",
+                "enabler20Flag": true,
+                "external_id": "nfl_lac_chargers_018",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/nfl_lac_chargers.png",
+                  "w": 1280
+                },
+                "subtitle": "Added to favorites list",
+                "title": "Los Angeles Chargers"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            },
+            "UNFAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "REMOVE FROM WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "DELETE",
+              "label": "REMOVE FROM WATCHLIST",
+              "payload": {
+                "channel_guid": "nfl_lac_chargers_018",
+                "enabler20Flag": true,
+                "external_id": "nfl_lac_chargers_018",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/nfl_lac_chargers.png",
+                  "w": 1280
+                },
+                "subtitle": "Removed from favorites list",
+                "title": "Los Angeles Chargers"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            }
+          },
+          "analytics": {
+            "item_id": "nfl_lac_chargers_018",
+            "query_id": "/drawer/favorites"
+          },
+          "focus_row_background_color": "0080C6",
+          "format": "CHANNEL_CARD",
+          "image": {
+            "h": 720,
+            "url": "https://mockserverfavorites.onrender.com/1280x720/nfl_lac_chargers.png",
+            "w": 1280
+          },
+          "overlay_indicators": [
+            {
+              "icon": {
+                "key": {
+                  "condition": {
+                    "checks": {
+                      "favorite_channel": "nfl_lac_chargers_018"
+                    },
+                    "decision": "IS_FAVORITED",
+                    "false": "FAVORITE_HEART_EMPTY",
+                    "true": "FAVORITE_HEART_FILLED"
+                  }
+                },
+                "type": "STATIC"
+              }
+            }
+          ],
+          "primary_action": {
+            "condition": {
+              "checks": {
+                "favorite_channel": "nfl_lac_chargers_018"
+              },
+              "decision": "IS_FAVORITED",
+              "false": "FAVORITE_WITH_INVALIDATION",
+              "true": "UNFAVORITE_WITH_INVALIDATION"
+            }
+          },
+          "team_abbr": "LAC",
+          "team_name": "Los Angeles Chargers",
+          "tile_analytics": {
+            "TBD": "TBD"
+          }
+        }
+      ],
+      "title": "L",
+      "total_tiles": 2
+    },
+    {
+      "alpha": "M",
+      "format": "GRID",
+      "ribbon_analytics": {
+        "AccountGuid": "65c9ca3e-217b-11ed-ba13-126882dbc557",
+        "AccountStatus": "Paid",
+        "DeviceGuid": "7b235964-439d-49dc-93ed-e7ed0ebad610",
+        "ProfileGuid": "10340350-2875-c41c-9371-1b714803851d",
+        "ProfileType": "Non Admin",
+        "ScreenName": "Home",
+        "SessionID": "",
+        "TabName": "Home",
+        "query_id": "/drawer/favorites"
+      },
+      "sub_title": "2",
+      "tiles": [
+        {
+          "actions": {
+            "FAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "ADD TO WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "POST",
+              "label": "ADD TO WATCHLIST",
+              "payload": {
+                "channel_guid": "nfl_mia_dolphins_019",
+                "enabler20Flag": true,
+                "external_id": "nfl_mia_dolphins_019",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/nfl_mia_dolphins.png",
+                  "w": 1280
+                },
+                "subtitle": "Added to favorites list",
+                "title": "Miami Dolphins"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            },
+            "UNFAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "REMOVE FROM WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "DELETE",
+              "label": "REMOVE FROM WATCHLIST",
+              "payload": {
+                "channel_guid": "nfl_mia_dolphins_019",
+                "enabler20Flag": true,
+                "external_id": "nfl_mia_dolphins_019",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/nfl_mia_dolphins.png",
+                  "w": 1280
+                },
+                "subtitle": "Removed from favorites list",
+                "title": "Miami Dolphins"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            }
+          },
+          "analytics": {
+            "item_id": "nfl_mia_dolphins_019",
+            "query_id": "/drawer/favorites"
+          },
+          "focus_row_background_color": "008E97",
+          "format": "CHANNEL_CARD",
+          "image": {
+            "h": 720,
+            "url": "https://mockserverfavorites.onrender.com/1280x720/nfl_mia_dolphins.png",
+            "w": 1280
+          },
+          "overlay_indicators": [
+            {
+              "icon": {
+                "key": {
+                  "condition": {
+                    "checks": {
+                      "favorite_channel": "nfl_mia_dolphins_019"
+                    },
+                    "decision": "IS_FAVORITED",
+                    "false": "FAVORITE_HEART_EMPTY",
+                    "true": "FAVORITE_HEART_FILLED"
+                  }
+                },
+                "type": "STATIC"
+              }
+            }
+          ],
+          "primary_action": {
+            "condition": {
+              "checks": {
+                "favorite_channel": "nfl_mia_dolphins_019"
+              },
+              "decision": "IS_FAVORITED",
+              "false": "FAVORITE_WITH_INVALIDATION",
+              "true": "UNFAVORITE_WITH_INVALIDATION"
+            }
+          },
+          "team_abbr": "MIA",
+          "team_name": "Miami Dolphins",
+          "tile_analytics": {
+            "TBD": "TBD"
+          }
+        },
+        {
+          "actions": {
+            "FAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "ADD TO WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "POST",
+              "label": "ADD TO WATCHLIST",
+              "payload": {
+                "channel_guid": "nfl_min_vikings_020",
+                "enabler20Flag": true,
+                "external_id": "nfl_min_vikings_020",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/nfl_min_vikings.png",
+                  "w": 1280
+                },
+                "subtitle": "Added to favorites list",
+                "title": "Minnesota Vikings"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            },
+            "UNFAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "REMOVE FROM WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "DELETE",
+              "label": "REMOVE FROM WATCHLIST",
+              "payload": {
+                "channel_guid": "nfl_min_vikings_020",
+                "enabler20Flag": true,
+                "external_id": "nfl_min_vikings_020",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/nfl_min_vikings.png",
+                  "w": 1280
+                },
+                "subtitle": "Removed from favorites list",
+                "title": "Minnesota Vikings"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            }
+          },
+          "analytics": {
+            "item_id": "nfl_min_vikings_020",
+            "query_id": "/drawer/favorites"
+          },
+          "focus_row_background_color": "4F2683",
+          "format": "CHANNEL_CARD",
+          "image": {
+            "h": 720,
+            "url": "https://mockserverfavorites.onrender.com/1280x720/nfl_min_vikings.png",
+            "w": 1280
+          },
+          "overlay_indicators": [
+            {
+              "icon": {
+                "key": {
+                  "condition": {
+                    "checks": {
+                      "favorite_channel": "nfl_min_vikings_020"
+                    },
+                    "decision": "IS_FAVORITED",
+                    "false": "FAVORITE_HEART_EMPTY",
+                    "true": "FAVORITE_HEART_FILLED"
+                  }
+                },
+                "type": "STATIC"
+              }
+            }
+          ],
+          "primary_action": {
+            "condition": {
+              "checks": {
+                "favorite_channel": "nfl_min_vikings_020"
+              },
+              "decision": "IS_FAVORITED",
+              "false": "FAVORITE_WITH_INVALIDATION",
+              "true": "UNFAVORITE_WITH_INVALIDATION"
+            }
+          },
+          "team_abbr": "MIN",
+          "team_name": "Minnesota Vikings",
+          "tile_analytics": {
+            "TBD": "TBD"
+          }
+        }
+      ],
+      "title": "M",
+      "total_tiles": 2
+    },
+    {
+      "alpha": "N",
+      "format": "GRID",
+      "ribbon_analytics": {
+        "AccountGuid": "65c9ca3e-217b-11ed-ba13-126882dbc557",
+        "AccountStatus": "Paid",
+        "DeviceGuid": "7b235964-439d-49dc-93ed-e7ed0ebad610",
+        "ProfileGuid": "10340350-2875-c41c-9371-1b714803851d",
+        "ProfileType": "Non Admin",
+        "ScreenName": "Home",
+        "SessionID": "",
+        "TabName": "Home",
+        "query_id": "/drawer/favorites"
+      },
+      "sub_title": "4",
+      "tiles": [
+        {
+          "actions": {
+            "FAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "ADD TO WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "POST",
+              "label": "ADD TO WATCHLIST",
+              "payload": {
+                "channel_guid": "nfl_ne_patriots_021",
+                "enabler20Flag": true,
+                "external_id": "nfl_ne_patriots_021",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/nfl_ne_patriots.png",
+                  "w": 1280
+                },
+                "subtitle": "Added to favorites list",
+                "title": "New England Patriots"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            },
+            "UNFAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "REMOVE FROM WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "DELETE",
+              "label": "REMOVE FROM WATCHLIST",
+              "payload": {
+                "channel_guid": "nfl_ne_patriots_021",
+                "enabler20Flag": true,
+                "external_id": "nfl_ne_patriots_021",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/nfl_ne_patriots.png",
+                  "w": 1280
+                },
+                "subtitle": "Removed from favorites list",
+                "title": "New England Patriots"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            }
+          },
+          "analytics": {
+            "item_id": "nfl_ne_patriots_021",
+            "query_id": "/drawer/favorites"
+          },
+          "focus_row_background_color": "002244",
+          "format": "CHANNEL_CARD",
+          "image": {
+            "h": 720,
+            "url": "https://mockserverfavorites.onrender.com/1280x720/nfl_ne_patriots.png",
+            "w": 1280
+          },
+          "overlay_indicators": [
+            {
+              "icon": {
+                "key": {
+                  "condition": {
+                    "checks": {
+                      "favorite_channel": "nfl_ne_patriots_021"
+                    },
+                    "decision": "IS_FAVORITED",
+                    "false": "FAVORITE_HEART_EMPTY",
+                    "true": "FAVORITE_HEART_FILLED"
+                  }
+                },
+                "type": "STATIC"
+              }
+            }
+          ],
+          "primary_action": {
+            "condition": {
+              "checks": {
+                "favorite_channel": "nfl_ne_patriots_021"
+              },
+              "decision": "IS_FAVORITED",
+              "false": "FAVORITE_WITH_INVALIDATION",
+              "true": "UNFAVORITE_WITH_INVALIDATION"
+            }
+          },
+          "team_abbr": "NE",
+          "team_name": "New England Patriots",
+          "tile_analytics": {
+            "TBD": "TBD"
+          }
+        },
+        {
+          "actions": {
+            "FAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "ADD TO WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "POST",
+              "label": "ADD TO WATCHLIST",
+              "payload": {
+                "channel_guid": "nfl_no_saints_022",
+                "enabler20Flag": true,
+                "external_id": "nfl_no_saints_022",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/nfl_no_saints.png",
+                  "w": 1280
+                },
+                "subtitle": "Added to favorites list",
+                "title": "New Orleans Saints"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            },
+            "UNFAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "REMOVE FROM WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "DELETE",
+              "label": "REMOVE FROM WATCHLIST",
+              "payload": {
+                "channel_guid": "nfl_no_saints_022",
+                "enabler20Flag": true,
+                "external_id": "nfl_no_saints_022",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/nfl_no_saints.png",
+                  "w": 1280
+                },
+                "subtitle": "Removed from favorites list",
+                "title": "New Orleans Saints"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            }
+          },
+          "analytics": {
+            "item_id": "nfl_no_saints_022",
+            "query_id": "/drawer/favorites"
+          },
+          "focus_row_background_color": "D3BC8D",
+          "format": "CHANNEL_CARD",
+          "image": {
+            "h": 720,
+            "url": "https://mockserverfavorites.onrender.com/1280x720/nfl_no_saints.png",
+            "w": 1280
+          },
+          "overlay_indicators": [
+            {
+              "icon": {
+                "key": {
+                  "condition": {
+                    "checks": {
+                      "favorite_channel": "nfl_no_saints_022"
+                    },
+                    "decision": "IS_FAVORITED",
+                    "false": "FAVORITE_HEART_EMPTY",
+                    "true": "FAVORITE_HEART_FILLED"
+                  }
+                },
+                "type": "STATIC"
+              }
+            }
+          ],
+          "primary_action": {
+            "condition": {
+              "checks": {
+                "favorite_channel": "nfl_no_saints_022"
+              },
+              "decision": "IS_FAVORITED",
+              "false": "FAVORITE_WITH_INVALIDATION",
+              "true": "UNFAVORITE_WITH_INVALIDATION"
+            }
+          },
+          "team_abbr": "NO",
+          "team_name": "New Orleans Saints",
+          "tile_analytics": {
+            "TBD": "TBD"
+          }
+        },
+        {
+          "actions": {
+            "FAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "ADD TO WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "POST",
+              "label": "ADD TO WATCHLIST",
+              "payload": {
+                "channel_guid": "nfl_nyg_giants_023",
+                "enabler20Flag": true,
+                "external_id": "nfl_nyg_giants_023",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/nfl_nyg_giants.png",
+                  "w": 1280
+                },
+                "subtitle": "Added to favorites list",
+                "title": "New York Giants"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            },
+            "UNFAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "REMOVE FROM WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "DELETE",
+              "label": "REMOVE FROM WATCHLIST",
+              "payload": {
+                "channel_guid": "nfl_nyg_giants_023",
+                "enabler20Flag": true,
+                "external_id": "nfl_nyg_giants_023",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/nfl_nyg_giants.png",
+                  "w": 1280
+                },
+                "subtitle": "Removed from favorites list",
+                "title": "New York Giants"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            }
+          },
+          "analytics": {
+            "item_id": "nfl_nyg_giants_023",
+            "query_id": "/drawer/favorites"
+          },
+          "focus_row_background_color": "0B2265",
+          "format": "CHANNEL_CARD",
+          "image": {
+            "h": 720,
+            "url": "https://mockserverfavorites.onrender.com/1280x720/nfl_nyg_giants.png",
+            "w": 1280
+          },
+          "overlay_indicators": [
+            {
+              "icon": {
+                "key": {
+                  "condition": {
+                    "checks": {
+                      "favorite_channel": "nfl_nyg_giants_023"
+                    },
+                    "decision": "IS_FAVORITED",
+                    "false": "FAVORITE_HEART_EMPTY",
+                    "true": "FAVORITE_HEART_FILLED"
+                  }
+                },
+                "type": "STATIC"
+              }
+            }
+          ],
+          "primary_action": {
+            "condition": {
+              "checks": {
+                "favorite_channel": "nfl_nyg_giants_023"
+              },
+              "decision": "IS_FAVORITED",
+              "false": "FAVORITE_WITH_INVALIDATION",
+              "true": "UNFAVORITE_WITH_INVALIDATION"
+            }
+          },
+          "team_abbr": "NYG",
+          "team_name": "New York Giants",
+          "tile_analytics": {
+            "TBD": "TBD"
+          }
+        },
+        {
+          "actions": {
+            "FAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "ADD TO WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "POST",
+              "label": "ADD TO WATCHLIST",
+              "payload": {
+                "channel_guid": "nfl_nyj_jets_024",
+                "enabler20Flag": true,
+                "external_id": "nfl_nyj_jets_024",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/nfl_nyj_jets.png",
+                  "w": 1280
+                },
+                "subtitle": "Added to favorites list",
+                "title": "New York Jets"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            },
+            "UNFAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "REMOVE FROM WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "DELETE",
+              "label": "REMOVE FROM WATCHLIST",
+              "payload": {
+                "channel_guid": "nfl_nyj_jets_024",
+                "enabler20Flag": true,
+                "external_id": "nfl_nyj_jets_024",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/nfl_nyj_jets.png",
+                  "w": 1280
+                },
+                "subtitle": "Removed from favorites list",
+                "title": "New York Jets"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            }
+          },
+          "analytics": {
+            "item_id": "nfl_nyj_jets_024",
+            "query_id": "/drawer/favorites"
+          },
+          "focus_row_background_color": "125740",
+          "format": "CHANNEL_CARD",
+          "image": {
+            "h": 720,
+            "url": "https://mockserverfavorites.onrender.com/1280x720/nfl_nyj_jets.png",
+            "w": 1280
+          },
+          "overlay_indicators": [
+            {
+              "icon": {
+                "key": {
+                  "condition": {
+                    "checks": {
+                      "favorite_channel": "nfl_nyj_jets_024"
+                    },
+                    "decision": "IS_FAVORITED",
+                    "false": "FAVORITE_HEART_EMPTY",
+                    "true": "FAVORITE_HEART_FILLED"
+                  }
+                },
+                "type": "STATIC"
+              }
+            }
+          ],
+          "primary_action": {
+            "condition": {
+              "checks": {
+                "favorite_channel": "nfl_nyj_jets_024"
+              },
+              "decision": "IS_FAVORITED",
+              "false": "FAVORITE_WITH_INVALIDATION",
+              "true": "UNFAVORITE_WITH_INVALIDATION"
+            }
+          },
+          "team_abbr": "NYJ",
+          "team_name": "New York Jets",
+          "tile_analytics": {
+            "TBD": "TBD"
+          }
+        }
+      ],
+      "title": "N",
+      "total_tiles": 4
+    },
+    {
+      "alpha": "P",
+      "format": "GRID",
+      "ribbon_analytics": {
+        "AccountGuid": "65c9ca3e-217b-11ed-ba13-126882dbc557",
+        "AccountStatus": "Paid",
+        "DeviceGuid": "7b235964-439d-49dc-93ed-e7ed0ebad610",
+        "ProfileGuid": "10340350-2875-c41c-9371-1b714803851d",
+        "ProfileType": "Non Admin",
+        "ScreenName": "Home",
+        "SessionID": "",
+        "TabName": "Home",
+        "query_id": "/drawer/favorites"
+      },
+      "sub_title": "2",
+      "tiles": [
+        {
+          "actions": {
+            "FAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "ADD TO WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "POST",
+              "label": "ADD TO WATCHLIST",
+              "payload": {
+                "channel_guid": "nfl_phi_eagles_025",
+                "enabler20Flag": true,
+                "external_id": "nfl_phi_eagles_025",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/nfl_phi_eagles.png",
+                  "w": 1280
+                },
+                "subtitle": "Added to favorites list",
+                "title": "Philadelphia Eagles"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            },
+            "UNFAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "REMOVE FROM WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "DELETE",
+              "label": "REMOVE FROM WATCHLIST",
+              "payload": {
+                "channel_guid": "nfl_phi_eagles_025",
+                "enabler20Flag": true,
+                "external_id": "nfl_phi_eagles_025",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/nfl_phi_eagles.png",
+                  "w": 1280
+                },
+                "subtitle": "Removed from favorites list",
+                "title": "Philadelphia Eagles"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            }
+          },
+          "analytics": {
+            "item_id": "nfl_phi_eagles_025",
+            "query_id": "/drawer/favorites"
+          },
+          "focus_row_background_color": "004C54",
+          "format": "CHANNEL_CARD",
+          "image": {
+            "h": 720,
+            "url": "https://mockserverfavorites.onrender.com/1280x720/nfl_phi_eagles.png",
+            "w": 1280
+          },
+          "overlay_indicators": [
+            {
+              "icon": {
+                "key": {
+                  "condition": {
+                    "checks": {
+                      "favorite_channel": "nfl_phi_eagles_025"
+                    },
+                    "decision": "IS_FAVORITED",
+                    "false": "FAVORITE_HEART_EMPTY",
+                    "true": "FAVORITE_HEART_FILLED"
+                  }
+                },
+                "type": "STATIC"
+              }
+            }
+          ],
+          "primary_action": {
+            "condition": {
+              "checks": {
+                "favorite_channel": "nfl_phi_eagles_025"
+              },
+              "decision": "IS_FAVORITED",
+              "false": "FAVORITE_WITH_INVALIDATION",
+              "true": "UNFAVORITE_WITH_INVALIDATION"
+            }
+          },
+          "team_abbr": "PHI",
+          "team_name": "Philadelphia Eagles",
+          "tile_analytics": {
+            "TBD": "TBD"
+          }
+        },
+        {
+          "actions": {
+            "FAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "ADD TO WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "POST",
+              "label": "ADD TO WATCHLIST",
+              "payload": {
+                "channel_guid": "nfl_pit_steelers_026",
+                "enabler20Flag": true,
+                "external_id": "nfl_pit_steelers_026",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/nfl_pit_steelers.png",
+                  "w": 1280
+                },
+                "subtitle": "Added to favorites list",
+                "title": "Pittsburgh Steelers"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            },
+            "UNFAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "REMOVE FROM WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "DELETE",
+              "label": "REMOVE FROM WATCHLIST",
+              "payload": {
+                "channel_guid": "nfl_pit_steelers_026",
+                "enabler20Flag": true,
+                "external_id": "nfl_pit_steelers_026",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/nfl_pit_steelers.png",
+                  "w": 1280
+                },
+                "subtitle": "Removed from favorites list",
+                "title": "Pittsburgh Steelers"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            }
+          },
+          "analytics": {
+            "item_id": "nfl_pit_steelers_026",
+            "query_id": "/drawer/favorites"
+          },
+          "focus_row_background_color": "FFB612",
+          "format": "CHANNEL_CARD",
+          "image": {
+            "h": 720,
+            "url": "https://mockserverfavorites.onrender.com/1280x720/nfl_pit_steelers.png",
+            "w": 1280
+          },
+          "overlay_indicators": [
+            {
+              "icon": {
+                "key": {
+                  "condition": {
+                    "checks": {
+                      "favorite_channel": "nfl_pit_steelers_026"
+                    },
+                    "decision": "IS_FAVORITED",
+                    "false": "FAVORITE_HEART_EMPTY",
+                    "true": "FAVORITE_HEART_FILLED"
+                  }
+                },
+                "type": "STATIC"
+              }
+            }
+          ],
+          "primary_action": {
+            "condition": {
+              "checks": {
+                "favorite_channel": "nfl_pit_steelers_026"
+              },
+              "decision": "IS_FAVORITED",
+              "false": "FAVORITE_WITH_INVALIDATION",
+              "true": "UNFAVORITE_WITH_INVALIDATION"
+            }
+          },
+          "team_abbr": "PIT",
+          "team_name": "Pittsburgh Steelers",
+          "tile_analytics": {
+            "TBD": "TBD"
+          }
+        }
+      ],
+      "title": "P",
+      "total_tiles": 2
+    },
+    {
+      "alpha": "S",
+      "format": "GRID",
+      "ribbon_analytics": {
+        "AccountGuid": "65c9ca3e-217b-11ed-ba13-126882dbc557",
+        "AccountStatus": "Paid",
+        "DeviceGuid": "7b235964-439d-49dc-93ed-e7ed0ebad610",
+        "ProfileGuid": "10340350-2875-c41c-9371-1b714803851d",
+        "ProfileType": "Non Admin",
+        "ScreenName": "Home",
+        "SessionID": "",
+        "TabName": "Home",
+        "query_id": "/drawer/favorites"
+      },
+      "sub_title": "2",
+      "tiles": [
+        {
+          "actions": {
+            "FAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "ADD TO WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "POST",
+              "label": "ADD TO WATCHLIST",
+              "payload": {
+                "channel_guid": "nfl_sf_49ers_027",
+                "enabler20Flag": true,
+                "external_id": "nfl_sf_49ers_027",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/nfl_sf_49ers.png",
+                  "w": 1280
+                },
+                "subtitle": "Added to favorites list",
+                "title": "San Francisco 49ers"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            },
+            "UNFAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "REMOVE FROM WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "DELETE",
+              "label": "REMOVE FROM WATCHLIST",
+              "payload": {
+                "channel_guid": "nfl_sf_49ers_027",
+                "enabler20Flag": true,
+                "external_id": "nfl_sf_49ers_027",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/nfl_sf_49ers.png",
+                  "w": 1280
+                },
+                "subtitle": "Removed from favorites list",
+                "title": "San Francisco 49ers"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            }
+          },
+          "analytics": {
+            "item_id": "nfl_sf_49ers_027",
+            "query_id": "/drawer/favorites"
+          },
+          "focus_row_background_color": "AA0000",
+          "format": "CHANNEL_CARD",
+          "image": {
+            "h": 720,
+            "url": "https://mockserverfavorites.onrender.com/1280x720/nfl_sf_49ers.png",
+            "w": 1280
+          },
+          "overlay_indicators": [
+            {
+              "icon": {
+                "key": {
+                  "condition": {
+                    "checks": {
+                      "favorite_channel": "nfl_sf_49ers_027"
+                    },
+                    "decision": "IS_FAVORITED",
+                    "false": "FAVORITE_HEART_EMPTY",
+                    "true": "FAVORITE_HEART_FILLED"
+                  }
+                },
+                "type": "STATIC"
+              }
+            }
+          ],
+          "primary_action": {
+            "condition": {
+              "checks": {
+                "favorite_channel": "nfl_sf_49ers_027"
+              },
+              "decision": "IS_FAVORITED",
+              "false": "FAVORITE_WITH_INVALIDATION",
+              "true": "UNFAVORITE_WITH_INVALIDATION"
+            }
+          },
+          "team_abbr": "SF",
+          "team_name": "San Francisco 49ers",
+          "tile_analytics": {
+            "TBD": "TBD"
+          }
+        },
+        {
+          "actions": {
+            "FAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "ADD TO WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "POST",
+              "label": "ADD TO WATCHLIST",
+              "payload": {
+                "channel_guid": "nfl_sea_seahawks_028",
+                "enabler20Flag": true,
+                "external_id": "nfl_sea_seahawks_028",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/nfl_sea_seahawks.png",
+                  "w": 1280
+                },
+                "subtitle": "Added to favorites list",
+                "title": "Seattle Seahawks"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            },
+            "UNFAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "REMOVE FROM WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "DELETE",
+              "label": "REMOVE FROM WATCHLIST",
+              "payload": {
+                "channel_guid": "nfl_sea_seahawks_028",
+                "enabler20Flag": true,
+                "external_id": "nfl_sea_seahawks_028",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/nfl_sea_seahawks.png",
+                  "w": 1280
+                },
+                "subtitle": "Removed from favorites list",
+                "title": "Seattle Seahawks"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            }
+          },
+          "analytics": {
+            "item_id": "nfl_sea_seahawks_028",
+            "query_id": "/drawer/favorites"
+          },
+          "focus_row_background_color": "002244",
+          "format": "CHANNEL_CARD",
+          "image": {
+            "h": 720,
+            "url": "https://mockserverfavorites.onrender.com/1280x720/nfl_sea_seahawks.png",
+            "w": 1280
+          },
+          "overlay_indicators": [
+            {
+              "icon": {
+                "key": {
+                  "condition": {
+                    "checks": {
+                      "favorite_channel": "nfl_sea_seahawks_028"
+                    },
+                    "decision": "IS_FAVORITED",
+                    "false": "FAVORITE_HEART_EMPTY",
+                    "true": "FAVORITE_HEART_FILLED"
+                  }
+                },
+                "type": "STATIC"
+              }
+            }
+          ],
+          "primary_action": {
+            "condition": {
+              "checks": {
+                "favorite_channel": "nfl_sea_seahawks_028"
+              },
+              "decision": "IS_FAVORITED",
+              "false": "FAVORITE_WITH_INVALIDATION",
+              "true": "UNFAVORITE_WITH_INVALIDATION"
+            }
+          },
+          "team_abbr": "SEA",
+          "team_name": "Seattle Seahawks",
+          "tile_analytics": {
+            "TBD": "TBD"
+          }
+        }
+      ],
+      "title": "S",
+      "total_tiles": 2
+    },
+    {
+      "alpha": "T",
+      "format": "GRID",
+      "ribbon_analytics": {
+        "AccountGuid": "65c9ca3e-217b-11ed-ba13-126882dbc557",
+        "AccountStatus": "Paid",
+        "DeviceGuid": "7b235964-439d-49dc-93ed-e7ed0ebad610",
+        "ProfileGuid": "10340350-2875-c41c-9371-1b714803851d",
+        "ProfileType": "Non Admin",
+        "ScreenName": "Home",
+        "SessionID": "",
+        "TabName": "Home",
+        "query_id": "/drawer/favorites"
+      },
+      "sub_title": "2",
+      "tiles": [
+        {
+          "actions": {
+            "FAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "ADD TO WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "POST",
+              "label": "ADD TO WATCHLIST",
+              "payload": {
+                "channel_guid": "nfl_tb_buccaneers_029",
+                "enabler20Flag": true,
+                "external_id": "nfl_tb_buccaneers_029",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/nfl_tb_buccaneers.png",
+                  "w": 1280
+                },
+                "subtitle": "Added to favorites list",
+                "title": "Tampa Bay Buccaneers"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            },
+            "UNFAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "REMOVE FROM WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "DELETE",
+              "label": "REMOVE FROM WATCHLIST",
+              "payload": {
+                "channel_guid": "nfl_tb_buccaneers_029",
+                "enabler20Flag": true,
+                "external_id": "nfl_tb_buccaneers_029",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/nfl_tb_buccaneers.png",
+                  "w": 1280
+                },
+                "subtitle": "Removed from favorites list",
+                "title": "Tampa Bay Buccaneers"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            }
+          },
+          "analytics": {
+            "item_id": "nfl_tb_buccaneers_029",
+            "query_id": "/drawer/favorites"
+          },
+          "focus_row_background_color": "D50A0A",
+          "format": "CHANNEL_CARD",
+          "image": {
+            "h": 720,
+            "url": "https://mockserverfavorites.onrender.com/1280x720/nfl_tb_buccaneers.png",
+            "w": 1280
+          },
+          "overlay_indicators": [
+            {
+              "icon": {
+                "key": {
+                  "condition": {
+                    "checks": {
+                      "favorite_channel": "nfl_tb_buccaneers_029"
+                    },
+                    "decision": "IS_FAVORITED",
+                    "false": "FAVORITE_HEART_EMPTY",
+                    "true": "FAVORITE_HEART_FILLED"
+                  }
+                },
+                "type": "STATIC"
+              }
+            }
+          ],
+          "primary_action": {
+            "condition": {
+              "checks": {
+                "favorite_channel": "nfl_tb_buccaneers_029"
+              },
+              "decision": "IS_FAVORITED",
+              "false": "FAVORITE_WITH_INVALIDATION",
+              "true": "UNFAVORITE_WITH_INVALIDATION"
+            }
+          },
+          "team_abbr": "TB",
+          "team_name": "Tampa Bay Buccaneers",
+          "tile_analytics": {
+            "TBD": "TBD"
+          }
+        },
+        {
+          "actions": {
+            "FAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "ADD TO WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "POST",
+              "label": "ADD TO WATCHLIST",
+              "payload": {
+                "channel_guid": "nfl_ten_titans_030",
+                "enabler20Flag": true,
+                "external_id": "nfl_ten_titans_030",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/nfl_ten_titans.png",
+                  "w": 1280
+                },
+                "subtitle": "Added to favorites list",
+                "title": "Tennessee Titans"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            },
+            "UNFAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "REMOVE FROM WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "DELETE",
+              "label": "REMOVE FROM WATCHLIST",
+              "payload": {
+                "channel_guid": "nfl_ten_titans_030",
+                "enabler20Flag": true,
+                "external_id": "nfl_ten_titans_030",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/nfl_ten_titans.png",
+                  "w": 1280
+                },
+                "subtitle": "Removed from favorites list",
+                "title": "Tennessee Titans"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            }
+          },
+          "analytics": {
+            "item_id": "nfl_ten_titans_030",
+            "query_id": "/drawer/favorites"
+          },
+          "focus_row_background_color": "0C2340",
+          "format": "CHANNEL_CARD",
+          "image": {
+            "h": 720,
+            "url": "https://mockserverfavorites.onrender.com/1280x720/nfl_ten_titans.png",
+            "w": 1280
+          },
+          "overlay_indicators": [
+            {
+              "icon": {
+                "key": {
+                  "condition": {
+                    "checks": {
+                      "favorite_channel": "nfl_ten_titans_030"
+                    },
+                    "decision": "IS_FAVORITED",
+                    "false": "FAVORITE_HEART_EMPTY",
+                    "true": "FAVORITE_HEART_FILLED"
+                  }
+                },
+                "type": "STATIC"
+              }
+            }
+          ],
+          "primary_action": {
+            "condition": {
+              "checks": {
+                "favorite_channel": "nfl_ten_titans_030"
+              },
+              "decision": "IS_FAVORITED",
+              "false": "FAVORITE_WITH_INVALIDATION",
+              "true": "UNFAVORITE_WITH_INVALIDATION"
+            }
+          },
+          "team_abbr": "TEN",
+          "team_name": "Tennessee Titans",
+          "tile_analytics": {
+            "TBD": "TBD"
+          }
+        }
+      ],
+      "title": "T",
+      "total_tiles": 2
+    },
+    {
+      "alpha": "W",
+      "format": "GRID",
+      "ribbon_analytics": {
+        "AccountGuid": "65c9ca3e-217b-11ed-ba13-126882dbc557",
+        "AccountStatus": "Paid",
+        "DeviceGuid": "7b235964-439d-49dc-93ed-e7ed0ebad610",
+        "ProfileGuid": "10340350-2875-c41c-9371-1b714803851d",
+        "ProfileType": "Non Admin",
+        "ScreenName": "Home",
+        "SessionID": "",
+        "TabName": "Home",
+        "query_id": "/drawer/favorites"
+      },
+      "sub_title": "2",
+      "tiles": [
+        {
+          "actions": {
+            "FAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "ADD TO WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "POST",
+              "label": "ADD TO WATCHLIST",
+              "payload": {
+                "channel_guid": "nfl_was_commanders_031",
+                "enabler20Flag": true,
+                "external_id": "nfl_was_commanders_031",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/nfl_was_commanders.png",
+                  "w": 1280
+                },
+                "subtitle": "Added to favorites list",
+                "title": "Washington Commanders"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            },
+            "UNFAVORITE_WITH_INVALIDATION": {
+              "adobe": {
+                "ActionName": "REMOVE FROM WATCHLIST",
+                "EventName": "favorite",
+                "MenuName": "favorites"
+              },
+              "http_method": "DELETE",
+              "label": "REMOVE FROM WATCHLIST",
+              "payload": {
+                "channel_guid": "nfl_was_commanders_031",
+                "enabler20Flag": true,
+                "external_id": "nfl_was_commanders_031",
+                "platform": "vizio",
+                "product": "sling",
+                "type": "channel"
+              },
+              "toast_info": {
+                "image": {
+                  "h": 720,
+                  "url": "https://mockserverfavorites.onrender.com/1280x720/nfl_was_commanders.png",
+                  "w": 1280
+                },
+                "subtitle": "Removed from favorites list",
+                "title": "Washington Commanders"
+              },
+              "url": "https://mockserverfavorites.onrender.com/watchlists/v5/watches.json"
+            }
+          },
+          "analytics": {
+            "item_id": "nfl_was_commanders_031",
+            "query_id": "/drawer/favorites"
+          },
+          "focus_row_background_color": "5A1414",
+          "format": "CHANNEL_CARD",
+          "image": {
+            "h": 720,
+            "url": "https://mockserverfavorites.onrender.com/1280x720/nfl_was_commanders.png",
+            "w": 1280
+          },
+          "overlay_indicators": [
+            {
+              "icon": {
+                "key": {
+                  "condition": {
+                    "checks": {
+                      "favorite_channel": "nfl_was_commanders_031"
+                    },
+                    "decision": "IS_FAVORITED",
+                    "false": "FAVORITE_HEART_EMPTY",
+                    "true": "FAVORITE_HEART_FILLED"
+                  }
+                },
+                "type": "STATIC"
+              }
+            }
+          ],
+          "primary_action": {
+            "condition": {
+              "checks": {
+                "favorite_channel": "nfl_was_commanders_031"
+              },
+              "decision": "IS_FAVORITED",
+              "false": "FAVORITE_WITH_INVALIDATION",
+              "true": "UNFAVORITE_WITH_INVALIDATION"
+            }
+          },
+          "team_abbr": "WAS",
+          "team_name": "Washington Commanders",
+          "tile_analytics": {
+            "TBD": "TBD"
+          }
+        }
+      ],
+      "title": "W",
+      "total_tiles": 1
+    }
+  ],
+  "start_time": 1777532269,
+  "type": "FAVORITES"
+}

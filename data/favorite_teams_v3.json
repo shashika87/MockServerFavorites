@@ -1,0 +1,141 @@
+{
+  "format": "DRAWERV2",
+  "header_view": {
+    "title": "Favorite Teams"
+  },
+  "href": "https://mockserverfavorites.onrender.com/drawer/sports_favorites?sourceScreen={sourceScreen}",
+  "ribbons": [
+    {
+      "format": "LIST",
+      "tiles": [
+        {
+          "actions": {
+            "DRAWERV2": {
+              "http_method": "GET",
+              "url": "https://mockserverfavorites.onrender.com/drawer/sports_favorites?sourceScreen=home&stack=nfl"
+            }
+          },
+          "format": "SIMPLE_ITEM",
+          "id": "de75814000624ad7b33a81364f593c81",
+          "primary_action": "DRAWERV2",
+          "sub_menu_indicator": true,
+          "title": "NFL",
+          "subtitle": "3 Teams",
+          "image": {
+            "h": 720,
+            "url": "https://mockserverfavorites.onrender.com/1280x720/nfl.png",
+            "w": 1280
+          }
+        },
+        {
+          "actions": {
+            "DRAWERV2": {
+              "http_method": "GET",
+              "url": "https://mockserverfavorites.onrender.com/drawer/sports_favorites?sourceScreen=home&stack=nba"
+            }
+          },
+          "format": "SIMPLE_ITEM",
+          "primary_action": "DRAWERV2",
+          "sub_menu_indicator": true,
+          "title": "NBA",
+          "subtitle": "1 Team",
+          "image": {
+            "h": 720,
+            "url": "https://mockserverfavorites.onrender.com/1280x720/nba.png",
+            "w": 1280
+          }
+        },
+        {
+          "actions": {
+            "DRAWERV2": {
+              "http_method": "GET",
+              "url": "https://mockserverfavorites.onrender.com/drawer/sports_favorites?sourceScreen=home&stack=ncaaf"
+            }
+          },
+          "format": "SIMPLE_ITEM",
+          "primary_action": "DRAWERV2",
+          "sub_menu_indicator": true,
+          "title": "NCAAF",
+          "image": {
+            "h": 720,
+            "url": "https://mockserverfavorites.onrender.com/1280x720/ncaaf.png",
+            "w": 1280
+          }
+        },
+        {
+          "actions": {
+            "DRAWERV2": {
+              "http_method": "GET",
+              "url": "https://mockserverfavorites.onrender.com/drawer/sports_favorites?sourceScreen=home&stack=nhl"
+            }
+          },
+          "format": "SIMPLE_ITEM",
+          "primary_action": "DRAWERV2",
+          "sub_menu_indicator": true,
+          "title": "NHL",
+          "subtitle": "2 Teams",
+          "image": {
+            "h": 720,
+            "url": "https://mockserverfavorites.onrender.com/1280x720/nhl.png",
+            "w": 1280
+          }
+        },
+        {
+          "actions": {
+            "DRAWERV2": {
+              "http_method": "GET",
+              "url": "https://mockserverfavorites.onrender.com/drawer/sports_favorites?sourceScreen=home&stack=mlb"
+            }
+          },
+          "format": "SIMPLE_ITEM",
+          "primary_action": "DRAWERV2",
+          "sub_menu_indicator": true,
+          "title": "MLB",
+          "image": {
+            "h": 720,
+            "url": "https://mockserverfavorites.onrender.com/1280x720/mlb.png",
+            "w": 1280
+          }
+        },
+        {
+          "actions": {
+            "DRAWERV2": {
+              "http_method": "GET",
+              "url": "https://mockserverfavorites.onrender.com/drawer/sports_favorites?sourceScreen=home&stack=mls"
+            }
+          },
+          "format": "SIMPLE_ITEM",
+          "primary_action": "DRAWERV2",
+          "sub_menu_indicator": true,
+          "title": "MLS",
+          "subtitle": "5 Teams",
+          "image": {
+            "h": 720,
+            "url": "https://mockserverfavorites.onrender.com/1280x720/mls.png",
+            "w": 1280
+          }
+        },
+        {
+          "actions": {
+            "DRAWERV2": {
+              "http_method": "GET",
+              "url": "https://mockserverfavorites.onrender.com/drawer/sports_favorites?sourceScreen=home&stack=epl"
+            }
+          },
+          "format": "SIMPLE_ITEM",
+          "primary_action": "DRAWERV2",
+          "sub_menu_indicator": true,
+          "title": "EPL",
+          "subtitle": "1 Team",
+          "image": {
+            "h": 720,
+            "url": "https://mockserverfavorites.onrender.com/1280x720/epl.png",
+            "w": 1280
+          }
+        }
+      ],
+      "total_tiles": 7
+    }
+  ],
+  "type": "DEFAULT"
+}

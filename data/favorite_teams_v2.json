@@ -1,0 +1,68 @@
+{
+  "format": "DRAWERV2",
+  "header_view": {
+    "title": "Favorite Teams"
+  },
+  "href": "https://mockserverfavorites.onrender.com/drawer/sports_favorites?sourceScreen={sourceScreen}",
+  "ribbons": [
+    {
+      "format": "LIST",
+      "tiles": [
+        {
+          "actions": {
+            "DRAWERV2": {
+              "http_method": "GET",
+              "url": "https://mockserverfavorites.onrender.com/drawer/sports_favorites?sourceScreen=home&stack=nfl"
+            }
+          },
+          "format": "SIMPLE_ITEM",
+          "id": "de75814000624ad7b33a81364f593c81",
+          "primary_action": "DRAWERV2",
+          "sub_menu_indicator": true,
+          "title": "NFL",
+          "image": {
+            "h": 720,
+            "url": "https://mockserverfavorites.onrender.com/1280x720/nfl.png",
+            "w": 1280
+          }
+        },
+        {
+          "actions": {
+            "DRAWERV2": {
+              "http_method": "GET",
+              "url": "https://mockserverfavorites.onrender.com/drawer/sports_favorites?sourceScreen=home&stack=nba"
+            }
+          },
+          "format": "SIMPLE_ITEM",
+          "primary_action": "DRAWERV2",
+          "sub_menu_indicator": true,
+          "title": "NBA",
+          "image": {
+            "h": 720,
+            "url": "https://mockserverfavorites.onrender.com/1280x720/nba.png",
+            "w": 1280
+          }
+        },
+        {
+          "actions": {
+            "DRAWERV2": {
+              "http_method": "GET",
+              "url": "https://mockserverfavorites.onrender.com/drawer/sports_favorites?sourceScreen=home&stack=mlb"
+            }
+          },
+          "format": "SIMPLE_ITEM",
+          "primary_action": "DRAWERV2",
+          "sub_menu_indicator": true,
+          "title": "MLB",
+          "image": {
+            "h": 720,
+            "url": "https://mockserverfavorites.onrender.com/1280x720/mlb.png",
+            "w": 1280
+          }
+        }
+      ],
+      "total_tiles": 3
+    }
+  ],
+  "type": "DEFAULT"
+}
